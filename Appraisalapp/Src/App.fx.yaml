@@ -1,0 +1,29 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |
+        =If(
+            Not(IsBlank(
+                LookUp( AppraisalAdminList,
+                   
+                    Title = User().Email
+                )
+            )),
+            Set(
+                is_admin,
+                true
+            ),
+            Set(
+                is_admin,
+                false
+            )
+        )
+    StartScreen: =
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

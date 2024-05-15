@@ -1,0 +1,169 @@
+Main_screen As screen:
+    BackgroundImage: =
+    Fill: =RGBA(46, 27, 171, 1)
+    ImagePosition: =ImagePosition.Stretch
+
+    Image1 As image:
+        Height: =570
+        Image: ='5fc1c59b4fd94ddd8128'
+        ImagePosition: =ImagePosition.Fill
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =525.00
+        X: =93.00
+        Y: =96
+        ZIndex: =6
+
+    Image2 As image:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =570
+        Image: =
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =644
+        X: =618
+        Y: =96
+        ZIndex: =7
+
+    Button1 As button:
+        BorderThickness: =1
+        Fill: =RGBA(0, 121, 187, 1)
+        Font: =Font.'Lato Black'
+        Height: =28
+        OnSelect: |+
+            =If(
+                Not(IsBlank(
+                    LookUp(
+                        AppraisalUserList ,
+                        Title = User().Email
+                    )
+                )),
+                Notify("Appraisal form is already submitted")
+               ,
+            
+                Navigate(User_screen)
+            )
+            
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =15.00
+        Text: ="Start Now"
+        Width: =159
+        X: =842
+        Y: =555
+        ZIndex: =8
+
+    Button1_1 As button:
+        BorderThickness: =1
+        Color: =RGBA(0, 134, 208, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =29
+        OnSelect: =Navigate(Admin_screen)
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =20.00
+        Text: ="Admin"
+        Visible: =is_admin
+        Width: =126
+        X: =1160
+        Y: =22
+        ZIndex: =9
+
+    Label2 As label:
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledBorderColor: =RGBA(102, 182, 227, 1)
+        DisabledColor: =RGBA(0, 134, 208, 1)
+        DisabledFill: =RGBA(0, 134, 208, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =25.00
+        Text: =User().FullName
+        Width: =534.00
+        X: =632.99
+        Y: =235
+        ZIndex: =10
+
+    Label3 As label:
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledFill: =RGBA(0, 134, 208, 1)
+        Font: =Font.Lato
+        Height: =56
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =20.00
+        Text: ="Hello,"
+        Width: =224.00
+        X: =632.99
+        Y: =179
+        ZIndex: =11
+
+    Label1 As label:
+        BorderColor: =RGBA(0, 134, 208, 1)
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =72
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =35.00
+        Text: ="Performance      "
+        Width: =528.01
+        X: =632.99
+        Y: =309
+        ZIndex: =12
+
+    Label4 As label:
+        Color: =RGBA(0, 134, 208, 1)
+        Font: =Font.Lato
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =20.00
+        Text: ="Appraisal Form"
+        Width: =361.00
+        X: =632.99
+        Y: =371
+        ZIndex: =13
+
+    Image3 As image:
+        Height: =73
+        Image: ='footer-logo'
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =104
+        X: =31
+        Y: =5
+        ZIndex: =14
+
+    Label5 As label:
+        Align: =Align.Center
+        Color: =RGBA(241, 244, 249, 1)
+        Height: =34
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =15.00
+        Text: ="Designed by NoblQ"
+        Width: =505.00
+        X: =381.00
+        Y: =702
+        ZIndex: =15
+
+    Label6 As label:
+        Color: =RGBA(39, 113, 194, 1)
+        Font: =Font.Lato
+        Height: =85
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =13.00
+        Text: ="Performance evaluation should be completed by the employee, the employee's manager, the employee's direct reports, and the employee's peers."
+        Width: =580.00
+        X: =632.99
+        Y: =411
+        ZIndex: =16
+

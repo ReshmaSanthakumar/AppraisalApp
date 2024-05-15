@@ -1,0 +1,67 @@
+"Success_Screen As screen.'tabletLayout_Success_ver3.0'":
+    BackgroundImage: ='5fc1c59b4fd94ddd8128'
+    ImagePosition: =ImagePosition.Fill
+
+    Button4_1 As button:
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledColor: =RGBA(0, 134, 208, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        OnSelect: =Exit(true)
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Text: ="Logout"
+        Width: =137
+        X: =1200
+        Y: =18
+        ZIndex: =4
+
+    Container2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =410
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =642
+        X: =348
+        Y: =180
+        ZIndex: =5
+
+        LblSuccessMsg1 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 134, 208, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =56
+            PaddingRight: =5.00
+            PaddingTop: =5.00
+            Size: =20.00
+            Text: ="Your response has been submitted"
+            Width: =500
+            X: =66
+            Y: =234
+            ZIndex: =1
+
+        iconCircle1 As circle.Circle:
+            Height: =100.00
+            Width: =100.00
+            X: =266
+            Y: =98
+            ZIndex: =2
+
+        iconCheck1 As icon.Check:
+            Height: =iconCircle1.Height
+            Icon: =Icon.Check
+            PaddingBottom: =Self.PaddingTop
+            PaddingLeft: =Self.PaddingTop
+            PaddingRight: =24.00
+            PaddingTop: =24.00
+            Width: =100.00
+            X: =266
+            Y: =98
+            ZIndex: =3
+
