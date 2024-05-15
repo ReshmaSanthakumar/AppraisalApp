@@ -1,5 +1,5 @@
 User_screen As screen:
-    BackgroundImage: ='5fc1c59b4fd94ddd8128'
+    BackgroundImage: =download
     ImagePosition: =ImagePosition.Fill
 
     Icon1 As icon.ChevronLeft:
@@ -16,12 +16,11 @@ User_screen As screen:
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.ExtraBold
-        Fill: =RGBA(255, 255, 255, 1)
         Height: =646
-        RadiusBottomLeft: =10
-        RadiusBottomRight: =10
-        RadiusTopLeft: =10
-        RadiusTopRight: =10
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Width: =1076
         X: =135
         Y: =62
@@ -29,7 +28,7 @@ User_screen As screen:
 
         Label1_1 As label:
             Align: =Align.Center
-            Color: =RGBA(0, 134, 208, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(255, 255, 255, 1)
             Font: =Font.'Lato Black'
             FontWeight: =FontWeight.Bold
@@ -48,7 +47,6 @@ User_screen As screen:
             DataSource: =AppraisalUserList
             DefaultMode: |
                 =FormMode.New
-            Fill: =RGBA(50, 86, 160, 1)
             Height: =502
             NumberOfColumns: =1
             OnSuccess: =Navigate(Success_Screen)

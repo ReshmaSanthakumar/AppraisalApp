@@ -1,6 +1,6 @@
 Main_screen As screen:
-    BackgroundImage: =
-    Fill: =RGBA(46, 27, 171, 1)
+    BackgroundImage: =download
+    Fill: =RGBA(152, 208, 70, 1)
     ImagePosition: =ImagePosition.Stretch
 
     Image1 As image:
@@ -9,8 +9,8 @@ Main_screen As screen:
         ImagePosition: =ImagePosition.Fill
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =525.00
-        X: =93.00
+        Width: =463
+        X: =154
         Y: =96
         ZIndex: =6
 
@@ -20,8 +20,8 @@ Main_screen As screen:
         Image: =
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =644
-        X: =618
+        Width: =581
+        X: =617
         Y: =96
         ZIndex: =7
 

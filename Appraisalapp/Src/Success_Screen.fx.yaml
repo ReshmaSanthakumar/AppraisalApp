@@ -1,5 +1,5 @@
 "Success_Screen As screen.'tabletLayout_Success_ver3.0'":
-    BackgroundImage: ='5fc1c59b4fd94ddd8128'
+    BackgroundImage: =download
     ImagePosition: =ImagePosition.Fill
 
     Button4_1 As button:
