@@ -16,6 +16,7 @@ User_screen As screen:
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(0, 0, 0, 0.39)
         Height: =646
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
@@ -380,6 +381,9 @@ User_screen As screen:
 
     Button2 As button:
         DisplayMode: =
+        Fill: =RGBA(0, 94, 146, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
         Height: =30
         OnSelect: |
             =If( IsBlank(DataCardValue7.Text) ||

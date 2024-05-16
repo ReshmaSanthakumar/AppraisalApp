@@ -102,12 +102,12 @@ Admin_screen As screen:
     Form2 As form:
         DataSource: =AppraisalUserList
         Fill: =RGBA(0, 0, 0, 0.26)
-        Height: =287
+        Height: =186
         Item: =Gallery1.Selected
         NumberOfColumns: =1
-        Width: =833
-        X: =530
-        Y: =480
+        Width: =821
+        X: =526
+        Y: =582
         ZIndex: =4
 
         "'TL Feedback_DataCard4' As typedDataCard.textualEditCard":
@@ -145,6 +145,7 @@ Admin_screen As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =48
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PaddingRight: =5.00
@@ -155,9 +156,9 @@ Admin_screen As screen:
                 RadiusTopRight: =0
                 Size: =13.00
                 Tooltip: =Parent.DisplayName
-                Width: =744.00
-                X: =30.00
-                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                Width: =732
+                X: =42
+                Y: =60
                 ZIndex: =2
 
             ErrorMessage12 As label:
@@ -191,14 +192,18 @@ Admin_screen As screen:
                 ZIndex: =4
 
     Button3 As button:
+        Fill: =RGBA(0, 94, 146, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =28
         OnSelect: =SubmitForm(Form2)
         PaddingRight: =5.00
         PaddingTop: =5.00
         Size: =15.00
         Text: ="Submit"
-        Width: =160.00
-        X: =883.00
-        Y: =701
+        Width: =146
+        X: =858
+        Y: =713
         ZIndex: =5
 
     TextInput1 As text:
@@ -256,10 +261,10 @@ Admin_screen As screen:
     FormViewer1 As formViewer:
         DataSource: =AppraisalUserList
         Fill: =RGBA(0, 0, 0, 0.43)
-        Height: =370
+        Height: =466
         Item: =Gallery1.Selected
         NumberOfColumns: =1
-        Width: =814
+        Width: =824
         X: =524
         Y: =93
         ZIndex: =11
@@ -273,7 +278,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =814
+            Width: =824
             X: =0
             Y: =0
             ZIndex: =12
@@ -318,7 +323,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =814
+            Width: =824
             X: =0
             Y: =1
             ZIndex: =12
@@ -363,7 +368,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =814
+            Width: =824
             X: =0
             Y: =2
             ZIndex: =12
@@ -409,7 +414,7 @@ Admin_screen As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue4.Selected
-            Width: =814
+            Width: =824
             X: =0
             Y: =3
             ZIndex: =12
@@ -488,7 +493,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =814
+            Width: =824
             X: =0
             Y: =4
             ZIndex: =12
@@ -525,9 +530,9 @@ Admin_screen As screen:
                 ZIndex: =2
 
     Button4 As button:
-        Color: =RGBA(0, 94, 146, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 94, 146, 1)
+        FontWeight: =FontWeight.Bold
         Height: =29
         OnSelect: =Exit(true)
         PaddingRight: =5.00
