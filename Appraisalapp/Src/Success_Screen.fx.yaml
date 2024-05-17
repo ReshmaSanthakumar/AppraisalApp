@@ -30,22 +30,6 @@
         Y: =180
         ZIndex: =5
 
-        LblSuccessMsg1 As label:
-            Align: =Align.Center
-            Color: =RGBA(0, 134, 208, 1)
-            DisplayMode: =DisplayMode.View
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            Height: =56
-            PaddingRight: =5.00
-            PaddingTop: =5.00
-            Size: =20.00
-            Text: ="Your response has been submitted"
-            Width: =500
-            X: =66
-            Y: =234
-            ZIndex: =1
-
         iconCircle1 As circle.Circle:
             Height: =100.00
             Width: =100.00
@@ -64,4 +48,16 @@
             X: =266
             Y: =98
             ZIndex: =3
+
+        Label7 As label:
+            Align: =Align.Center
+            Color: =RGBA(56, 96, 178, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =56
+            Size: =19
+            Text: ="Your response has been submitted"
+            Width: =462
+            X: =85
+            Y: =218
+            ZIndex: =4
 
