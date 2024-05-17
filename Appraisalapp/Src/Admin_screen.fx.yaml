@@ -102,7 +102,7 @@ Admin_screen As screen:
     Form2 As form:
         DataSource: =AppraisalUserList
         Fill: =RGBA(0, 0, 0, 0.26)
-        Height: =186
+        Height: =126
         Item: =Gallery1.Selected
         NumberOfColumns: =1
         Width: =821
@@ -110,85 +110,76 @@ Admin_screen As screen:
         Y: =582
         ZIndex: =4
 
-        "'TL Feedback_DataCard4' As typedDataCard.textualEditCard":
+        "'Reporting Manager Feedback _DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="TLFeedback"
-            Default: =ThisItem.TLFeedback
+            DataField: ="ReportingManagerFeedback"
+            Default: =ThisItem.'Reporting Manager Feedback '
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,TLFeedback)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,ReportingManagerFeedback)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, TLFeedback)
+            Height: =115
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, ReportingManagerFeedback)
             Required: =false
-            Update: =DataCardValue17.Text
-            Width: =833
+            Update: =DataCardValue90.Text
+            Width: =821
             X: =0
             Y: =0
             ZIndex: =5
 
-            DataCardKey17 As label:
+            DataCardKey90 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Lato Black'
+                FontWeight: =FontWeight.Bold
                 Height: =34
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
                 Text: =Parent.DisplayName
-                Width: =744.00
+                Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30.00
+                X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue17 As text:
+            DataCardValue90 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =48
+                Height: =50
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PaddingRight: =5.00
-                PaddingTop: =5.00
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13.00
                 Tooltip: =Parent.DisplayName
-                Width: =732
-                X: =42
-                Y: =60
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =41
                 ZIndex: =2
 
-            ErrorMessage12 As label:
+            ErrorMessage59 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Size: =14.00
+                PaddingRight: =0
+                PaddingTop: =0
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =744.00
-                X: =30.00
-                Y: =DataCardValue17.Y + DataCardValue17.Height
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue90.Y + DataCardValue90.Height
                 ZIndex: =3
 
-            StarVisible12 As label:
+            StarVisible59 As label:
                 Align: =Align.Center
-                Height: =DataCardKey17.Height
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
+                Height: =DataCardKey90.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30.00
+                Width: =30
                 Wrap: =false
-                X: =0.00
-                Y: =DataCardKey17.Y
+                Y: =DataCardKey90.Y
                 ZIndex: =4
 
     Button3 As button:
@@ -202,7 +193,7 @@ Admin_screen As screen:
         Size: =15.00
         Text: ="Submit"
         Width: =146
-        X: =858
+        X: =863
         Y: =713
         ZIndex: =5
 
@@ -254,8 +245,8 @@ Admin_screen As screen:
         PaddingTop: =0.00
         Tooltip: =If(SortDescending1, "Sort list in reverse alphabetical order", "Sort list in alphabetical order")
         Width: =43
-        X: =425.00
-        Y: =76
+        X: =425
+        Y: =67
         ZIndex: =10
 
     FormViewer1 As formViewer:
@@ -269,7 +260,7 @@ Admin_screen As screen:
         Y: =93
         ZIndex: =11
 
-        Title_DataCard2 As typedDataCard.textualViewCard:
+        Title_DataCard5 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
@@ -283,35 +274,30 @@ Admin_screen As screen:
             Y: =0
             ZIndex: =12
 
-            DataCardKey1 As label:
+            DataCardKey37 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                PaddingBottom: =0
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
                 Text: =Parent.DisplayName
-                Width: =718.00
+                Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30.00
+                X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue1 As label:
+            DataCardValue37 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Size: =13.00
+                PaddingRight: =0
+                PaddingTop: =0
                 Text: =Parent.Default
-                Width: =718.00
-                X: =30.00
-                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey37.Y + DataCardKey37.Height + 5
                 ZIndex: =2
 
         Name_DataCard2 As typedDataCard.textualViewCard:
@@ -328,43 +314,38 @@ Admin_screen As screen:
             Y: =1
             ZIndex: =12
 
-            DataCardKey2 As label:
+            DataCardKey38 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                PaddingBottom: =0
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
                 Text: =Parent.DisplayName
-                Width: =718.00
+                Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30.00
+                X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue2 As label:
+            DataCardValue38 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Size: =13.00
+                PaddingRight: =0
+                PaddingTop: =0
                 Text: =Parent.Default
-                Width: =718.00
-                X: =30.00
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey38.Y + DataCardKey38.Height + 5
                 ZIndex: =2
 
-        "'Employee ID_DataCard2' As typedDataCard.textualViewCard":
+        "'Employee Id_DataCard2' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeID"
+            DataField: ="EmployeeId"
             Default: =ThisItem.'Employee Id'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Employee Id')
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,EmployeeId)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -373,123 +354,78 @@ Admin_screen As screen:
             Y: =2
             ZIndex: =12
 
-            DataCardKey3 As label:
+            DataCardKey39 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                PaddingBottom: =0
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
                 Text: =Parent.DisplayName
-                Width: =718.00
+                Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30.00
+                X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue3 As label:
+            DataCardValue39 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Size: =13.00
+                PaddingRight: =0
+                PaddingTop: =0
                 Text: =Parent.Default
-                Width: =718.00
-                X: =30.00
-                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey39.Y + DataCardKey39.Height + 5
                 ZIndex: =2
 
-        "'Rate your knowledge and skills relevant to your role._DataCard1' As typedDataCard.comboBoxViewCard":
+        "'Jeevan Reporting Manager Name_DataCard2' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Rateyourknowledgeandskillsreleva"
-            Default: =ThisItem.Rateyourknowledgeandskillsreleva
+            DataField: ="JeevanReportingManagerName"
+            Default: =ThisItem.'Jeevan Reporting Manager Name'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Rateyourknowledgeandskillsreleva)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,JeevanReportingManagerName)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =40
             Required: =false
-            Update: =DataCardValue4.Selected
             Width: =824
             X: =0
             Y: =3
             ZIndex: =12
 
-            DataCardKey4 As label:
+            DataCardKey40 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
                 Text: =Parent.DisplayName
-                Width: =718.00
+                Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30.00
+                X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue4 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+            DataCardValue40 As label:
+                AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 0)
-                Items: =Choices([@AppraisalUserList].Rateyourknowledgeandskillsreleva)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                SearchFields: =["Value"]
-                SearchItems: =Choices(AppraisalUserList.Rateyourknowledgeandskillsreleva,DataCardValue4.SearchText)
-                SelectMultiple: =false
-                Size: =13.00
-                Width: =718.00
-                X: =30.00
-                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey40.Y + DataCardKey40.Height + 5
                 ZIndex: =2
 
-            ErrorMessage1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Size: =14.00
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =718.00
-                X: =30.00
-                Y: =DataCardValue4.Y + DataCardValue4.Height
-                ZIndex: =3
-
-            StarVisible1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey4.Height
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30.00
-                Wrap: =false
-                X: =0.00
-                Y: =DataCardKey4.Y
-                ZIndex: =4
-
-        "'TL Feedback_DataCard2' As typedDataCard.textualViewCard":
+        "'Please mention your current project name _DataCard2' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="TLFeedback"
-            Default: =ThisItem.TLFeedback
+            DataField: ="Pleasementionyourcurrentprojectn"
+            Default: =ThisItem.'Please mention your current project name '
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,TLFeedback)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Pleasementionyourcurrentprojectn)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -498,35 +434,868 @@ Admin_screen As screen:
             Y: =4
             ZIndex: =12
 
-            DataCardKey6 As label:
+            DataCardKey41 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                PaddingBottom: =0
-                PaddingRight: =5.00
-                PaddingTop: =5.00
-                Size: =13.00
                 Text: =Parent.DisplayName
-                Width: =718.00
+                Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30.00
+                X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue6 As label:
+            DataCardValue41 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                Size: =13.00
+                PaddingRight: =0
+                PaddingTop: =0
                 Text: =Parent.Default
-                Width: =718.00
-                X: =30.00
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey41.Y + DataCardKey41.Height + 5
+                ZIndex: =2
+
+        "'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Sharesomestandoutmomentsoraccomp"
+            Default: =ThisItem.'Share some standout moments or accomplishments from this year that you think deserve a raise.'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Sharesomestandoutmomentsoraccomp)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =5
+            ZIndex: =12
+
+            DataCardKey42 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue42 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey42.Y + DataCardKey42.Height + 5
+                ZIndex: =2
+
+        "'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Shareanyhurdlesthatcameyourwayin"
+            Default: =ThisItem.'Share any hurdles that came your way in your role. How did you overcome them like a champ?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Shareanyhurdlesthatcameyourwayin)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =6
+            ZIndex: =12
+
+            DataCardKey43 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue43 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey43.Y + DataCardKey43.Height + 5
+                ZIndex: =2
+
+        "'Rate your knowledge and skills relevant to your role_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Rateyourknowledgeandskillsreleva0"
+            Default: =ThisItem.'Rate your knowledge and skills relevant to your role'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Rateyourknowledgeandskillsreleva0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =7
+            ZIndex: =12
+
+            DataCardKey44 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue44 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey44.Y + DataCardKey44.Height + 5
+                ZIndex: =2
+
+        "'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) _DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Haveyoubeenonaquesttolevelupyour"
+            Default: |-
+                =ThisItem.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Haveyoubeenonaquesttolevelupyour)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =8
+            ZIndex: =12
+
+            DataCardKey45 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue45 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey45.Y + DataCardKey45.Height + 5
+                ZIndex: =2
+
+        "'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Sharethenamesof5Jeevaniteswhomyo"
+            Default: =ThisItem.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Sharethenamesof5Jeevaniteswhomyo)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =9
+            ZIndex: =12
+
+            DataCardKey46 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue46 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey46.Y + DataCardKey46.Height + 5
+                ZIndex: =2
+
+        "'Rate your problem-solving and critical-thinking skills.  _DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Rateyourproblem_x002d_solvingand"
+            Default: =ThisItem.'"Rate your problem-solving and critical-thinking skills.  "'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Rateyourproblem_x002d_solvingand)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =10
+            ZIndex: =12
+
+            DataCardKey47 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue47 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey47.Y + DataCardKey47.Height + 5
+                ZIndex: =2
+
+        "'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Letusknowabouttheonestarcolleagu"
+            Default: =ThisItem.'Let us know about the one star colleague of yours, who helped you be your better version this year'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Letusknowabouttheonestarcolleagu)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =11
+            ZIndex: =12
+
+            DataCardKey48 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue48 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey48.Y + DataCardKey48.Height + 5
+                ZIndex: =2
+
+        "'Paint a picture of your career dreams and ambitions._DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Paintapictureofyourcareerdreamsa"
+            Default: =ThisItem.'Paint a picture of your career dreams and ambitions.'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Paintapictureofyourcareerdreamsa)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =12
+            ZIndex: =12
+
+            DataCardKey49 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue49 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey49.Y + DataCardKey49.Height + 5
+                ZIndex: =2
+
+        "'What can the company do to fuel your career development?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Whatcanthecompanydotofuelyourcar"
+            Default: =ThisItem.'What can the company do to fuel your career development?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Whatcanthecompanydotofuelyourcar)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =13
+            ZIndex: =12
+
+            DataCardKey50 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue50 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey50.Y + DataCardKey50.Height + 5
+                ZIndex: =2
+
+        "'Please share your feedback about your reporting manager!_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Pleaseshareyourfeedbackaboutyour"
+            Default: =ThisItem.'Please share your feedback about your reporting manager!'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Pleaseshareyourfeedbackaboutyour)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =14
+            ZIndex: =12
+
+            DataCardKey51 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue51 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey51.Y + DataCardKey51.Height + 5
+                ZIndex: =2
+
+        "'On a scale of one to ten, where do you rate yourself?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Onascaleofonetoten_x002c_wheredo"
+            Default: =ThisItem.'On a scale of one to ten, where do you rate yourself?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onascaleofonetoten_x002c_wheredo)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =15
+            ZIndex: =12
+
+            DataCardKey52 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue52 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey52.Y + DataCardKey52.Height + 5
+                ZIndex: =2
+
+        "'What is your current CTC?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="WhatisyourcurrentCTC_x003f_"
+            Default: =ThisItem.'What is your current CTC?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourcurrentCTC_x003f_)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =16
+            ZIndex: =12
+
+            DataCardKey53 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue53 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey53.Y + DataCardKey53.Height + 5
+                ZIndex: =2
+
+        "'What is your expected CTC? _DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="WhatisyourexpectedCTC_x003f_"
+            Default: =ThisItem.'"What is your expected CTC? "'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourexpectedCTC_x003f_)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =17
+            ZIndex: =12
+
+            DataCardKey54 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue54 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
+                ZIndex: =2
+
+        "'Explain how it (expected CTC) is rightfully yours! _DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Explainhowit_x0028_expectedCTC_x"
+            Default: =ThisItem.'Explain how it (expected CTC) is rightfully yours! '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Explainhowit_x0028_expectedCTC_x)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =18
+            ZIndex: =12
+
+            DataCardKey55 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue55 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey55.Y + DataCardKey55.Height + 5
+                ZIndex: =2
+
+        "'On a scale of one to ten, how blissful are you with your current job situation? _DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Onascaleofonetoten_x002c_howblis"
+            Default: =ThisItem.'"On a scale of one to ten, how blissful are you with your current job situation? "'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onascaleofonetoten_x002c_howblis)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =19
+            ZIndex: =12
+
+            DataCardKey56 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue56 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey56.Y + DataCardKey56.Height + 5
+                ZIndex: =2
+
+        "'Are you interested in an internal movement?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Areyouinterestedinaninternalmove"
+            Default: =ThisItem.'Are you interested in an internal movement?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Areyouinterestedinaninternalmove)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =20
+            ZIndex: =12
+
+            DataCardKey57 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue57 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey57.Y + DataCardKey57.Height + 5
+                ZIndex: =2
+
+        "'On the hunt for some on-site action?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Onthehuntforsomeon_x002d_siteact"
+            Default: =ThisItem.'On the hunt for some on-site action?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onthehuntforsomeon_x002d_siteact)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =21
+            ZIndex: =12
+
+            DataCardKey58 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue58 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey58.Y + DataCardKey58.Height + 5
+                ZIndex: =2
+
+        "'Have you given our employee referral program a spin yet?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Haveyougivenouremployeereferralp"
+            Default: =ThisItem.'Have you given our employee referral program a spin yet?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Haveyougivenouremployeereferralp)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =22
+            ZIndex: =12
+
+            DataCardKey59 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue59 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey59.Y + DataCardKey59.Height + 5
+                ZIndex: =2
+
+        "'If no, let us know why?!_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Ifno_x002c_letusknowwhy_x003f__x"
+            Default: =ThisItem.'If no, let us know why?!'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Ifno_x002c_letusknowwhy_x003f__x)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =23
+            ZIndex: =12
+
+            DataCardKey60 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue60 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey60.Y + DataCardKey60.Height + 5
+                ZIndex: =2
+
+        Team_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Team"
+            Default: =ThisItem.Team
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Team)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =24
+            ZIndex: =12
+
+            DataCardKey61 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue61 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey61.Y + DataCardKey61.Height + 5
+                ZIndex: =2
+
+        "'Reporting Manager Feedback _DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ReportingManagerFeedback"
+            Default: =ThisItem.'Reporting Manager Feedback '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,ReportingManagerFeedback)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =824
+            X: =0
+            Y: =25
+            ZIndex: =12
+
+            DataCardKey62 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue62 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey62.Y + DataCardKey62.Height + 5
                 ZIndex: =2
 
     Button4 As button:
