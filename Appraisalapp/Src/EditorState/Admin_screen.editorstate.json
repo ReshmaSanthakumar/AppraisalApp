@@ -382,7 +382,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelect",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultButtonStyle",
@@ -4314,7 +4314,7 @@
         {
           "Category": "Data",
           "PropertyName": "DisplayName",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -4324,7 +4324,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -5425,7 +5425,7 @@
         {
           "Category": "Design",
           "PropertyName": "TemplateFill",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -5994,7 +5994,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelect",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultIconStyle",
@@ -6604,7 +6604,7 @@
         {
           "Category": "Data",
           "PropertyName": "DisplayName",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -6955,7 +6955,7 @@
         {
           "Category": "Data",
           "PropertyName": "DisplayName",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -8443,7 +8443,7 @@
         {
           "Category": "Data",
           "PropertyName": "DisplayName",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -8817,7 +8817,7 @@
         {
           "Category": "Data",
           "PropertyName": "DisplayName",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
