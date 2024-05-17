@@ -1,28 +1,16 @@
 Main_screen As screen:
-    BackgroundImage: =download
+    BackgroundImage: =picccs
     Fill: =RGBA(152, 208, 70, 1)
     ImagePosition: =ImagePosition.Stretch
 
-    Image1 As image:
-        Height: =570
-        Image: ='5fc1c59b4fd94ddd8128'
-        ImagePosition: =ImagePosition.Fill
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =463
-        X: =154
-        Y: =96
-        ZIndex: =6
-
     Image2 As image:
-        Fill: =RGBA(255, 255, 255, 1)
         Height: =570
         Image: =
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =581
-        X: =617
-        Y: =96
+        X: =427
+        Y: =166
         ZIndex: =7
 
     Button1 As button:
@@ -49,8 +37,8 @@ Main_screen As screen:
         Size: =15.00
         Text: ="Start Now"
         Width: =159
-        X: =842
-        Y: =555
+        X: =664
+        Y: =589
         ZIndex: =8
 
     Button1_1 As button:
@@ -76,7 +64,6 @@ Main_screen As screen:
         DisabledBorderColor: =RGBA(102, 182, 227, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
         DisabledFill: =RGBA(0, 134, 208, 1)
-        Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Bold
         Height: =56
@@ -85,8 +72,8 @@ Main_screen As screen:
         Size: =25.00
         Text: =User().FullName
         Width: =534.00
-        X: =632.99
-        Y: =235
+        X: =454
+        Y: =269
         ZIndex: =10
 
     Label3 As label:
@@ -99,8 +86,8 @@ Main_screen As screen:
         Size: =20.00
         Text: ="Hello,"
         Width: =224.00
-        X: =632.99
-        Y: =179
+        X: =454
+        Y: =213
         ZIndex: =11
 
     Label1 As label:
@@ -115,8 +102,8 @@ Main_screen As screen:
         Size: =35.00
         Text: ="Performance      "
         Width: =528.01
-        X: =632.99
-        Y: =309
+        X: =454
+        Y: =343
         ZIndex: =12
 
     Label4 As label:
@@ -127,23 +114,24 @@ Main_screen As screen:
         Size: =20.00
         Text: ="Appraisal Form"
         Width: =361.00
-        X: =632.99
-        Y: =371
+        X: =454
+        Y: =405
         ZIndex: =13
 
     Image3 As image:
-        Height: =73
+        Height: =81
         Image: ='footer-logo'
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =104
+        Width: =148
         X: =31
         Y: =5
         ZIndex: =14
 
     Label5 As label:
         Align: =Align.Center
-        Color: =RGBA(241, 244, 249, 1)
+        Color: =RGBA(18, 61, 13, 1)
+        FontWeight: =FontWeight.Bold
         Height: =34
         PaddingRight: =5.00
         PaddingTop: =5.00
@@ -163,7 +151,7 @@ Main_screen As screen:
         Size: =13.00
         Text: ="Performance evaluation should be completed by the employee, the employee's manager, the employee's direct reports, and the employee's peers."
         Width: =580.00
-        X: =632.99
-        Y: =411
+        X: =454
+        Y: =445
         ZIndex: =16
 
