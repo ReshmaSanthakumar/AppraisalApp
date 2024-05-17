@@ -31,6 +31,7 @@ User_screen As screen:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(56, 96, 178, 1)
             Font: =Font.'Lato Black'
             FontWeight: =FontWeight.Bold
             Height: =71
@@ -38,8 +39,7 @@ User_screen As screen:
             PaddingTop: =5.00
             Size: =25
             Text: ="Performance Appraisal Form"
-            Width: =809
-            X: =126
+            Width: =1076
             ZIndex: =1
 
         Form1 As form:
@@ -48,12 +48,12 @@ User_screen As screen:
             DataSource: =AppraisalUserList
             DefaultMode: |
                 =FormMode.New
-            Height: =502
+            Height: =509
             NumberOfColumns: =1
             OnSuccess: =Navigate(Success_Screen)
-            Width: =976
-            X: =39
-            Y: =70
+            Width: =841
+            X: =114
+            Y: =102
             ZIndex: =2
 
             Title_DataCard3 As typedDataCard.textualEditCard:
@@ -67,15 +67,18 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Title)
                 Required: =false
                 Update: =DataCardValue8.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =0
                 ZIndex: =3
 
                 DataCardKey8 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
-                    Text: =Parent.DisplayName
+                    Text: ="Email *"
                     Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
@@ -94,7 +97,7 @@ User_screen As screen:
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =781
                     X: =30
                     Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                     ZIndex: =2
@@ -107,7 +110,12 @@ User_screen As screen:
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =Parent.Error
+                    Text: |-
+                        =If( !IsBlank(DataCardValue8.Text) &&
+                            !IsMatch(
+                                DataCardValue8.Text,
+                                Match.Email
+                            ),"Please Enter Email Properly")
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
@@ -135,13 +143,16 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Name)
                 Required: =false
                 Update: =DataCardValue9.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =1
                 ZIndex: =3
 
                 DataCardKey9 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -203,13 +214,16 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, EmployeeId)
                 Required: =false
                 Update: =DataCardValue10.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =2
                 ZIndex: =3
 
                 DataCardKey10 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -271,13 +285,16 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, JeevanReportingManagerName)
                 Required: =false
                 Update: =DataCardValue11.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =3
                 ZIndex: =3
 
                 DataCardKey11 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -339,13 +356,16 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Pleasementionyourcurrentprojectn)
                 Required: =false
                 Update: =DataCardValue12.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =4
                 ZIndex: =3
 
                 DataCardKey12 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -407,15 +427,18 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Sharesomestandoutmomentsoraccomp)
                 Required: =false
                 Update: =DataCardValue13.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =5
                 ZIndex: =3
 
                 DataCardKey13 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
-                    Text: =Parent.DisplayName
+                    Text: ="Share some standout moments or accomplishments from this year that you think deserve a raise"
                     Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
@@ -475,13 +498,16 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Shareanyhurdlesthatcameyourwayin)
                 Required: =false
                 Update: =DataCardValue14.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =6
                 ZIndex: =3
 
                 DataCardKey14 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -543,13 +569,16 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Rateyourknowledgeandskillsreleva0)
                 Required: =false
                 Update: =DataCardValue15.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =7
                 ZIndex: =3
 
                 DataCardKey15 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -612,7 +641,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Haveyoubeenonaquesttolevelupyour)
                 Required: =false
                 Update: =DataCardValue16.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =8
                 ZIndex: =3
@@ -680,7 +709,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Sharethenamesof5Jeevaniteswhomyo)
                 Required: =false
                 Update: =DataCardValue18.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =9
                 ZIndex: =3
@@ -748,7 +777,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Rateyourproblem_x002d_solvingand)
                 Required: =false
                 Update: =DataCardValue19.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =10
                 ZIndex: =3
@@ -816,7 +845,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Letusknowabouttheonestarcolleagu)
                 Required: =false
                 Update: =DataCardValue20.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =11
                 ZIndex: =3
@@ -884,7 +913,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Paintapictureofyourcareerdreamsa)
                 Required: =false
                 Update: =DataCardValue21.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =12
                 ZIndex: =3
@@ -952,7 +981,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Whatcanthecompanydotofuelyourcar)
                 Required: =false
                 Update: =DataCardValue22.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =13
                 ZIndex: =3
@@ -1020,7 +1049,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Pleaseshareyourfeedbackaboutyour)
                 Required: =false
                 Update: =DataCardValue23.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =14
                 ZIndex: =3
@@ -1088,7 +1117,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Onascaleofonetoten_x002c_wheredo)
                 Required: =false
                 Update: =DataCardValue24.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =15
                 ZIndex: =3
@@ -1156,7 +1185,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, WhatisyourcurrentCTC_x003f_)
                 Required: =false
                 Update: =DataCardValue25.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =16
                 ZIndex: =3
@@ -1224,7 +1253,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, WhatisyourexpectedCTC_x003f_)
                 Required: =false
                 Update: =DataCardValue26.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =17
                 ZIndex: =3
@@ -1292,7 +1321,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Explainhowit_x0028_expectedCTC_x)
                 Required: =false
                 Update: =DataCardValue27.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =18
                 ZIndex: =3
@@ -1360,7 +1389,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Onascaleofonetoten_x002c_howblis)
                 Required: =false
                 Update: =DataCardValue28.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =19
                 ZIndex: =3
@@ -1428,7 +1457,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Areyouinterestedinaninternalmove)
                 Required: =false
                 Update: =DataCardValue29.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =20
                 ZIndex: =3
@@ -1496,7 +1525,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Onthehuntforsomeon_x002d_siteact)
                 Required: =false
                 Update: =DataCardValue30.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =21
                 ZIndex: =3
@@ -1564,7 +1593,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Haveyougivenouremployeereferralp)
                 Required: =false
                 Update: =DataCardValue31.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =22
                 ZIndex: =3
@@ -1632,7 +1661,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Ifno_x002c_letusknowwhy_x003f__x)
                 Required: =false
                 Update: =DataCardValue32.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =23
                 ZIndex: =3
@@ -1700,7 +1729,7 @@ User_screen As screen:
                 MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Team)
                 Required: =false
                 Update: =DataCardValue33.Text
-                Width: =976
+                Width: =841
                 X: =0
                 Y: =24
                 ZIndex: =3
@@ -1779,6 +1808,6 @@ User_screen As screen:
         Text: ="Submit"
         Width: =146
         X: =600
-        Y: =652
+        Y: =708
         ZIndex: =8
 
