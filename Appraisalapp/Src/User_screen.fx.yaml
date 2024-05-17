@@ -43,6 +43,7 @@ User_screen As screen:
             ZIndex: =1
 
         Form1 As form:
+            AcceptsFocus: =false
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
             DataSource: =AppraisalUserList
@@ -648,10 +649,12 @@ User_screen As screen:
 
                 DataCardKey16 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
-                    Wrap: =false
                     X: =30
                     Y: =10
                     ZIndex: =1
@@ -716,10 +719,12 @@ User_screen As screen:
 
                 DataCardKey18 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
-                    Wrap: =false
                     X: =30
                     Y: =10
                     ZIndex: =1
@@ -784,10 +789,12 @@ User_screen As screen:
 
                 DataCardKey19 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
-                    Wrap: =false
                     X: =30
                     Y: =10
                     ZIndex: =1
@@ -852,6 +859,9 @@ User_screen As screen:
 
                 DataCardKey20 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -920,6 +930,9 @@ User_screen As screen:
 
                 DataCardKey21 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -988,6 +1001,9 @@ User_screen As screen:
 
                 DataCardKey22 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1056,10 +1072,12 @@ User_screen As screen:
 
                 DataCardKey23 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
-                    Wrap: =false
                     X: =30
                     Y: =10
                     ZIndex: =1
@@ -1124,6 +1142,9 @@ User_screen As screen:
 
                 DataCardKey24 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1192,6 +1213,9 @@ User_screen As screen:
 
                 DataCardKey25 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1260,6 +1284,9 @@ User_screen As screen:
 
                 DataCardKey26 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1328,6 +1355,9 @@ User_screen As screen:
 
                 DataCardKey27 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1396,6 +1426,9 @@ User_screen As screen:
 
                 DataCardKey28 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1464,6 +1497,9 @@ User_screen As screen:
 
                 DataCardKey29 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1532,6 +1568,9 @@ User_screen As screen:
 
                 DataCardKey30 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1600,10 +1639,12 @@ User_screen As screen:
 
                 DataCardKey31 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
-                    Wrap: =false
                     X: =30
                     Y: =10
                     ZIndex: =1
@@ -1668,6 +1709,9 @@ User_screen As screen:
 
                 DataCardKey32 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1736,6 +1780,9 @@ User_screen As screen:
 
                 DataCardKey33 As label:
                     AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1808,6 +1855,6 @@ User_screen As screen:
         Text: ="Submit"
         Width: =146
         X: =600
-        Y: =708
+        Y: =719
         ZIndex: =8
 
