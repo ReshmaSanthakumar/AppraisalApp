@@ -33,6 +33,7 @@
         LblSuccessMsg1 As label:
             Align: =Align.Center
             Color: =RGBA(0, 134, 208, 1)
+            DisplayMode: =DisplayMode.View
             Font: =Font.Lato
             FontWeight: =FontWeight.Semibold
             Height: =56
