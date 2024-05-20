@@ -105,13 +105,13 @@ Admin_screen As screen:
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =28
-        OnSelect: =SubmitForm(Form2)
+        OnSelect: =Navigate(Feedback_Screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
         Size: =15.00
-        Text: ="Feedback"
-        Width: =146
-        X: =847
+        Text: ="Add Feedback"
+        Width: =176
+        X: =817
         Y: =713
         ZIndex: =5
 
