@@ -13,13 +13,13 @@ Admin_screen As screen:
         TemplateFill: =If(ThisItem.IsSelected,ColorFade(RGBA(209,232,178,1),-30%),RGBA(0, 0, 0, 0))
         TemplatePadding: =0
         TemplateSize: =90
-        Width: =432
+        Width: =396
         X: =21
         Y: =168
         ZIndex: =1
 
         Title2 As label:
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(2, 99, 31, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -36,7 +36,7 @@ Admin_screen As screen:
             ZIndex: =1
 
         Subtitle2 As label:
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(2, 107, 39, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -172,7 +172,7 @@ Admin_screen As screen:
 
     FormViewer1 As formViewer:
         DataSource: =AppraisalUserList
-        Fill: =RGBA(0, 0, 0, 0.43)
+        Fill: =RGBA(153, 207, 236, 1)
         Height: =594
         Item: =Gallery1.Selected
         NumberOfColumns: =1
@@ -197,7 +197,7 @@ Admin_screen As screen:
 
             DataCardKey37 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(1, 89, 27, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -209,7 +209,7 @@ Admin_screen As screen:
 
             DataCardValue37 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 92, 29, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -237,7 +237,7 @@ Admin_screen As screen:
 
             DataCardKey38 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 110, 33, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -249,7 +249,7 @@ Admin_screen As screen:
 
             DataCardValue38 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 112, 48, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -277,7 +277,7 @@ Admin_screen As screen:
 
             DataCardKey39 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(3, 102, 21, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -289,7 +289,7 @@ Admin_screen As screen:
 
             DataCardValue39 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 99, 8, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -317,7 +317,7 @@ Admin_screen As screen:
 
             DataCardKey40 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 110, 34, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -329,7 +329,7 @@ Admin_screen As screen:
 
             DataCardValue40 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(3, 102, 33, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -357,7 +357,7 @@ Admin_screen As screen:
 
             DataCardKey41 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 107, 41, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -369,7 +369,7 @@ Admin_screen As screen:
 
             DataCardValue41 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 102, 47, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -397,7 +397,7 @@ Admin_screen As screen:
 
             DataCardKey42 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 105, 45, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -409,7 +409,7 @@ Admin_screen As screen:
 
             DataCardValue42 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 87, 31, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -437,7 +437,7 @@ Admin_screen As screen:
 
             DataCardKey43 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 94, 30, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -448,7 +448,7 @@ Admin_screen As screen:
 
             DataCardValue43 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(3, 102, 38, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -476,7 +476,7 @@ Admin_screen As screen:
 
             DataCardKey44 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 115, 49, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -488,7 +488,7 @@ Admin_screen As screen:
 
             DataCardValue44 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 102, 47, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -517,7 +517,7 @@ Admin_screen As screen:
 
             DataCardKey45 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 107, 39, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -528,7 +528,7 @@ Admin_screen As screen:
 
             DataCardValue45 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(1, 105, 23, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -556,7 +556,7 @@ Admin_screen As screen:
 
             DataCardKey46 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 94, 16, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -567,7 +567,7 @@ Admin_screen As screen:
 
             DataCardValue46 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 89, 38, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -595,7 +595,7 @@ Admin_screen As screen:
 
             DataCardKey47 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(3, 97, 31, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -607,7 +607,7 @@ Admin_screen As screen:
 
             DataCardValue47 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 94, 22, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -625,7 +625,7 @@ Admin_screen As screen:
             Default: =ThisItem.'Let us know about the one star colleague of yours, who helped you be your better version this year'
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Letusknowabouttheonestarcolleagu)
-            Fill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(2, 89, 38, 0)
             Height: =40
             Required: =false
             Width: =892
@@ -635,7 +635,7 @@ Admin_screen As screen:
 
             DataCardKey48 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(3, 92, 34, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -647,7 +647,7 @@ Admin_screen As screen:
 
             DataCardValue48 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 92, 41, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -675,7 +675,7 @@ Admin_screen As screen:
 
             DataCardKey49 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 110, 47, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -687,7 +687,7 @@ Admin_screen As screen:
 
             DataCardValue49 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 107, 27, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -715,7 +715,7 @@ Admin_screen As screen:
 
             DataCardKey50 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 102, 29, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -727,7 +727,7 @@ Admin_screen As screen:
 
             DataCardValue50 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 102, 42, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -755,7 +755,7 @@ Admin_screen As screen:
 
             DataCardKey51 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 115, 34, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -767,7 +767,7 @@ Admin_screen As screen:
 
             DataCardValue51 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(1, 110, 48, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -795,7 +795,7 @@ Admin_screen As screen:
 
             DataCardKey52 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 107, 53, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -807,7 +807,7 @@ Admin_screen As screen:
 
             DataCardValue52 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 94, 34, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -835,7 +835,7 @@ Admin_screen As screen:
 
             DataCardKey53 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 102, 44, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -847,7 +847,7 @@ Admin_screen As screen:
 
             DataCardValue53 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 102, 19, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -875,7 +875,7 @@ Admin_screen As screen:
 
             DataCardKey54 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 115, 19, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -887,7 +887,7 @@ Admin_screen As screen:
 
             DataCardValue54 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 125, 41, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
@@ -915,7 +915,7 @@ Admin_screen As screen:
 
             DataCardKey55 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 115, 51, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Text: =Parent.DisplayName
@@ -927,7 +927,7 @@ Admin_screen As screen:
 
             DataCardValue55 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(2, 117, 44, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
