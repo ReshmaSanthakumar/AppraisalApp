@@ -2296,7 +2296,14 @@
         "LineHeight",
         "Overflow",
         "AutoHeight",
-        "Wrap",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Wrap",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         {
           "AFDDataSourceName": "",
