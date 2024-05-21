@@ -70,8 +70,8 @@ User_screen As screen:
         Size: =15
         Text: ="Submit"
         Width: =146
-        X: =630
-        Y: =693
+        X: =590
+        Y: =700
         ZIndex: =20
 
     Form4 As form.PowerApps_CoreControls_Form:
@@ -95,7 +95,7 @@ User_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Title)
-            Required: =false
+            Required: =true
             Update: =DataCardValue109.Value
             Width: =435
             X: =0
@@ -106,7 +106,7 @@ User_screen As screen:
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
                 Height: =22
-                Text: ="Email"
+                Text: ="Email "
                 Visible: =true
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
@@ -132,10 +132,17 @@ User_screen As screen:
 
             ErrorMessage83 As Text:
                 DisplayMode: =DisplayMode.Edit
-                FontColor: =
+                FontColor: =RGBA(215, 58, 60, 1)
                 Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Text: |-
+                    =If(
+                        !IsBlank(DataCardValue109.Value) && !IsMatch(
+                            DataCardValue109.Value,
+                            Match.Email
+                        ),
+                        "Enter the Email properly"
+                    )
+                Visible: =true
                 Width: =Parent.Width - 48
                 Wrap: =true
                 X: =24
@@ -148,7 +155,7 @@ User_screen As screen:
                 FontColor: =
                 Height: =30
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =true
                 Width: =30
                 X: =0
                 Y: =DataCardKey109.Y
@@ -164,7 +171,7 @@ User_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Name)
-            Required: =false
+            Required: =true
             Update: =DataCardValue110.Value
             Width: =435
             X: =1
@@ -195,15 +202,22 @@ User_screen As screen:
                 Value: =Parent.Default
                 Width: =Parent.Width - 48
                 X: =24
-                Y: =DataCardKey110.Y + DataCardKey110.Height + 4
+                Y: =44
                 ZIndex: =2
 
             ErrorMessage84 As Text:
                 DisplayMode: =DisplayMode.Edit
-                FontColor: =
+                FontColor: =RGBA(215, 58, 60, 1)
                 Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Text: |-
+                    =If(
+                        !IsBlank(DataCardValue110.Value) && !IsMatch(
+                            DataCardValue110.Value,
+                           Match.MultipleLetters
+                        ),
+                        "Enter the Name properly"
+                    )
+                Visible: =true
                 Width: =Parent.Width - 48
                 Wrap: =true
                 X: =24
@@ -1342,8 +1356,8 @@ User_screen As screen:
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
                 Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey127.Y + DataCardKey127.Height + 4
+                X: =30
+                Y: =49
                 ZIndex: =2
 
             ErrorMessage101 As Text:
@@ -1378,7 +1392,7 @@ User_screen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On a scale of one to ten, how blissful are you with your current job situation? ')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
+            Height: =115
             Required: =false
             Update: =DataCardValue128.Selected
             Width: =435
@@ -1389,13 +1403,13 @@ User_screen As screen:
             DataCardKey128 As Text:
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
-                Height: =22
+                Height: =43
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =false
+                Wrap: =true
                 X: =24
-                Y: =10
+                Y: =4
                 ZIndex: =1
 
             DataCardValue128 As Combobox.pcfdataset:
@@ -1407,7 +1421,7 @@ User_screen As screen:
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
-                Y: =DataCardKey128.Y + DataCardKey128.Height + 4
+                Y: =51
                 ZIndex: =2
 
             ErrorMessage102 As Text:
@@ -1471,7 +1485,7 @@ User_screen As screen:
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
-                Y: =DataCardKey129.Y + DataCardKey129.Height + 4
+                Y: =48
                 ZIndex: =2
 
             ErrorMessage103 As Text:
@@ -1702,7 +1716,7 @@ User_screen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Team)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
+            Height: =87
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Team)
             Required: =false
             Update: =DataCardValue133.Value
