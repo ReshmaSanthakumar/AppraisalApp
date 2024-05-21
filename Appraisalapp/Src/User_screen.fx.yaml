@@ -55,12 +55,10 @@ User_screen As screen:
         HoverFill: =App.Theme.Colors.Darker10
         OnSelect: |-
             =If(
-                IsBlank(DataCardValue109.Value) || !IsMatch(
-                    DataCardValue109.Value,
-                    Match.Email
-                ) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value),
+                IsBlank(DataCardValue109.Value) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue112.Value) || IsBlank(DataCardValue113.Value) || IsBlank(DataCardValue114.Value) || IsBlank(DataCardValue115.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue116.Selected.Value) || IsBlank(DataCardValue117.Value) || IsBlank(DataCardValue118.Value) || IsBlank(DataCardValue119.Selected.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue120.Value) || IsBlank(DataCardValue121.Value) || IsBlank(DataCardValue122.Value) || IsBlank(DataCardValue123.Value) || IsBlank(DataCardValue124.Selected.Value) || IsBlank(DataCardValue125.Value) || IsBlank(DataCardValue126.Value) || IsBlank(DataCardValue127.Value) || IsBlank(DataCardValue128.Selected.Value) || IsBlank(DataCardValue129.Selected.Value) || IsBlank(DataCardValue130.Selected.Value) || IsBlank(DataCardValue131.Selected.Value) || IsBlank(DataCardValue133.Value),
                 Notify("please Fill all the fields properly"),
-                SubmitForm(Form4);Navigate(Success_Screen)
+                SubmitForm(Form4);
+                Navigate(Success_Screen)
             )
         PaddingRight: =5.00
         PaddingTop: =5.00
