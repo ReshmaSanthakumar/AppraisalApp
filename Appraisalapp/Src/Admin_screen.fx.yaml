@@ -699,9 +699,9 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Rateyourproblem_x002d_solvingand"
-            Default: =ThisItem.'"Rate your problem-solving and critical-thinking skills.  "'
+            Default: =ThisItem.'Rate your problem-solving and critical-thinking skills'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'"Rate your problem-solving and critical-thinking skills.  "')
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your problem-solving and critical-thinking skills')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1035,9 +1035,9 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="WhatisyourexpectedCTC_x003f_"
-            Default: =ThisItem.'"What is your expected CTC? "'
+            Default: =ThisItem.'What is your expected CTC? '
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'"What is your expected CTC? "')
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'What is your expected CTC? ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1131,9 +1131,9 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Onascaleofonetoten_x002c_howblis"
-            Default: =ThisItem.'"On a scale of one to ten, how blissful are you with your current job situation? "'
+            Default: =ThisItem.'On a scale of one to ten, how blissful are you with your current job situation? '
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'"On a scale of one to ten, how blissful are you with your current job situation? "')
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On a scale of one to ten, how blissful are you with your current job situation? ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
