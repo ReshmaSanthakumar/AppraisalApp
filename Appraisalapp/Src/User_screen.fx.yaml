@@ -20,7 +20,7 @@ User_screen As screen:
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =46
-        Size: =25
+        Size: =20
         Text: ="Performance Appraisal Form"
         Width: =532
         X: =397
@@ -282,10 +282,17 @@ User_screen As screen:
 
             ErrorMessage85 As Text:
                 DisplayMode: =DisplayMode.Edit
-                FontColor: =
+                FontColor: =RGBA(215, 58, 60, 1)
                 Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Text: |-
+                    =If(
+                        !IsBlank(DataCardValue111.Value) && !IsMatch(
+                            DataCardValue111.Value,
+                           Match.OptionalDigits
+                        ),
+                        "Enter the Id properly"
+                    )
+                Visible: =true
                 Width: =Parent.Width - 48
                 Wrap: =true
                 X: =24
@@ -298,7 +305,7 @@ User_screen As screen:
                 FontColor: =
                 Height: =30
                 Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Visible: =true
                 Width: =30
                 X: =0
                 Y: =DataCardKey111.Y
