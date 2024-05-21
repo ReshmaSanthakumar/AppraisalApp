@@ -555,7 +555,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Rateyourknowledgeandskillsreleva0"
-            Default: =ThisItem.'Rate your knowledge and skills relevant to your role'
+            Default: =ThisItem.'Rate your knowledge and skills relevant to your role'.Value
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your knowledge and skills relevant to your role')
             Fill: =RGBA(0, 0, 0, 0)
@@ -699,7 +699,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Rateyourproblem_x002d_solvingand"
-            Default: =ThisItem.'Rate your problem-solving and critical-thinking skills'
+            Default: =ThisItem.'Rate your problem-solving and critical-thinking skills'.Value
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your problem-solving and critical-thinking skills')
             Fill: =RGBA(0, 0, 0, 0)
@@ -939,7 +939,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Onascaleofonetoten_x002c_wheredo"
-            Default: =ThisItem.'On a scale of one to ten, where do you rate yourself?'
+            Default: =ThisItem.'On a scale of one to ten, where do you rate yourself?'.Value
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On a scale of one to ten, where do you rate yourself?')
             Fill: =RGBA(0, 0, 0, 0)
@@ -1131,7 +1131,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Onascaleofonetoten_x002c_howblis"
-            Default: =ThisItem.'On a scale of one to ten, how blissful are you with your current job situation? '
+            Default: =ThisItem.'On a scale of one to ten, how blissful are you with your current job situation? '.Value
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On a scale of one to ten, how blissful are you with your current job situation? ')
             Fill: =RGBA(0, 0, 0, 0)
@@ -1144,7 +1144,7 @@ Admin_screen As screen:
 
             DataCardKey56 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1160,9 +1160,10 @@ Admin_screen As screen:
             DataCardValue56 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(255, 255, 255, 1)
                 Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
@@ -1179,7 +1180,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Areyouinterestedinaninternalmove"
-            Default: =ThisItem.'Are you interested in an internal movement?'
+            Default: =ThisItem.'Are you interested in an internal movement?'.Value
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Are you interested in an internal movement?')
             Fill: =RGBA(0, 0, 0, 0)
@@ -1192,7 +1193,7 @@ Admin_screen As screen:
 
             DataCardKey57 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1208,7 +1209,7 @@ Admin_screen As screen:
             DataCardValue57 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -1227,7 +1228,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Onthehuntforsomeon_x002d_siteact"
-            Default: =ThisItem.'On the hunt for some on-site action?'
+            Default: =ThisItem.'On the hunt for some on-site action?'.Value
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On the hunt for some on-site action?')
             Fill: =RGBA(0, 0, 0, 0)
@@ -1240,7 +1241,7 @@ Admin_screen As screen:
 
             DataCardKey58 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1256,7 +1257,7 @@ Admin_screen As screen:
             DataCardValue58 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -1275,7 +1276,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Haveyougivenouremployeereferralp"
-            Default: =ThisItem.'Have you given our employee referral program a spin yet?'
+            Default: =ThisItem.'Have you given our employee referral program a spin yet?'.Value
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Have you given our employee referral program a spin yet?')
             Fill: =RGBA(0, 0, 0, 0)
@@ -1288,7 +1289,7 @@ Admin_screen As screen:
 
             DataCardKey59 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1304,7 +1305,7 @@ Admin_screen As screen:
             DataCardValue59 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -1336,7 +1337,7 @@ Admin_screen As screen:
 
             DataCardKey60 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1352,7 +1353,7 @@ Admin_screen As screen:
             DataCardValue60 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -1384,7 +1385,7 @@ Admin_screen As screen:
 
             DataCardKey61 As label:
                 AutoHeight: =true
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1400,7 +1401,7 @@ Admin_screen As screen:
             DataCardValue61 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
