@@ -477,7 +477,9 @@ scr_userDT As screen:
         ZIndex: =4
 
     "txt_ip As 'Text input'":
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         Width: =320
         X: =228
