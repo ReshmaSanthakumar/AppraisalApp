@@ -2,22 +2,32 @@ Main_screen As screen:
     BackgroundImage: =picccs
     Fill: =RGBA(152, 208, 70, 1)
     ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     Image2 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =570
         Image: =
-        PaddingRight: =0.00
-        PaddingTop: =0.00
         Width: =581
         X: =427
         Y: =166
         ZIndex: =7
 
     Button1 As button:
+        BorderColor: =App.Theme.Colors.Primary
         BorderThickness: =1
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(2, 87, 34, 1)
         Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
         Height: =28
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
         OnSelect: |+
             =If(
                 Not(IsBlank(
@@ -34,6 +44,9 @@ Main_screen As screen:
             
         PaddingRight: =5.00
         PaddingTop: =5.00
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
         Size: =15.00
         Text: ="Start Now"
         Width: =159
@@ -42,14 +55,25 @@ Main_screen As screen:
         ZIndex: =8
 
     Button1_1 As button:
+        BorderColor: =App.Theme.Colors.Primary
         BorderThickness: =1
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(3, 94, 24, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Bold
         Height: =29
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
         OnSelect: =Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =15
         Text: ="Admin"
         Visible: =is_admin
         Width: =126
@@ -58,6 +82,7 @@ Main_screen As screen:
         ZIndex: =9
 
     Label2 As label:
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(16, 105, 0, 1)
         DisabledBorderColor: =RGBA(102, 182, 227, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
@@ -65,8 +90,6 @@ Main_screen As screen:
         Font: =Font.Lato
         FontWeight: =FontWeight.Bold
         Height: =56
-        PaddingRight: =5.00
-        PaddingTop: =5.00
         Size: =25.00
         Text: =User().FullName
         Width: =534.00
@@ -75,12 +98,12 @@ Main_screen As screen:
         ZIndex: =10
 
     Label3 As label:
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(6, 94, 34, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(0, 134, 208, 1)
         Font: =Font.Lato
         Height: =56
-        PaddingRight: =5.00
-        PaddingTop: =5.00
         Size: =20.00
         Text: ="Hello,"
         Width: =224.00
@@ -92,11 +115,10 @@ Main_screen As screen:
         BorderColor: =RGBA(0, 134, 208, 1)
         Color: =RGBA(2, 102, 24, 1)
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =72
-        PaddingRight: =5.00
-        PaddingTop: =5.00
         Size: =35.00
         Text: ="Performance      "
         Width: =528.01
@@ -105,10 +127,10 @@ Main_screen As screen:
         ZIndex: =12
 
     Label4 As label:
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(2, 89, 27, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
-        PaddingRight: =5.00
-        PaddingTop: =5.00
         Size: =20.00
         Text: ="Appraisal Form"
         Width: =361.00
@@ -117,10 +139,11 @@ Main_screen As screen:
         ZIndex: =13
 
     Image3 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =81
         Image: ='logo-colour-1'
-        PaddingRight: =0.00
-        PaddingTop: =0.00
         Width: =148
         X: =31
         Y: =5
@@ -128,11 +151,12 @@ Main_screen As screen:
 
     Label5 As label:
         Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(18, 61, 13, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =34
-        PaddingRight: =5.00
-        PaddingTop: =5.00
         Size: =15.00
         Text: ="Designed by NoblQ"
         Width: =505.00
@@ -141,12 +165,12 @@ Main_screen As screen:
         ZIndex: =15
 
     Label6 As label:
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(3, 97, 36, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         Height: =85
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        Size: =13.00
+        Size: =13
         Text: ="Performance evaluation should be completed by the employee, the employee's manager, the employee's direct reports, and the employee's peers."
         Width: =580.00
         X: =454

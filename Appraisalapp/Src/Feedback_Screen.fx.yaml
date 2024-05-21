@@ -1,6 +1,9 @@
 Feedback_Screen As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     Form2 As form:
+        BorderColor: =App.Theme.Colors.Darker40
         DataSource: =AppraisalUserList
         Fill: =RGBA(241, 244, 249, 1)
         Height: =442
@@ -12,14 +15,15 @@ Feedback_Screen As screen:
         ZIndex: =1
 
         "'Reporting Manager Feedback _DataCard3' As typedDataCard.textualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="ReportingManagerFeedback"
             Default: =ThisItem.'Reporting Manager Feedback '
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,ReportingManagerFeedback)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Reporting Manager Feedback ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =317
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, ReportingManagerFeedback)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Reporting Manager Feedback ')
             Required: =false
             Update: =DataCardValue90.Text
             Width: =1131
@@ -30,9 +34,11 @@ Feedback_Screen As screen:
             DataCardKey90 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 105, 45, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Lato Black'
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -41,13 +47,21 @@ Feedback_Screen As screen:
                 ZIndex: =1
 
             DataCardValue90 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
                 Color: =RGBA(2, 82, 36, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =App.Theme.Font
                 Height: =220
                 HintText: ="Feedback"
+                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =App.Theme.Colors.Lighter70
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -55,6 +69,7 @@ Feedback_Screen As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =13
                 Tooltip: =Parent.DisplayName
                 Width: =873
                 X: =30
@@ -63,6 +78,10 @@ Feedback_Screen As screen:
 
             ErrorMessage59 As label:
                 AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -78,7 +97,11 @@ Feedback_Screen As screen:
 
             StarVisible59 As label:
                 Align: =Align.Center
+                Color: =App.Theme.Colors.Darker30
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 Height: =DataCardKey90.Height
+                Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -88,14 +111,14 @@ Feedback_Screen As screen:
 
     Label1_3 As label:
         Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(2, 94, 19, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =85
-        PaddingRight: =5.00
-        PaddingTop: =5.00
         Size: =25
         Text: ="Add Employee Feedback"
         Width: =1366.00
@@ -103,14 +126,24 @@ Feedback_Screen As screen:
         ZIndex: =2
 
     Button3_1 As button:
+        BorderColor: =App.Theme.Colors.Primary
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(1, 89, 32, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =36
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
         OnSelect: =SubmitForm(Form2);Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
-        Size: =15.00
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =15
         Text: ="Submit Feedback"
         Width: =196
         X: =576

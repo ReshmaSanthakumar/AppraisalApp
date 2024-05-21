@@ -1,11 +1,12 @@
 Admin_screen As screen:
     BackgroundImage: =
-    Fill: =RGBA(255, 255, 255, 1)
     ImagePosition: =ImagePosition.Fill
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Fill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(242, 242, 242, 1)
         Height: =573
         Items: =SortByColumns(Search(AppraisalUserList,TextInput1.Text, Name,Title), "Name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
@@ -19,7 +20,9 @@ Admin_screen As screen:
         ZIndex: =1
 
         Title2 As label:
-            Color: =RGBA(2, 99, 31, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -27,7 +30,6 @@ Admin_screen As screen:
             PaddingLeft: =0
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Size: =14.00
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =395.00
@@ -36,7 +38,9 @@ Admin_screen As screen:
             ZIndex: =1
 
         Subtitle2 As label:
-            Color: =RGBA(2, 107, 39, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -44,7 +48,7 @@ Admin_screen As screen:
             PaddingLeft: =0
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Size: =12.00
+            Size: =12
             Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =395.00
@@ -54,7 +58,10 @@ Admin_screen As screen:
 
         NextArrow2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
+            BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =50
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
@@ -69,6 +76,8 @@ Admin_screen As screen:
             ZIndex: =3
 
         Separator2 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =8
             OnSelect: =Select(Parent)
             Width: =481.00
@@ -77,6 +86,8 @@ Admin_screen As screen:
             ZIndex: =4
 
         Rectangle2 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =App.Theme.Colors.Darker30
             Height: =Parent.TemplateHeight - Separator2.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
@@ -86,14 +97,14 @@ Admin_screen As screen:
 
     Label1_2 As label:
         Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(2, 94, 19, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =85
-        PaddingRight: =5.00
-        PaddingTop: =5.00
         Size: =25
         Text: ="Feedback"
         Width: =1366.00
@@ -101,14 +112,24 @@ Admin_screen As screen:
         ZIndex: =2
 
     Button3 As button:
+        BorderColor: =App.Theme.Colors.Primary
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(1, 89, 32, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =28
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
         OnSelect: =Navigate(Feedback_Screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
-        Size: =15.00
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =15
         Text: ="Add Feedback"
         Width: =176
         X: =817
@@ -117,12 +138,20 @@ Admin_screen As screen:
 
     TextInput1 As text:
         Align: =Align.Center
-        BorderColor: =RGBA(3, 94, 26, 1)
-        Color: =RGBA(2, 117, 23, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
         Default: =""
         DelayOutput: =true
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
         Height: =59
         HintText: ="Search items"
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
         PaddingRight: =5.00
         PaddingTop: =5.00
         Size: =22.00
@@ -132,7 +161,9 @@ Admin_screen As screen:
         ZIndex: =7
 
     Icon3 As icon.Search:
-        Color: =RGBA(0, 102, 22, 1)
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =50
         Icon: =Icon.Search
         PaddingRight: =0.00
@@ -144,7 +175,10 @@ Admin_screen As screen:
         ZIndex: =8
 
     Icon5 As icon.Reload:
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =50
         Icon: =Icon.Reload
         OnSelect: =Refresh(AppraisalUserList)
@@ -157,7 +191,9 @@ Admin_screen As screen:
 
     Icon6 As icon.ArrowsUpDown:
         AccessibleLabel: =Self.Tooltip
-        Color: =RGBA(1, 102, 20, 1)
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =76
         Icon: =Icon.Sort
         OnSelect: |-
@@ -171,6 +207,7 @@ Admin_screen As screen:
         ZIndex: =10
 
     FormViewer1 As formViewer:
+        BorderColor: =App.Theme.Colors.Darker40
         DataSource: =AppraisalUserList
         Fill: =RGBA(241, 244, 249, 1)
         Height: =594
@@ -182,6 +219,7 @@ Admin_screen As screen:
         ZIndex: =11
 
         Title_DataCard5 As typedDataCard.textualViewCard:
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
@@ -198,8 +236,10 @@ Admin_screen As screen:
             DataCardKey37 As label:
                 AutoHeight: =true
                 Color: =RGBA(1, 89, 27, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: ="Email"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -209,12 +249,16 @@ Admin_screen As screen:
 
             DataCardValue37 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 92, 29, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -222,6 +266,7 @@ Admin_screen As screen:
                 ZIndex: =2
 
         Name_DataCard2 As typedDataCard.textualViewCard:
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Name"
             Default: =ThisItem.Name
@@ -238,8 +283,10 @@ Admin_screen As screen:
             DataCardKey38 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 110, 33, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -249,12 +296,16 @@ Admin_screen As screen:
 
             DataCardValue38 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 112, 48, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -262,11 +313,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Employee Id_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmployeeId"
             Default: =ThisItem.'Employee Id'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,EmployeeId)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Employee Id')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -278,8 +330,11 @@ Admin_screen As screen:
             DataCardKey39 As label:
                 AutoHeight: =true
                 Color: =RGBA(3, 102, 21, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -289,12 +344,16 @@ Admin_screen As screen:
 
             DataCardValue39 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(0, 99, 8, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -302,11 +361,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Jeevan Reporting Manager Name_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="JeevanReportingManagerName"
             Default: =ThisItem.'Jeevan Reporting Manager Name'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,JeevanReportingManagerName)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Jeevan Reporting Manager Name')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -318,8 +378,11 @@ Admin_screen As screen:
             DataCardKey40 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 110, 34, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -329,12 +392,16 @@ Admin_screen As screen:
 
             DataCardValue40 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(3, 102, 33, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -342,11 +409,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Please mention your current project name _DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Pleasementionyourcurrentprojectn"
             Default: =ThisItem.'Please mention your current project name '
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Pleasementionyourcurrentprojectn)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Please mention your current project name ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -358,8 +426,11 @@ Admin_screen As screen:
             DataCardKey41 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 107, 41, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -369,12 +440,16 @@ Admin_screen As screen:
 
             DataCardValue41 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 102, 47, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -382,11 +457,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Sharesomestandoutmomentsoraccomp"
             Default: =ThisItem.'Share some standout moments or accomplishments from this year that you think deserve a raise.'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Sharesomestandoutmomentsoraccomp)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share some standout moments or accomplishments from this year that you think deserve a raise.')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -398,8 +474,11 @@ Admin_screen As screen:
             DataCardKey42 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 105, 45, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -408,12 +487,16 @@ Admin_screen As screen:
 
             DataCardValue42 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 87, 31, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -421,11 +504,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Shareanyhurdlesthatcameyourwayin"
             Default: =ThisItem.'Share any hurdles that came your way in your role. How did you overcome them like a champ?'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Shareanyhurdlesthatcameyourwayin)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share any hurdles that came your way in your role. How did you overcome them like a champ?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -437,8 +521,11 @@ Admin_screen As screen:
             DataCardKey43 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 94, 30, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -447,12 +534,16 @@ Admin_screen As screen:
 
             DataCardValue43 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(3, 102, 38, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -460,11 +551,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Rate your knowledge and skills relevant to your role_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Rateyourknowledgeandskillsreleva0"
             Default: =ThisItem.'Rate your knowledge and skills relevant to your role'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Rateyourknowledgeandskillsreleva0)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your knowledge and skills relevant to your role')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -476,8 +568,11 @@ Admin_screen As screen:
             DataCardKey44 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 115, 49, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -487,12 +582,16 @@ Admin_screen As screen:
 
             DataCardValue44 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 102, 47, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -500,12 +599,14 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) _DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Haveyoubeenonaquesttolevelupyour"
             Default: |-
                 =ThisItem.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) '
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Haveyoubeenonaquesttolevelupyour)
+            DisplayName: |-
+                =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -517,8 +618,11 @@ Admin_screen As screen:
             DataCardKey45 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 107, 39, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -527,12 +631,16 @@ Admin_screen As screen:
 
             DataCardValue45 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(1, 105, 23, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -540,11 +648,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Sharethenamesof5Jeevaniteswhomyo"
             Default: =ThisItem.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Sharethenamesof5Jeevaniteswhomyo)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -556,8 +665,11 @@ Admin_screen As screen:
             DataCardKey46 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 94, 16, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -566,12 +678,16 @@ Admin_screen As screen:
 
             DataCardValue46 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 89, 38, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -579,11 +695,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Rate your problem-solving and critical-thinking skills.  _DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Rateyourproblem_x002d_solvingand"
             Default: =ThisItem.'"Rate your problem-solving and critical-thinking skills.  "'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Rateyourproblem_x002d_solvingand)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'"Rate your problem-solving and critical-thinking skills.  "')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -595,8 +712,11 @@ Admin_screen As screen:
             DataCardKey47 As label:
                 AutoHeight: =true
                 Color: =RGBA(3, 97, 31, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -606,12 +726,16 @@ Admin_screen As screen:
 
             DataCardValue47 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 94, 22, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -619,11 +743,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Letusknowabouttheonestarcolleagu"
             Default: =ThisItem.'Let us know about the one star colleague of yours, who helped you be your better version this year'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Letusknowabouttheonestarcolleagu)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Let us know about the one star colleague of yours, who helped you be your better version this year')
             Fill: =RGBA(2, 89, 38, 0)
             Height: =40
             Required: =false
@@ -635,8 +760,11 @@ Admin_screen As screen:
             DataCardKey48 As label:
                 AutoHeight: =true
                 Color: =RGBA(3, 92, 34, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -646,12 +774,16 @@ Admin_screen As screen:
 
             DataCardValue48 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 92, 41, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -659,11 +791,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Paint a picture of your career dreams and ambitions._DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Paintapictureofyourcareerdreamsa"
             Default: =ThisItem.'Paint a picture of your career dreams and ambitions.'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Paintapictureofyourcareerdreamsa)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Paint a picture of your career dreams and ambitions.')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -675,8 +808,11 @@ Admin_screen As screen:
             DataCardKey49 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 110, 47, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -686,12 +822,16 @@ Admin_screen As screen:
 
             DataCardValue49 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(0, 107, 27, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -699,11 +839,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'What can the company do to fuel your career development?_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Whatcanthecompanydotofuelyourcar"
             Default: =ThisItem.'What can the company do to fuel your career development?'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Whatcanthecompanydotofuelyourcar)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'What can the company do to fuel your career development?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -715,8 +856,11 @@ Admin_screen As screen:
             DataCardKey50 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 102, 29, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -726,12 +870,16 @@ Admin_screen As screen:
 
             DataCardValue50 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(0, 102, 42, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -739,11 +887,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Please share your feedback about your reporting manager!_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Pleaseshareyourfeedbackaboutyour"
             Default: =ThisItem.'Please share your feedback about your reporting manager!'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Pleaseshareyourfeedbackaboutyour)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Please share your feedback about your reporting manager!')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -755,8 +904,11 @@ Admin_screen As screen:
             DataCardKey51 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 115, 34, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -766,12 +918,16 @@ Admin_screen As screen:
 
             DataCardValue51 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(1, 110, 48, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -779,11 +935,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'On a scale of one to ten, where do you rate yourself?_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Onascaleofonetoten_x002c_wheredo"
             Default: =ThisItem.'On a scale of one to ten, where do you rate yourself?'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onascaleofonetoten_x002c_wheredo)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On a scale of one to ten, where do you rate yourself?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -795,8 +952,11 @@ Admin_screen As screen:
             DataCardKey52 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 107, 53, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -806,12 +966,16 @@ Admin_screen As screen:
 
             DataCardValue52 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 94, 34, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -819,11 +983,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'What is your current CTC?_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="WhatisyourcurrentCTC_x003f_"
             Default: =ThisItem.'What is your current CTC?'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourcurrentCTC_x003f_)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'What is your current CTC?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -835,8 +1000,11 @@ Admin_screen As screen:
             DataCardKey53 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 102, 44, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -846,12 +1014,16 @@ Admin_screen As screen:
 
             DataCardValue53 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 102, 19, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -859,11 +1031,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'What is your expected CTC? _DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="WhatisyourexpectedCTC_x003f_"
             Default: =ThisItem.'"What is your expected CTC? "'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourexpectedCTC_x003f_)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'"What is your expected CTC? "')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -875,8 +1048,11 @@ Admin_screen As screen:
             DataCardKey54 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 115, 19, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -886,12 +1062,16 @@ Admin_screen As screen:
 
             DataCardValue54 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 125, 41, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -899,11 +1079,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Explain how it (expected CTC) is rightfully yours! _DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explainhowit_x0028_expectedCTC_x"
             Default: =ThisItem.'Explain how it (expected CTC) is rightfully yours! '
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Explainhowit_x0028_expectedCTC_x)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Explain how it (expected CTC) is rightfully yours! ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -915,8 +1096,11 @@ Admin_screen As screen:
             DataCardKey55 As label:
                 AutoHeight: =true
                 Color: =RGBA(2, 115, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -926,12 +1110,16 @@ Admin_screen As screen:
 
             DataCardValue55 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(2, 117, 44, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -939,11 +1127,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'On a scale of one to ten, how blissful are you with your current job situation? _DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Onascaleofonetoten_x002c_howblis"
             Default: =ThisItem.'"On a scale of one to ten, how blissful are you with your current job situation? "'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onascaleofonetoten_x002c_howblis)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'"On a scale of one to ten, how blissful are you with your current job situation? "')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -955,8 +1144,11 @@ Admin_screen As screen:
             DataCardKey56 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -966,12 +1158,16 @@ Admin_screen As screen:
 
             DataCardValue56 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -979,11 +1175,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Are you interested in an internal movement?_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Areyouinterestedinaninternalmove"
             Default: =ThisItem.'Are you interested in an internal movement?'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Areyouinterestedinaninternalmove)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Are you interested in an internal movement?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -995,8 +1192,11 @@ Admin_screen As screen:
             DataCardKey57 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1006,12 +1206,16 @@ Admin_screen As screen:
 
             DataCardValue57 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -1019,11 +1223,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'On the hunt for some on-site action?_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Onthehuntforsomeon_x002d_siteact"
             Default: =ThisItem.'On the hunt for some on-site action?'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onthehuntforsomeon_x002d_siteact)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On the hunt for some on-site action?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1035,8 +1240,11 @@ Admin_screen As screen:
             DataCardKey58 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1046,12 +1254,16 @@ Admin_screen As screen:
 
             DataCardValue58 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -1059,11 +1271,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Have you given our employee referral program a spin yet?_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Haveyougivenouremployeereferralp"
             Default: =ThisItem.'Have you given our employee referral program a spin yet?'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Haveyougivenouremployeereferralp)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Have you given our employee referral program a spin yet?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1075,8 +1288,11 @@ Admin_screen As screen:
             DataCardKey59 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1086,12 +1302,16 @@ Admin_screen As screen:
 
             DataCardValue59 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -1099,11 +1319,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'If no, let us know why?!_DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Ifno_x002c_letusknowwhy_x003f__x"
             Default: =ThisItem.'If no, let us know why?!'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Ifno_x002c_letusknowwhy_x003f__x)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'If no, let us know why?!')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1115,8 +1336,11 @@ Admin_screen As screen:
             DataCardKey60 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1126,12 +1350,16 @@ Admin_screen As screen:
 
             DataCardValue60 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -1139,6 +1367,7 @@ Admin_screen As screen:
                 ZIndex: =2
 
         Team_DataCard2 As typedDataCard.textualViewCard:
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Team"
             Default: =ThisItem.Team
@@ -1155,8 +1384,11 @@ Admin_screen As screen:
             DataCardKey61 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1166,12 +1398,16 @@ Admin_screen As screen:
 
             DataCardValue61 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -1179,11 +1415,12 @@ Admin_screen As screen:
                 ZIndex: =2
 
         "'Reporting Manager Feedback _DataCard2' As typedDataCard.textualViewCard":
+            BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="ReportingManagerFeedback"
             Default: =ThisItem.'Reporting Manager Feedback '
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,ReportingManagerFeedback)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Reporting Manager Feedback ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1195,8 +1432,11 @@ Admin_screen As screen:
             DataCardKey62 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =13
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1206,12 +1446,16 @@ Admin_screen As screen:
 
             DataCardValue62 As label:
                 AutoHeight: =true
+                BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
+                Font: =App.Theme.Font
                 Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =13
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -1219,13 +1463,24 @@ Admin_screen As screen:
                 ZIndex: =2
 
     Button4 As button:
+        BorderColor: =App.Theme.Colors.Primary
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(5, 117, 48, 1)
+        Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =29
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
         OnSelect: =Exit(true)
         PaddingRight: =5.00
         PaddingTop: =5.00
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =15
         Text: ="Logout"
         Width: =139
         X: =1196
@@ -1233,7 +1488,10 @@ Admin_screen As screen:
         ZIndex: =12
 
     Icon1_1 As icon.ChevronLeft:
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =50
         Icon: =Icon.ChevronLeft
         OnSelect: =Navigate(Main_screen)
