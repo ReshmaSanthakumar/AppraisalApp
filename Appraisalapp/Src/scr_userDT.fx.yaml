@@ -1,0 +1,486 @@
+scr_userDT As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    DataTable1 As dataTable.datatable:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =App.Theme.Colors.Primary
+        HeadingFont: =App.Theme.Font
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =615
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter80
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: |-
+            =If(txt_ip.Value="",
+                If(varPageNumber=1,
+                    FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),
+                    LastN(
+                        FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),
+                        If( CountRows(col1) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
+                            drp_row_limit.Selected.Value * 1,
+                            drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
+                                                                )
+                            )
+                        )
+                ),
+                Not(txt_ip.Value=""),
+                Filter(col1,(txt_ip.Value in ThisRecord.Name)),
+                If(varPageNumber=1,
+                    FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),
+                    LastN(
+                        FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),
+                        If( CountRows(col1) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
+                            drp_row_limit.Selected.Value * 1,
+                            drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
+                                                                )
+                            )
+                        )
+                )
+                )
+        LinkColor: =App.Theme.Colors.Lighter10
+        PrimaryColor1: =App.Theme.Colors.Primary
+        PrimaryColor2: =App.Theme.Colors.Darker30
+        PrimaryColor3: =App.Theme.Colors.Lighter70
+        SelectedColor: =RGBA(0, 0, 0, 1)
+        SelectedFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        Width: =1329
+        X: =15
+        Y: =87
+        ZIndex: =1
+
+        Title_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Title"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Title
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Name_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="Name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'Employee Id_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Employee Id"
+            FieldName: ="EmployeeId"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Employee Id'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        "'Jeevan Reporting Manager Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Jeevan Reporting Manager Name"
+            FieldName: ="JeevanReportingManagerName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Jeevan Reporting Manager Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'Please mention your current project name _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Please mention your current project name "
+            FieldName: ="Pleasementionyourcurrentprojectn"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Please mention your current project name '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        "'Share some standout moments or accomplishments from this year that you think deserve a raise._Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Share some standout moments or accomplishments from this year that you think deserve a raise."
+            FieldName: ="Sharesomestandoutmomentsoraccomp"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.'Share some standout moments or accomplishments from this year that you think deserve a raise.'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        "'Share any hurdles that came your way in your role. How did you overcome them like a champ?_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Share any hurdles that came your way in your role. How did you overcome them like a champ?"
+            FieldName: ="Shareanyhurdlesthatcameyourwayin"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'Share any hurdles that came your way in your role. How did you overcome them like a champ?'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        "'Rate your knowledge and skills relevant to your role_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Rate your knowledge and skills relevant to your role"
+            FieldName: ="Rateyourknowledgeandskillsreleva0"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.'Rate your knowledge and skills relevant to your role'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        "'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) "
+            FieldName: ="Haveyoubeenonaquesttolevelupyour"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: |-
+                =ThisItem.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        "'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!"
+            FieldName: ="Sharethenamesof5Jeevaniteswhomyo"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+        "'Rate your problem-solving and critical-thinking skills_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Rate your problem-solving and critical-thinking skills"
+            FieldName: ="Rateyourproblem_x002d_solvingand"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.'Rate your problem-solving and critical-thinking skills'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+        "'Let us know about the one star colleague of yours, who helped you be your better version this year_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Let us know about the one star colleague of yours, who helped you be your better version this year"
+            FieldName: ="Letusknowabouttheonestarcolleagu"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
+            Text: =ThisItem.'Let us know about the one star colleague of yours, who helped you be your better version this year'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+        "'Paint a picture of your career dreams and ambitions._Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Paint a picture of your career dreams and ambitions."
+            FieldName: ="Paintapictureofyourcareerdreamsa"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: =ThisItem.'Paint a picture of your career dreams and ambitions.'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =13
+
+        "'What can the company do to fuel your career development?_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="What can the company do to fuel your career development?"
+            FieldName: ="Whatcanthecompanydotofuelyourcar"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =14
+            Text: =ThisItem.'What can the company do to fuel your career development?'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =14
+
+        "'Please share your feedback about your reporting manager!_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Please share your feedback about your reporting manager!"
+            FieldName: ="Pleaseshareyourfeedbackaboutyour"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =15
+            Text: =ThisItem.'Please share your feedback about your reporting manager!'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =15
+
+        "'On a scale of one to ten, where do you rate yourself?_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="On a scale of one to ten, where do you rate yourself?"
+            FieldName: ="Onascaleofonetoten_x002c_wheredo"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =16
+            Text: =ThisItem.'On a scale of one to ten, where do you rate yourself?'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =16
+
+        "'What is your current CTC?_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="What is your current CTC?"
+            FieldName: ="WhatisyourcurrentCTC_x003f_"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =17
+            Text: =ThisItem.'What is your current CTC?'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =17
+
+        "'What is your expected CTC? _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="What is your expected CTC? "
+            FieldName: ="WhatisyourexpectedCTC_x003f_"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =18
+            Text: =ThisItem.'What is your expected CTC? '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =18
+
+        "'Explain how it (expected CTC) is rightfully yours! _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Explain how it (expected CTC) is rightfully yours! "
+            FieldName: ="Explainhowit_x0028_expectedCTC_x"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =19
+            Text: =ThisItem.'Explain how it (expected CTC) is rightfully yours! '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =19
+
+        "'On a scale of one to ten, how blissful are you with your current job situation? _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="On a scale of one to ten, how blissful are you with your current job situation? "
+            FieldName: ="Onascaleofonetoten_x002c_howblis"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =20
+            Text: =ThisItem.'On a scale of one to ten, how blissful are you with your current job situation? '.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =20
+
+        "'Are you interested in an internal movement?_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Are you interested in an internal movement?"
+            FieldName: ="Areyouinterestedinaninternalmove"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =21
+            Text: =ThisItem.'Are you interested in an internal movement?'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =21
+
+        "'On the hunt for some on-site action?_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="On the hunt for some on-site action?"
+            FieldName: ="Onthehuntforsomeon_x002d_siteact"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =22
+            Text: =ThisItem.'On the hunt for some on-site action?'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =22
+
+        "'Have you given our employee referral program a spin yet?_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Have you given our employee referral program a spin yet?"
+            FieldName: ="Haveyougivenouremployeereferralp"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =23
+            Text: =ThisItem.'Have you given our employee referral program a spin yet?'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =23
+
+        "'If no, let us know why?!_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="If no, let us know why?!"
+            FieldName: ="Ifno_x002c_letusknowwhy_x003f__x"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =24
+            Text: =ThisItem.'If no, let us know why?!'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =24
+
+        Team_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Team"
+            FieldName: ="Team"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =25
+            Text: =ThisItem.Team
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =25
+
+        "'Reporting Manager Feedback _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Reporting Manager Feedback "
+            FieldName: ="ReportingManagerFeedback"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =26
+            Text: =ThisItem.'Reporting Manager Feedback '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =26
+
+        "'Rate the Employee_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Rate the Employee"
+            FieldName: ="RatetheEmployee"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =27
+            Text: =ThisItem.'Rate the Employee'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =27
+
+    drp_row_limit As Dropdown.pcfdataset:
+        DefaultSelectedItems: =["10"]
+        DisplayMode: =DisplayMode.Edit
+        Height: =30
+        Items: =["10", "15", "20"]
+        Width: =63
+        X: =587
+        Y: =726
+        ZIndex: =2
+
+    Icon2 As icon.ChevronRight:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.ChevronRight
+        OnSelect: |-
+            =UpdateContext({varPageNumber:varPageNumber+1})
+        Width: =35
+        X: =736
+        Y: =726
+        ZIndex: =3
+
+    Icon4 As icon.ChevronLeft:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =30
+        Icon: =Icon.ChevronLeft
+        Width: =34
+        X: =674
+        Y: =726
+        ZIndex: =4
+
+    "txt_ip As 'Text input'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Width: =320
+        X: =228
+        Y: =36
+        ZIndex: =5
+

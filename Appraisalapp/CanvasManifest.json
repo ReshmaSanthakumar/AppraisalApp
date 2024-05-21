@@ -138,6 +138,7 @@
     "Admin_screen",
     "Success_Screen",
     "Feedback_Screen",
-    "Screen1"
+    "scr_powerBI",
+    "scr_userDT"
   ]
 }

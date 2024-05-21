@@ -16,8 +16,10 @@ App As appinfo:
                 is_admin,
                 false
             )
-        )
-    StartScreen: =
+        );
+        Set(col1,AppraisalUserList);
+        Set(varPageNumber,1)
+    StartScreen: =Main_screen
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
