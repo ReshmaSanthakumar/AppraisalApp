@@ -59,7 +59,7 @@ User_screen As screen:
                     DataCardValue109.Value,
                     Match.Email
                 ) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value),
-                Notify("please Fill the form properly"),
+                Notify("please Fill all the fields properly"),
                 SubmitForm(Form4);Navigate(Success_Screen)
             )
         PaddingRight: =5.00
@@ -321,7 +321,7 @@ User_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =124
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Jeevan Reporting Manager Name')
-            Required: =true
+            Required: =false
             Update: =DataCardValue112.Value
             Width: =435
             X: =0
@@ -337,7 +337,7 @@ User_screen As screen:
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =26
+                Y: =20
                 ZIndex: =1
 
             "DataCardValue112 As 'Text input'":
@@ -359,7 +359,11 @@ User_screen As screen:
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
                 Height: =30
-                Text: =Parent.Error
+                Text: |-
+                    =If(
+                        IsBlank(DataCardValue112.Value),
+                        "Enter the name properly"
+                    )
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
                 Width: =Parent.Width - 48
                 Wrap: =true
@@ -405,7 +409,7 @@ User_screen As screen:
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =30
+                Y: =20
                 ZIndex: =1
 
             "DataCardValue113 As 'Text input'":
@@ -609,7 +613,7 @@ User_screen As screen:
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =27
+                Y: =20
                 ZIndex: =1
 
             DataCardValue116 As Combobox.pcfdataset:
