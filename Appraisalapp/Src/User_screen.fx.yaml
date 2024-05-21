@@ -53,15 +53,14 @@ User_screen As screen:
         HoverBorderColor: =App.Theme.Colors.Darker10
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =App.Theme.Colors.Darker10
-        OnSelect: |
-            =If( IsBlank(DataCardValue8.Text) ||
-                !IsMatch(
-                    DataCardValue8.Text,
+        OnSelect: |-
+            =If(
+                IsBlank(DataCardValue109.Value) || !IsMatch(
+                    DataCardValue109.Value,
                     Match.Email
-                ) || IsBlank(DataCardValue9.Text) || IsBlank(DataCardValue10.Text) || IsBlank(DataCardValue11.Text),
+                ) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue112.Value),
                 Notify("please Fill the form properly"),
-                SubmitForm(Form1)
-                
+                SubmitForm(Form4);Navigate(Success_Screen)
             )
         PaddingRight: =5.00
         PaddingTop: =5.00
@@ -78,6 +77,7 @@ User_screen As screen:
     Form4 As form.PowerApps_CoreControls_Form:
         BorderColor: =App.Theme.Colors.Darker40
         DataSource: =AppraisalUserList
+        DefaultMode: =FormMode.New
         Height: =608
         UseFluentV9Cards: =true
         Width: =1306
@@ -104,20 +104,24 @@ User_screen As screen:
 
             DataCardKey109 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
-                Text: =Parent.DisplayName
+                Text: ="Email"
+                Visible: =true
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =10
+                Y: =18
                 ZIndex: =1
 
             "DataCardValue109 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -128,6 +132,7 @@ User_screen As screen:
 
             ErrorMessage83 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -140,6 +145,7 @@ User_screen As screen:
             StarVisible83 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -167,20 +173,23 @@ User_screen As screen:
 
             DataCardKey110 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =10
+                Y: =18
                 ZIndex: =1
 
             "DataCardValue110 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -191,6 +200,7 @@ User_screen As screen:
 
             ErrorMessage84 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -203,6 +213,7 @@ User_screen As screen:
             StarVisible84 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -217,10 +228,10 @@ User_screen As screen:
             DataField: ="EmployeeId"
             Default: =ThisItem.'Employee Id'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,EmployeeId)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Employee Id')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, EmployeeId)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Employee Id')
             Required: =false
             Update: =DataCardValue111.Value
             Width: =435
@@ -230,20 +241,23 @@ User_screen As screen:
 
             DataCardKey111 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =10
+                Y: =18
                 ZIndex: =1
 
             "DataCardValue111 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -254,6 +268,7 @@ User_screen As screen:
 
             ErrorMessage85 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -266,6 +281,7 @@ User_screen As screen:
             StarVisible85 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -280,10 +296,10 @@ User_screen As screen:
             DataField: ="JeevanReportingManagerName"
             Default: =ThisItem.'Jeevan Reporting Manager Name'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,JeevanReportingManagerName)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Jeevan Reporting Manager Name')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, JeevanReportingManagerName)
+            Height: =124
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Jeevan Reporting Manager Name')
             Required: =false
             Update: =DataCardValue112.Value
             Width: =435
@@ -293,30 +309,34 @@ User_screen As screen:
 
             DataCardKey112 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =10
+                Y: =26
                 ZIndex: =1
 
             "DataCardValue112 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
-                Width: =Parent.Width - 48
+                Width: =387
                 X: =24
-                Y: =DataCardKey112.Y + DataCardKey112.Height + 4
+                Y: =48
                 ZIndex: =2
 
             ErrorMessage86 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -329,6 +349,7 @@ User_screen As screen:
             StarVisible86 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -343,10 +364,10 @@ User_screen As screen:
             DataField: ="Pleasementionyourcurrentprojectn"
             Default: =ThisItem.'Please mention your current project name '
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Pleasementionyourcurrentprojectn)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Please mention your current project name ')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Pleasementionyourcurrentprojectn)
+            Height: =106
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Please mention your current project name ')
             Required: =false
             Update: =DataCardValue113.Value
             Width: =435
@@ -356,30 +377,34 @@ User_screen As screen:
 
             DataCardKey113 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =10
+                Y: =30
                 ZIndex: =1
 
             "DataCardValue113 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
-                Width: =Parent.Width - 48
+                Width: =387
                 X: =24
-                Y: =DataCardKey113.Y + DataCardKey113.Height + 4
+                Y: =52
                 ZIndex: =2
 
             ErrorMessage87 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -392,6 +417,7 @@ User_screen As screen:
             StarVisible87 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -406,43 +432,47 @@ User_screen As screen:
             DataField: ="Sharesomestandoutmomentsoraccomp"
             Default: =ThisItem.'Share some standout moments or accomplishments from this year that you think deserve a raise.'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Sharesomestandoutmomentsoraccomp)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share some standout moments or accomplishments from this year that you think deserve a raise.')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Sharesomestandoutmomentsoraccomp)
+            Height: =182
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Share some standout moments or accomplishments from this year that you think deserve a raise.')
             Required: =false
             Update: =DataCardValue114.Value
             Width: =435
-            X: =2
-            Y: =1
+            X: =1
+            Y: =2
             ZIndex: =22
 
             DataCardKey114 As Text:
                 DisplayMode: =DisplayMode.Edit
-                Height: =22
+                FontColor: =
+                Height: =41
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =false
+                Wrap: =true
                 X: =24
-                Y: =10
+                Y: =0
                 ZIndex: =1
 
             "DataCardValue114 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                FontColor: =
+                Height: =97
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
-                Width: =Parent.Width - 48
+                Width: =387
                 X: =24
-                Y: =DataCardKey114.Y + DataCardKey114.Height + 4
+                Y: =87
                 ZIndex: =2
 
             ErrorMessage88 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -455,6 +485,7 @@ User_screen As screen:
             StarVisible88 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -469,10 +500,10 @@ User_screen As screen:
             DataField: ="Shareanyhurdlesthatcameyourwayin"
             Default: =ThisItem.'Share any hurdles that came your way in your role. How did you overcome them like a champ?'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Shareanyhurdlesthatcameyourwayin)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share any hurdles that came your way in your role. How did you overcome them like a champ?')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Shareanyhurdlesthatcameyourwayin)
+            Height: =178
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Share any hurdles that came your way in your role. How did you overcome them like a champ?')
             Required: =false
             Update: =DataCardValue115.Value
             Width: =435
@@ -482,30 +513,35 @@ User_screen As screen:
 
             DataCardKey115 As Text:
                 DisplayMode: =DisplayMode.Edit
-                Height: =22
+                FontColor: =
+                Height: =42
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
+                Wrap: =true
+                X: =30
+                Y: =0
                 ZIndex: =1
 
             "DataCardValue115 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                Align: ='TextInputCanvas.Align'.Start
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                FontColor: =
+                Height: =97
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
-                Width: =Parent.Width - 48
+                Width: =387
                 X: =24
-                Y: =DataCardKey115.Y + DataCardKey115.Height + 4
+                Y: =87
                 ZIndex: =2
 
             ErrorMessage89 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -518,6 +554,7 @@ User_screen As screen:
             StarVisible89 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -532,25 +569,26 @@ User_screen As screen:
             DataField: ="Rateyourknowledgeandskillsreleva0"
             Default: =ThisItem.'Rate your knowledge and skills relevant to your role'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Rateyourknowledgeandskillsreleva0)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your knowledge and skills relevant to your role')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
+            Height: =106
             Required: =false
             Update: =DataCardValue116.Selected
             Width: =435
-            X: =1
-            Y: =2
+            X: =2
+            Y: =1
             ZIndex: =22
 
             DataCardKey116 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
                 Wrap: =false
                 X: =24
-                Y: =10
+                Y: =27
                 ZIndex: =1
 
             DataCardValue116 As Combobox.pcfdataset:
@@ -558,15 +596,16 @@ User_screen As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@AppraisalUserList].Rateyourknowledgeandskillsreleva0)
+                Items: =Choices([@AppraisalUserList].'Rate your knowledge and skills relevant to your role')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
-                Y: =DataCardKey116.Y + DataCardKey116.Height + 4
+                Y: =51
                 ZIndex: =2
 
             ErrorMessage90 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -579,6 +618,7 @@ User_screen As screen:
             StarVisible90 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -594,10 +634,12 @@ User_screen As screen:
             Default: |-
                 =ThisItem.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) '
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Haveyoubeenonaquesttolevelupyour)
+            DisplayName: |-
+                =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) ')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Haveyoubeenonaquesttolevelupyour)
+            Height: =249
+            MaxLength: |-
+                =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) ')
             Required: =false
             Update: =DataCardValue117.Value
             Width: =435
@@ -607,30 +649,34 @@ User_screen As screen:
 
             DataCardKey117 As Text:
                 DisplayMode: =DisplayMode.Edit
-                Height: =22
+                FontColor: =
+                Height: =88
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =false
+                Wrap: =true
                 X: =24
-                Y: =10
+                Y: =0
                 ZIndex: =1
 
             "DataCardValue117 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                FontColor: =
+                Height: =140
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
-                Width: =Parent.Width - 48
+                Width: =387
                 X: =24
-                Y: =DataCardKey117.Y + DataCardKey117.Height + 4
+                Y: =88
                 ZIndex: =2
 
             ErrorMessage91 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -643,6 +689,7 @@ User_screen As screen:
             StarVisible91 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -657,10 +704,10 @@ User_screen As screen:
             DataField: ="Sharethenamesof5Jeevaniteswhomyo"
             Default: =ThisItem.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Sharethenamesof5Jeevaniteswhomyo)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Sharethenamesof5Jeevaniteswhomyo)
+            Height: =175
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!')
             Required: =false
             Update: =DataCardValue118.Value
             Width: =435
@@ -670,30 +717,34 @@ User_screen As screen:
 
             DataCardKey118 As Text:
                 DisplayMode: =DisplayMode.Edit
-                Height: =22
+                FontColor: =
+                Height: =43
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =false
+                Wrap: =true
                 X: =24
-                Y: =10
+                Y: =3
                 ZIndex: =1
 
             "DataCardValue118 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                FontColor: =
+                Height: =101
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
-                Width: =Parent.Width - 48
+                Width: =387
                 X: =24
-                Y: =DataCardKey118.Y + DataCardKey118.Height + 4
+                Y: =52
                 ZIndex: =2
 
             ErrorMessage92 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -706,6 +757,7 @@ User_screen As screen:
             StarVisible92 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -720,7 +772,7 @@ User_screen As screen:
             DataField: ="Rateyourproblem_x002d_solvingand"
             Default: =ThisItem.'Rate your problem-solving and critical-thinking skills'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Rateyourproblem_x002d_solvingand)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your problem-solving and critical-thinking skills')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -732,6 +784,7 @@ User_screen As screen:
 
             DataCardKey119 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -746,15 +799,16 @@ User_screen As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@AppraisalUserList].Rateyourproblem_x002d_solvingand)
+                Items: =Choices([@AppraisalUserList].'Rate your problem-solving and critical-thinking skills')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
-                Y: =DataCardKey119.Y + DataCardKey119.Height + 4
+                Y: =48
                 ZIndex: =2
 
             ErrorMessage93 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -767,6 +821,7 @@ User_screen As screen:
             StarVisible93 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -781,10 +836,10 @@ User_screen As screen:
             DataField: ="Letusknowabouttheonestarcolleagu"
             Default: =ThisItem.'Let us know about the one star colleague of yours, who helped you be your better version this year'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Letusknowabouttheonestarcolleagu)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Let us know about the one star colleague of yours, who helped you be your better version this year')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Letusknowabouttheonestarcolleagu)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Let us know about the one star colleague of yours, who helped you be your better version this year')
             Required: =false
             Update: =DataCardValue120.Value
             Width: =435
@@ -794,30 +849,34 @@ User_screen As screen:
 
             DataCardKey120 As Text:
                 DisplayMode: =DisplayMode.Edit
-                Height: =22
+                FontColor: =
+                Height: =44
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =false
+                Wrap: =true
                 X: =24
-                Y: =10
+                Y: =3
                 ZIndex: =1
 
             "DataCardValue120 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                FontColor: =
+                Height: =107
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
                 Width: =Parent.Width - 48
                 X: =24
-                Y: =DataCardKey120.Y + DataCardKey120.Height + 4
+                Y: =49
                 ZIndex: =2
 
             ErrorMessage94 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -830,6 +889,7 @@ User_screen As screen:
             StarVisible94 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -844,10 +904,10 @@ User_screen As screen:
             DataField: ="Paintapictureofyourcareerdreamsa"
             Default: =ThisItem.'Paint a picture of your career dreams and ambitions.'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Paintapictureofyourcareerdreamsa)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Paint a picture of your career dreams and ambitions.')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Paintapictureofyourcareerdreamsa)
+            Height: =153
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Paint a picture of your career dreams and ambitions.')
             Required: =false
             Update: =DataCardValue121.Value
             Width: =435
@@ -857,6 +917,7 @@ User_screen As screen:
 
             DataCardKey121 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -868,8 +929,10 @@ User_screen As screen:
 
             "DataCardValue121 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
+                FontColor: =
+                Height: =96
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -881,6 +944,7 @@ User_screen As screen:
 
             ErrorMessage95 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -893,6 +957,7 @@ User_screen As screen:
             StarVisible95 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -907,10 +972,10 @@ User_screen As screen:
             DataField: ="Whatcanthecompanydotofuelyourcar"
             Default: =ThisItem.'What can the company do to fuel your career development?'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Whatcanthecompanydotofuelyourcar)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'What can the company do to fuel your career development?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Whatcanthecompanydotofuelyourcar)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'What can the company do to fuel your career development?')
             Required: =false
             Update: =DataCardValue122.Value
             Width: =435
@@ -920,6 +985,7 @@ User_screen As screen:
 
             DataCardKey122 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -931,8 +997,10 @@ User_screen As screen:
 
             "DataCardValue122 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
+                FontColor: =
+                Height: =92
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -944,6 +1012,7 @@ User_screen As screen:
 
             ErrorMessage96 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -956,6 +1025,7 @@ User_screen As screen:
             StarVisible96 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -970,10 +1040,10 @@ User_screen As screen:
             DataField: ="Pleaseshareyourfeedbackaboutyour"
             Default: =ThisItem.'Please share your feedback about your reporting manager!'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Pleaseshareyourfeedbackaboutyour)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Please share your feedback about your reporting manager!')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Pleaseshareyourfeedbackaboutyour)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Please share your feedback about your reporting manager!')
             Required: =false
             Update: =DataCardValue123.Value
             Width: =435
@@ -983,6 +1053,7 @@ User_screen As screen:
 
             DataCardKey123 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -994,8 +1065,10 @@ User_screen As screen:
 
             "DataCardValue123 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
+                FontColor: =
+                Height: =95
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -1007,6 +1080,7 @@ User_screen As screen:
 
             ErrorMessage97 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1019,6 +1093,7 @@ User_screen As screen:
             StarVisible97 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1033,9 +1108,9 @@ User_screen As screen:
             DataField: ="Onascaleofonetoten_x002c_wheredo"
             Default: =ThisItem.'On a scale of one to ten, where do you rate yourself?'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onascaleofonetoten_x002c_wheredo)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On a scale of one to ten, where do you rate yourself?')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
+            Height: =103
             Required: =false
             Update: =DataCardValue124.Selected
             Width: =435
@@ -1045,6 +1120,7 @@ User_screen As screen:
 
             DataCardKey124 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1059,7 +1135,7 @@ User_screen As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@AppraisalUserList].Onascaleofonetoten_x002c_wheredo)
+                Items: =Choices([@AppraisalUserList].'On a scale of one to ten, where do you rate yourself?')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1068,6 +1144,7 @@ User_screen As screen:
 
             ErrorMessage98 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1080,6 +1157,7 @@ User_screen As screen:
             StarVisible98 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1094,10 +1172,10 @@ User_screen As screen:
             DataField: ="WhatisyourcurrentCTC_x003f_"
             Default: =ThisItem.'What is your current CTC?'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourcurrentCTC_x003f_)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'What is your current CTC?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, WhatisyourcurrentCTC_x003f_)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'What is your current CTC?')
             Required: =false
             Update: =DataCardValue125.Value
             Width: =435
@@ -1107,6 +1185,7 @@ User_screen As screen:
 
             DataCardKey125 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1118,7 +1197,9 @@ User_screen As screen:
 
             "DataCardValue125 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
@@ -1131,6 +1212,7 @@ User_screen As screen:
 
             ErrorMessage99 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1143,6 +1225,7 @@ User_screen As screen:
             StarVisible99 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1157,10 +1240,10 @@ User_screen As screen:
             DataField: ="WhatisyourexpectedCTC_x003f_"
             Default: =ThisItem.'What is your expected CTC? '
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourexpectedCTC_x003f_)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'What is your expected CTC? ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, WhatisyourexpectedCTC_x003f_)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'What is your expected CTC? ')
             Required: =false
             Update: =DataCardValue126.Value
             Width: =435
@@ -1170,6 +1253,7 @@ User_screen As screen:
 
             DataCardKey126 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1181,7 +1265,9 @@ User_screen As screen:
 
             "DataCardValue126 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
@@ -1194,6 +1280,7 @@ User_screen As screen:
 
             ErrorMessage100 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1206,6 +1293,7 @@ User_screen As screen:
             StarVisible100 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1220,10 +1308,10 @@ User_screen As screen:
             DataField: ="Explainhowit_x0028_expectedCTC_x"
             Default: =ThisItem.'Explain how it (expected CTC) is rightfully yours! '
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Explainhowit_x0028_expectedCTC_x)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Explain how it (expected CTC) is rightfully yours! ')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Explainhowit_x0028_expectedCTC_x)
+            Height: =107
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Explain how it (expected CTC) is rightfully yours! ')
             Required: =false
             Update: =DataCardValue127.Value
             Width: =435
@@ -1233,6 +1321,7 @@ User_screen As screen:
 
             DataCardKey127 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1244,7 +1333,9 @@ User_screen As screen:
 
             "DataCardValue127 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
@@ -1257,6 +1348,7 @@ User_screen As screen:
 
             ErrorMessage101 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1269,6 +1361,7 @@ User_screen As screen:
             StarVisible101 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1283,7 +1376,7 @@ User_screen As screen:
             DataField: ="Onascaleofonetoten_x002c_howblis"
             Default: =ThisItem.'On a scale of one to ten, how blissful are you with your current job situation? '
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onascaleofonetoten_x002c_howblis)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On a scale of one to ten, how blissful are you with your current job situation? ')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -1295,6 +1388,7 @@ User_screen As screen:
 
             DataCardKey128 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1309,7 +1403,7 @@ User_screen As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@AppraisalUserList].Onascaleofonetoten_x002c_howblis)
+                Items: =Choices([@AppraisalUserList].'On a scale of one to ten, how blissful are you with your current job situation? ')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1318,6 +1412,7 @@ User_screen As screen:
 
             ErrorMessage102 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1330,6 +1425,7 @@ User_screen As screen:
             StarVisible102 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1344,7 +1440,7 @@ User_screen As screen:
             DataField: ="Areyouinterestedinaninternalmove"
             Default: =ThisItem.'Are you interested in an internal movement?'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Areyouinterestedinaninternalmove)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Are you interested in an internal movement?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -1356,6 +1452,7 @@ User_screen As screen:
 
             DataCardKey129 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1370,7 +1467,7 @@ User_screen As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@AppraisalUserList].Areyouinterestedinaninternalmove)
+                Items: =Choices([@AppraisalUserList].'Are you interested in an internal movement?')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1379,6 +1476,7 @@ User_screen As screen:
 
             ErrorMessage103 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1391,6 +1489,7 @@ User_screen As screen:
             StarVisible103 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1405,9 +1504,9 @@ User_screen As screen:
             DataField: ="Onthehuntforsomeon_x002d_siteact"
             Default: =ThisItem.'On the hunt for some on-site action?'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Onthehuntforsomeon_x002d_siteact)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'On the hunt for some on-site action?')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
+            Height: =112
             Required: =false
             Update: =DataCardValue130.Selected
             Width: =435
@@ -1417,6 +1516,7 @@ User_screen As screen:
 
             DataCardKey130 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1431,7 +1531,7 @@ User_screen As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@AppraisalUserList].Onthehuntforsomeon_x002d_siteact)
+                Items: =Choices([@AppraisalUserList].'On the hunt for some on-site action?')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1440,6 +1540,7 @@ User_screen As screen:
 
             ErrorMessage104 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1452,6 +1553,7 @@ User_screen As screen:
             StarVisible104 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1466,7 +1568,7 @@ User_screen As screen:
             DataField: ="Haveyougivenouremployeereferralp"
             Default: =ThisItem.'Have you given our employee referral program a spin yet?'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Haveyougivenouremployeereferralp)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Have you given our employee referral program a spin yet?')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -1478,6 +1580,7 @@ User_screen As screen:
 
             DataCardKey131 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1492,7 +1595,7 @@ User_screen As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@AppraisalUserList].Haveyougivenouremployeereferralp)
+                Items: =Choices([@AppraisalUserList].'Have you given our employee referral program a spin yet?')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1501,6 +1604,7 @@ User_screen As screen:
 
             ErrorMessage105 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1513,6 +1617,7 @@ User_screen As screen:
             StarVisible105 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1527,10 +1632,10 @@ User_screen As screen:
             DataField: ="Ifno_x002c_letusknowwhy_x003f__x"
             Default: =ThisItem.'If no, let us know why?!'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Ifno_x002c_letusknowwhy_x003f__x)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'If no, let us know why?!')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Ifno_x002c_letusknowwhy_x003f__x)
+            Height: =126
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'If no, let us know why?!')
             Required: =false
             Update: =DataCardValue132.Value
             Width: =435
@@ -1540,6 +1645,7 @@ User_screen As screen:
 
             DataCardKey132 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1551,8 +1657,10 @@ User_screen As screen:
 
             "DataCardValue132 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
+                FontColor: =
+                Height: =73
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -1564,6 +1672,7 @@ User_screen As screen:
 
             ErrorMessage106 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1576,6 +1685,7 @@ User_screen As screen:
             StarVisible106 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1603,6 +1713,7 @@ User_screen As screen:
 
             DataCardKey133 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1614,7 +1725,9 @@ User_screen As screen:
 
             "DataCardValue133 As 'Text input'":
                 AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
+                FontColor: =
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 Required: =Parent.Required
@@ -1627,6 +1740,7 @@ User_screen As screen:
 
             ErrorMessage107 As Text:
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: =Parent.Error
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1639,229 +1753,12 @@ User_screen As screen:
             StarVisible107 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 X: =0
                 Y: =DataCardKey133.Y
-                ZIndex: =4
-
-        "'Reporting Manager Feedback _DataCard5' As typedDataCard.fluentV9TextualEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ReportingManagerFeedback"
-            Default: =ThisItem.'Reporting Manager Feedback '
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,ReportingManagerFeedback)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, ReportingManagerFeedback)
-            Required: =false
-            Update: =DataCardValue134.Value
-            Width: =435
-            X: =1
-            Y: =8
-            ZIndex: =22
-
-            DataCardKey134 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue134 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey134.Y + DataCardKey134.Height + 4
-                ZIndex: =2
-
-            ErrorMessage108 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue134.Y + DataCardValue134.Height
-                ZIndex: =3
-
-            StarVisible108 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey134.Y
-                ZIndex: =4
-
-        "'Rate the Employee_DataCard3' As typedDataCard.fluentV9TextualEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="RatetheEmployee"
-            Default: =ThisItem.'Rate the Employee'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,RatetheEmployee)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, RatetheEmployee)
-            Required: =false
-            Update: =DataCardValue135.Value
-            Width: =435
-            X: =2
-            Y: =8
-            ZIndex: =22
-
-            DataCardKey135 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue135 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey135.Y + DataCardKey135.Height + 4
-                ZIndex: =2
-
-            ErrorMessage109 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue135.Y + DataCardValue135.Height
-                ZIndex: =3
-
-            StarVisible109 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey135.Y
-                ZIndex: =4
-
-        Attachments_DataCard3 As typedDataCard.attachmentsEditCard:
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'{Attachments}')
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue136.Attachments
-            Width: =435
-            X: =0
-            Y: =9
-            ZIndex: =22
-
-            DataCardKey136 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue136 As attachments:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                IsInDataCard: =true
-                ItemColor: =RGBA(255, 255, 255, 1)
-                ItemFill: =App.Theme.Colors.Primary
-                ItemHoverColor: =RGBA(0, 0, 0, 1)
-                ItemHoverFill: =App.Theme.Colors.Lighter70
-                Items: =Parent.Default
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =App.Theme.Colors.Darker30
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey136.Y + DataCardKey136.Height + 5
-                ZIndex: =2
-
-            ErrorMessage110 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue136.Y + DataCardValue136.Height
-                ZIndex: =3
-
-            StarVisible110 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey136.Height
-                Size: =13
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey136.Y
                 ZIndex: =4
 

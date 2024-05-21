@@ -14,286 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.Title_DataCard5.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.Title_DataCard5.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Title"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.Title_DataCard5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Title"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.Name_DataCard2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.Name_DataCard2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Name"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.Name_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Employee Id_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Employee Id_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Employee Id'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Employee Id_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Employee Id"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Jeevan Reporting Manager Name_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Jeevan Reporting Manager Name_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 32,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Jeevan Reporting Manager Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Jeevan Reporting Manager Name_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Jeevan Reporting Manager Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Please mention your current project name\u00A0_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Please mention your current project name\u00A0_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 44,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Please mention your current project name\u00A0'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Please mention your current project name\u00A0_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Please mention your current project name\u00A0"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 96,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Share some standout moments or accomplishments from this year that you think deserve a raise.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Share some standout moments or accomplishments from this year that you think deserve a raise."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 93,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Share any hurdles that came your way in your role. How did you overcome them like a champ?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Share any hurdles that came your way in your role. How did you overcome them like a champ?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Admin_screen.FormViewer1.'Rate your knowledge and skills relevant to your role_DataCard2'.Default"
                 }
               ],
@@ -319,94 +39,15 @@
           ],
           "message": {
             "arguments": [
-              "Rate your knowledge and skills relevant to your role"
+              "Text",
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 200,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 94,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -439,174 +80,15 @@
           ],
           "message": {
             "arguments": [
-              "Rate your problem-solving and critical-thinking skills"
+              "Text",
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 101,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Let us know about the one star colleague of yours, who helped you be your better version this year'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Let us know about the one star colleague of yours, who helped you be your better version this year"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Paint a picture of your career dreams and ambitions._DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Paint a picture of your career dreams and ambitions._DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 55,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Paint a picture of your career dreams and ambitions.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Paint a picture of your career dreams and ambitions._DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Paint a picture of your career dreams and ambitions."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'What can the company do to fuel your career development?_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'What can the company do to fuel your career development?_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 59,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'What can the company do to fuel your career development?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'What can the company do to fuel your career development?_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "What can the company do to fuel your career development?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Please share your feedback about your reporting manager!_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Please share your feedback about your reporting manager!_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 59,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Please share your feedback about your reporting manager!'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Please share your feedback about your reporting manager!_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Please share your feedback about your reporting manager!"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -639,134 +121,15 @@
           ],
           "message": {
             "arguments": [
-              "On a scale of one to ten, where do you rate yourself?"
+              "Text",
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'What is your current CTC?_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'What is your current CTC?_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 28,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'What is your current CTC?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'What is your current CTC?_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "What is your current CTC?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'What is your expected CTC? _DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'What is your expected CTC? _DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'What is your expected CTC? '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'What is your expected CTC? _DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "What is your expected CTC? "
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Explain how it (expected CTC) is rightfully yours! _DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Explain how it (expected CTC) is rightfully yours! _DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 54,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Explain how it (expected CTC) is rightfully yours! '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Explain how it (expected CTC) is rightfully yours! _DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Explain how it (expected CTC) is rightfully yours! "
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -799,14 +162,15 @@
           ],
           "message": {
             "arguments": [
-              "On a scale of one to ten, how blissful are you with your current job situation? "
+              "Text",
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -839,14 +203,15 @@
           ],
           "message": {
             "arguments": [
-              "Are you interested in an internal movement?"
+              "Text",
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -879,14 +244,15 @@
           ],
           "message": {
             "arguments": [
-              "On the hunt for some on-site action?"
+              "Text",
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -919,134 +285,15 @@
           ],
           "message": {
             "arguments": [
-              "Have you given our employee referral program a spin yet?"
+              "Text",
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'If no, let us know why?!_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'If no, let us know why?!_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'If no, let us know why?!'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'If no, let us know why?!_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If no, let us know why?!"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.Team_DataCard2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.Team_DataCard2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Team"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.Team_DataCard2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Team"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Reporting Manager Feedback _DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.FormViewer1.'Reporting Manager Feedback _DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Reporting Manager Feedback '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Admin_screen",
-                "type": "Admin_screen.FormViewer1.'Reporting Manager Feedback _DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Reporting Manager Feedback "
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 0
         },
         {
@@ -1094,1825 +341,30 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen.Gallery1.Title2.Text"
+                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_screen.Gallery1.Title2.Text",
+                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Title"
-                  }
                 }
               },
               "properties": {
-                "member": "Text",
-                "module": "Admin_screen",
-                "type": "Admin_screen.Gallery1.Title2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Title"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen.Gallery1.Subtitle2.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen.Gallery1.Subtitle2.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Name"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Admin_screen",
-                "type": "Admin_screen.Gallery1.Subtitle2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": "DataCardValue8"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue8"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 26,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 4,
-                  "snippet": {
-                    "text": "IsBlank"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 58,
-                  "snippet": {
-                    "text": "DataCardValue8"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue8"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 72,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 116,
-                  "snippet": {
-                    "text": "DataCardValue9"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue9"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 130,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 108,
-                  "snippet": {
-                    "text": "IsBlank"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 148,
-                  "snippet": {
-                    "text": "DataCardValue10"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue10"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 163,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 140,
-                  "snippet": {
-                    "text": "IsBlank"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 181,
-                  "snippet": {
-                    "text": "DataCardValue11"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue11"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 196,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 173,
-                  "snippet": {
-                    "text": "IsBlank"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 264,
-                  "snippet": {
-                    "text": "Form1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_screen",
-                "type": "User_screen.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Form1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Reporting Manager Feedback '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
+                "member": "AccessibleLabel",
                 "module": "Feedback_Screen",
-                "type": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'"
+                "type": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "Reporting Manager Feedback "
-            ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.Title_DataCard3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.Title_DataCard3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Title"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.Title_DataCard3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Title"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.Name_DataCard5.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.Name_DataCard5.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Name"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.Name_DataCard5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Employee Id_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Employee Id_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Employee Id'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Employee Id_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Employee Id"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Jeevan Reporting Manager Name_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Jeevan Reporting Manager Name_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 32,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Jeevan Reporting Manager Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Jeevan Reporting Manager Name_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Jeevan Reporting Manager Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Please mention your current project name\u00A0_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Please mention your current project name\u00A0_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 44,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Please mention your current project name\u00A0'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Please mention your current project name\u00A0_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Please mention your current project name\u00A0"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 96,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Share some standout moments or accomplishments from this year that you think deserve a raise.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Share some standout moments or accomplishments from this year that you think deserve a raise."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 93,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Share any hurdles that came your way in your role. How did you overcome them like a champ?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Share any hurdles that came your way in your role. How did you overcome them like a champ?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Rate your knowledge and skills relevant to your role_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Rate your knowledge and skills relevant to your role_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 55,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Rate your knowledge and skills relevant to your role'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Rate your knowledge and skills relevant to your role_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Rate your knowledge and skills relevant to your role"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 200,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification)\u00A0"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 94,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Share the names of 5 Jeevanites whom you think exceeded their work expectations this year!!"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Rate your problem-solving and critical-thinking skills_DataCard2'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Rate your problem-solving and critical-thinking skills_DataCard2'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 57,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Rate your problem-solving and critical-thinking skills'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Rate your problem-solving and critical-thinking skills_DataCard2'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Rate your problem-solving and critical-thinking skills"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 101,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Let us know about the one star colleague of yours, who helped you be your better version this year'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Let us know about the one star colleague of yours, who helped you be your better version this year_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Let us know about the one star colleague of yours, who helped you be your better version this year"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Paint a picture of your career dreams and ambitions._DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Paint a picture of your career dreams and ambitions._DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 55,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Paint a picture of your career dreams and ambitions.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Paint a picture of your career dreams and ambitions._DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Paint a picture of your career dreams and ambitions."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'What can the company do to fuel your career development?_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'What can the company do to fuel your career development?_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 59,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'What can the company do to fuel your career development?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'What can the company do to fuel your career development?_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "What can the company do to fuel your career development?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Please share your feedback about your reporting manager!_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Please share your feedback about your reporting manager!_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 59,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Please share your feedback about your reporting manager!'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Please share your feedback about your reporting manager!_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Please share your feedback about your reporting manager!"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'On a scale of one to ten, where do you rate yourself?_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'On a scale of one to ten, where do you rate yourself?_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 56,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'On a scale of one to ten, where do you rate yourself?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'On a scale of one to ten, where do you rate yourself?_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "On a scale of one to ten, where do you rate yourself?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'What is your current CTC?_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'What is your current CTC?_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 28,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'What is your current CTC?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'What is your current CTC?_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "What is your current CTC?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'What is your expected CTC? _DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'What is your expected CTC? _DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'What is your expected CTC? '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'What is your expected CTC? _DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "What is your expected CTC? "
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Explain how it (expected CTC) is rightfully yours! _DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Explain how it (expected CTC) is rightfully yours! _DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 54,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Explain how it (expected CTC) is rightfully yours! '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Explain how it (expected CTC) is rightfully yours! _DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Explain how it (expected CTC) is rightfully yours! "
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'On a scale of one to ten, how blissful are you with your current job situation? _DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'On a scale of one to ten, how blissful are you with your current job situation? _DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 83,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'On a scale of one to ten, how blissful are you with your current job situation? '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'On a scale of one to ten, how blissful are you with your current job situation? _DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "On a scale of one to ten, how blissful are you with your current job situation? "
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Are you interested in an internal movement?_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Are you interested in an internal movement?_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 46,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Are you interested in an internal movement?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Are you interested in an internal movement?_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Are you interested in an internal movement?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'On the hunt for some on-site action?_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'On the hunt for some on-site action?_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 39,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'On the hunt for some on-site action?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'On the hunt for some on-site action?_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "On the hunt for some on-site action?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Have you given our employee referral program a spin yet?_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Have you given our employee referral program a spin yet?_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 59,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Have you given our employee referral program a spin yet?'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Have you given our employee referral program a spin yet?_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Have you given our employee referral program a spin yet?"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'If no, let us know why?!_DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'If no, let us know why?!_DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'If no, let us know why?!'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'If no, let us know why?!_DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If no, let us know why?!"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.Team_DataCard5.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.Team_DataCard5.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Team"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.Team_DataCard5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Team"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Reporting Manager Feedback _DataCard5'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Reporting Manager Feedback _DataCard5'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Reporting Manager Feedback '"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Reporting Manager Feedback _DataCard5'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Reporting Manager Feedback "
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.'Rate the Employee_DataCard3'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.'Rate the Employee_DataCard3'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Rate the Employee'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.'Rate the Employee_DataCard3'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Rate the Employee"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.Attachments_DataCard3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.Attachments_DataCard3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Attachments"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "User_screen",
-                "type": "User_screen.Form4.Attachments_DataCard3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Attachments"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2942,7 +394,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2972,7 +424,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3002,7 +454,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -3032,7 +484,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3062,7 +514,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3092,7 +544,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -3122,7 +574,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -3152,7 +604,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3182,7 +634,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -3212,67 +664,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Feedback_Screen",
-                "type": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Form4.Attachments_DataCard3.DataCardValue136.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Form4.Attachments_DataCard3.DataCardValue136.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_screen",
-                "type": "User_screen.Form4.Attachments_DataCard3.DataCardValue136"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3302,7 +694,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3332,7 +724,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3362,7 +754,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3392,7 +784,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3422,7 +814,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3452,7 +844,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3482,7 +874,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3512,7 +904,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3542,7 +934,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3572,7 +964,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3602,7 +994,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -3611,16 +1003,16 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrInvalidName",
+              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
               "messageStrings": {
                 "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
+                  "text": "Expected {0} value."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
+                  "Change the rule to produce a {0} value."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
@@ -3642,34 +1034,6 @@
                   "Try moving your data to a different data source."
                 ],
                 "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
