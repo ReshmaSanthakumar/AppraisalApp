@@ -1,12 +1,13 @@
 Admin_screen As screen:
     BackgroundImage: =
+    Fill: =RGBA(214, 221, 224, 1)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Fill: =RGBA(242, 242, 242, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =573
         Items: =SortByColumns(Search(AppraisalUserList,TextInput1.Text, Name,Title), "Name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
@@ -101,10 +102,10 @@ Admin_screen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(2, 94, 19, 1)
+        Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =85
+        Height: =64
         Size: =25
         Text: ="Feedback"
         Width: =1366.00
@@ -116,7 +117,7 @@ Admin_screen As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(1, 89, 32, 1)
+        Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =28
@@ -185,8 +186,8 @@ Admin_screen As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =36
-        X: =93
-        Y: =14
+        X: =77
+        Y: =7
         ZIndex: =9
 
     Icon6 As icon.ArrowsUpDown:
@@ -209,7 +210,7 @@ Admin_screen As screen:
     FormViewer1 As formViewer:
         BorderColor: =App.Theme.Colors.Darker40
         DataSource: =AppraisalUserList
-        Fill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =594
         Item: =Gallery1.Selected
         NumberOfColumns: =1
@@ -1484,7 +1485,7 @@ Admin_screen As screen:
         Text: ="Logout"
         Width: =139
         X: =1196
-        Y: =28
+        Y: =17
         ZIndex: =12
 
     Icon1_1 As icon.ChevronLeft:
@@ -1498,7 +1499,7 @@ Admin_screen As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =37
-        X: =29
-        Y: =14
+        X: =21
+        Y: =7
         ZIndex: =13
 
