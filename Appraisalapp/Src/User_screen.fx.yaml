@@ -449,47 +449,51 @@ User_screen As screen:
                 Y: =DataCardKey113.Y
                 ZIndex: =4
 
-        "'Rate your knowledge and skills relevant to your role_DataCard5' As typedDataCard.fluentV9ComboBoxEditCard":
+        "'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard5' As typedDataCard.fluentV9TextualEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Rateyourknowledgeandskillsreleva0"
-            Default: =ThisItem.'Rate your knowledge and skills relevant to your role'
+            DataField: ="Sharesomestandoutmomentsoraccomp"
+            Default: =ThisItem.'Share some standout moments or accomplishments from this year that you think deserve a raise.'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your knowledge and skills relevant to your role')
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share some standout moments or accomplishments from this year that you think deserve a raise.')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =106
+            Height: =182
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Share some standout moments or accomplishments from this year that you think deserve a raise.')
             Required: =false
-            Update: =DataCardValue116.Selected
+            Update: =DataCardValue114.Value
             Width: =435
-            X: =2
-            Y: =1
+            X: =1
+            Y: =2
             ZIndex: =22
 
-            DataCardKey116 As Text:
+            DataCardKey114 As Text:
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
-                Height: =22
+                Height: =41
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =false
+                Wrap: =true
                 X: =24
-                Y: =20
+                Y: =0
                 ZIndex: =1
 
-            DataCardValue116 As Combobox.pcfdataset:
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DefaultSelectedItems: =[Parent.Default]
+            "DataCardValue114 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Items: =Choices([@AppraisalUserList].'Rate your knowledge and skills relevant to your role')
+                FontColor: =
+                Height: =97
+                Mode: ='TextInputCanvas.Mode'.Multiline
+                Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
+                Value: =Parent.Default
+                Width: =387
                 X: =24
-                Y: =51
+                Y: =87
                 ZIndex: =2
 
-            ErrorMessage90 As Text:
+            ErrorMessage88 As Text:
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
                 Height: =30
@@ -498,19 +502,19 @@ User_screen As screen:
                 Width: =Parent.Width - 48
                 Wrap: =true
                 X: =24
-                Y: =DataCardValue116.Y + DataCardValue116.Height
+                Y: =DataCardValue114.Y + DataCardValue114.Height
                 ZIndex: =3
 
-            StarVisible90 As Text:
+            StarVisible88 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
-                Height: =20
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 X: =0
-                Y: =DataCardKey116.Y
+                Y: =DataCardKey114.Y
                 ZIndex: =4
 
         "'Share any hurdles that came your way in your role. How did you overcome them like a champ?_DataCard5' As typedDataCard.fluentV9TextualEditCard":
@@ -582,51 +586,47 @@ User_screen As screen:
                 Y: =DataCardKey115.Y
                 ZIndex: =4
 
-        "'Share some standout moments or accomplishments from this year that you think deserve a raise._DataCard5' As typedDataCard.fluentV9TextualEditCard":
+        "'Rate your knowledge and skills relevant to your role_DataCard5' As typedDataCard.fluentV9ComboBoxEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Sharesomestandoutmomentsoraccomp"
-            Default: =ThisItem.'Share some standout moments or accomplishments from this year that you think deserve a raise.'
+            DataField: ="Rateyourknowledgeandskillsreleva0"
+            Default: =ThisItem.'Rate your knowledge and skills relevant to your role'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Share some standout moments or accomplishments from this year that you think deserve a raise.')
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate your knowledge and skills relevant to your role')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =182
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Share some standout moments or accomplishments from this year that you think deserve a raise.')
+            Height: =106
             Required: =false
-            Update: =DataCardValue114.Value
+            Update: =DataCardValue116.Selected
             Width: =435
-            X: =1
-            Y: =2
+            X: =2
+            Y: =1
             ZIndex: =22
 
-            DataCardKey114 As Text:
+            DataCardKey116 As Text:
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
-                Height: =41
+                Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
-                Wrap: =true
+                Wrap: =false
                 X: =24
-                Y: =0
+                Y: =20
                 ZIndex: =1
 
-            "DataCardValue114 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
+            DataCardValue116 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =97
-                Mode: ='TextInputCanvas.Mode'.Multiline
-                Required: =Parent.Required
+                Height: =32
+                Items: =Choices([@AppraisalUserList].'Rate your knowledge and skills relevant to your role')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =387
+                Width: =Parent.Width - 48
                 X: =24
-                Y: =87
+                Y: =51
                 ZIndex: =2
 
-            ErrorMessage88 As Text:
+            ErrorMessage90 As Text:
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
                 Height: =30
@@ -635,19 +635,19 @@ User_screen As screen:
                 Width: =Parent.Width - 48
                 Wrap: =true
                 X: =24
-                Y: =DataCardValue114.Y + DataCardValue114.Height
+                Y: =DataCardValue116.Y + DataCardValue116.Height
                 ZIndex: =3
 
-            StarVisible88 As Text:
+            StarVisible90 As Text:
                 Align: ='TextCanvas.Align'.Center
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
-                Height: =30
+                Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 X: =0
-                Y: =DataCardKey114.Y
+                Y: =DataCardKey116.Y
                 ZIndex: =4
 
         "'Have you been on a quest to level up your skills, bag some certifications, or chase down extra training this year? If yes, describe about them in detail. ( Eg: Name & details of the certification) _DataCard5' As typedDataCard.fluentV9TextualEditCard":
