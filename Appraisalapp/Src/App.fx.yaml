@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |-
         =If(
             Not(IsBlank(
                 LookUp( AppraisalAdminList,
@@ -17,8 +17,6 @@ App As appinfo:
                 false
             )
         );
-        Set(col1,AppraisalUserList);
-        Set(varPageNumber,1)
     StartScreen: =Main_screen
     Theme: =PowerAppsTheme
 
