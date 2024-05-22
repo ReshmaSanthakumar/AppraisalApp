@@ -14,56 +14,6 @@ scr_powerBI As screen:
         Y: =78
         ZIndex: =1
 
-    Container1_2 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.Light
-        Fill: =RGBA(21, 68, 18, 1)
-        Height: =722
-        RadiusBottomLeft: =4
-        RadiusBottomRight: =4
-        RadiusTopLeft: =4
-        RadiusTopRight: =4
-        Width: =68
-        Y: =46
-        ZIndex: =2
-
-        Icon7_3 As icon.DetailList:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =54
-            Icon: =Icon.DetailList
-            OnSelect: =Navigate(scr_userDT)
-            Width: =29
-            X: =23
-            Y: =110
-            ZIndex: =1
-
-        Icon8_3 As icon.Home:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =54
-            Icon: =Icon.Home
-            OnSelect: =Navigate(Admin_screen)
-            Width: =31
-            X: =18
-            Y: =27
-            ZIndex: =2
-
-        Icon9_3 As icon.Trending:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Icon: =Icon.Trending
-            OnSelect: =Navigate(scr_powerBI)
-            Width: =29
-            X: =23
-            Y: =171
-            ZIndex: =3
-
     Rectangle3_1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =RGBA(21, 68, 18, 1)
@@ -120,4 +70,55 @@ scr_powerBI As screen:
         X: =1196
         Y: =17
         ZIndex: =6
+
+    Container1_2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(21, 68, 18, 1)
+        Height: =722
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =68
+        Y: =46
+        ZIndex: =7
+
+        Icon7_3 As icon.DetailList:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =46
+            Icon: =Icon.DetailList
+            OnSelect: =Navigate(scr_userDT)
+            Width: =25
+            X: =19
+            Y: =99
+            ZIndex: =1
+
+        Icon8_3 As icon.Home:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =46
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Admin_screen)
+            Width: =26
+            X: =18
+            Y: =27
+            ZIndex: =2
+
+        Icon9_3 As icon.Trending:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =46
+            Icon: =Icon.Trending
+            OnSelect: =Navigate(scr_powerBI)
+            Width: =25
+            X: =23
+            Y: =171
+            ZIndex: =3
 
