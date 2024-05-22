@@ -2,7 +2,7 @@ scr_userDT As screen:
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnVisible: |-
-        =UpdateContext({varPageNumber:1});
+        =UpdateContext({varPageNumber:1});txt_ip.Value=""
 
     DataTable1 As dataTable.datatable:
         BorderColor: =App.Theme.Colors.Darker40
@@ -89,6 +89,24 @@ scr_userDT As screen:
                             )
                         ),'Rate the Employee',SortOrder.Descending
                         )
+                ), 
+                // Else : Display as no filters
+                If(varPageNumber=1,
+                    Sort( 
+                        FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
+                    )
+                    ,
+                    Sort( 
+                        LastN(
+                        FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),
+                        If
+                        ( CountRows(col1) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
+                            drp_row_limit.Selected.Value * 1,
+                            drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
+                                                                )
+                        )
+                            ), 'Rate the Employee',SortOrder.Descending
+                        )   
                 )
                 )
         LinkColor: =App.Theme.Colors.Lighter10
@@ -233,6 +251,7 @@ scr_userDT As screen:
         DisplayMode: =DisplayMode.Edit
         FontColor: =
         Height: =32
+        Value: =""
         Width: =320
         X: =430
         Y: =82
