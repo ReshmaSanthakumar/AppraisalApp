@@ -1,6 +1,8 @@
 scr_userDT As screen:
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: |-
+        =UpdateContext({varPageNumber:1})
 
     DataTable1 As dataTable.datatable:
         BorderColor: =App.Theme.Colors.Darker40
