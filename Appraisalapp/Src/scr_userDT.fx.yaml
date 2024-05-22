@@ -251,7 +251,7 @@ scr_userDT As screen:
         DisplayMode: =DisplayMode.Edit
         FontColor: =
         Height: =32
-        Value: =""
+        Value: =
         Width: =320
         X: =430
         Y: =82
