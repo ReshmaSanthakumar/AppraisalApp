@@ -25,7 +25,7 @@ Feedback_Screen As screen:
             Height: =139
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, RatetheEmployee)
             Required: =false
-            Update: ='Rating1'.Value
+            Update: =Rating1.Value
             Width: =1224
             X: =0
             Y: =1
