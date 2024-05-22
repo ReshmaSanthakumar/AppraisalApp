@@ -429,8 +429,8 @@ scr_userDT As screen:
         FocusedBorderThickness: =4
         Font: =App.Theme.Font
         Height: =32
-        HoverBorderColor: =App.Theme.Colors.Darker40
-        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverBorderColor: =RGBA(166, 166, 166, 1)
+        HoverColor: =RGBA(166, 166, 166, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         Size: =13
         X: =430
