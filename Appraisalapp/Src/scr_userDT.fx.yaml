@@ -24,7 +24,7 @@ scr_userDT As screen:
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
         Items: |-
-            =If(And(txt_ip.Value="",drp_rating.Selected.Value=0), //1. Noting filtered
+            =If(And(txt_ip.Text="",drp_rating.Selected.Value=0), //1. Noting filtered
                 If(varPageNumber=1,
                     Sort( 
                         FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
@@ -42,15 +42,15 @@ scr_userDT As screen:
                             ), 'Rate the Employee',SortOrder.Descending
                         )   
                 ),
-                And(Not(txt_ip.Value=""),drp_rating.Selected.Value=0), //2. Name filter only
+                And(Not(txt_ip.Text=""),drp_rating.Selected.Value=0), //2. Name filter only
                 If(varPageNumber=1,
                     Sort(
-                    FirstN(Filter(col1,(txt_ip.Value in ThisRecord.Name)),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
+                    FirstN(Filter(col1,(txt_ip.Text in ThisRecord.Name)),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
                         )
                     ,
                     Sort(LastN(
-                        FirstN(Filter(col1,(txt_ip.Value in ThisRecord.Name)),drp_row_limit.Selected.Value * varPageNumber),
-                        If( CountRows(Filter(col1,(txt_ip.Value in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
+                        FirstN(Filter(col1,(txt_ip.Text in ThisRecord.Name)),drp_row_limit.Selected.Value * varPageNumber),
+                        If( CountRows(Filter(col1,(txt_ip.Text in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
                             drp_row_limit.Selected.Value * 1,
                             drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
                                                                 )
@@ -58,7 +58,7 @@ scr_userDT As screen:
                         ),'Rate the Employee',SortOrder.Descending
                         )
                 ),
-                And(txt_ip.Value="",drp_rating.Selected.Value<>0), //3. Rating filter only
+                And(txt_ip.Text="",drp_rating.Selected.Value<>0), //3. Rating filter only
                 If(varPageNumber=1,
                     Sort(
                     FirstN(Filter(col1,(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
@@ -66,7 +66,7 @@ scr_userDT As screen:
                     ,
                     Sort(LastN(
                         FirstN(Filter(col1,(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),
-                        If( CountRows(Filter(col1,(txt_ip.Value in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
+                        If( CountRows(Filter(col1,(txt_ip.Text in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
                             drp_row_limit.Selected.Value * 1,
                             drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
                                                                 )
@@ -74,15 +74,15 @@ scr_userDT As screen:
                         ),'Rate the Employee',SortOrder.Descending
                         )
                 ),
-                And(txt_ip.Value<>"",drp_rating.Selected.Value<>0), //4. Name and Rating filters
+                And(txt_ip.Text<>"",drp_rating.Selected.Value<>0), //4. Name and Rating filters
                 If(varPageNumber=1,
                     Sort(
-                    FirstN(Filter(Filter(col1,(txt_ip.Value in ThisRecord.Name)),(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
+                    FirstN(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
                         )
                     ,
                     Sort(LastN(
-                        FirstN(Filter(Filter(col1,(txt_ip.Value in ThisRecord.Name)),(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),
-                        If( CountRows(Filter(Filter(col1,(txt_ip.Value in ThisRecord.Name)),(txt_ip.Value in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, 
+                        FirstN(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),
+                        If( CountRows(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(txt_ip.Text in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, 
                             drp_row_limit.Selected.Value * 1,
                             drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
                                                                 )
@@ -245,17 +245,6 @@ scr_userDT As screen:
         X: =674
         Y: =726
         ZIndex: =4
-
-    "txt_ip As 'Text input'":
-        BasePaletteColor: =
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        Height: =32
-        Value: =
-        Width: =320
-        X: =430
-        Y: =82
-        ZIndex: =5
 
     Label8 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -428,4 +417,23 @@ scr_userDT As screen:
         X: =100
         Y: =756
         ZIndex: =15
+
+    txt_ip As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Height: =32
+        HoverBorderColor: =App.Theme.Colors.Darker40
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        X: =430
+        Y: =82
+        ZIndex: =16
 
