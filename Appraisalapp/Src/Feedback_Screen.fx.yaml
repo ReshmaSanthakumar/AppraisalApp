@@ -212,7 +212,7 @@ Feedback_Screen As screen:
         Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =68
+        Height: =57
         Size: =20
         Text: ="Add Employee Feedback"
         Width: =1366.00

@@ -341,61 +341,45 @@ scr_userDT As screen:
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =63
+        Width: =68
         Y: =46
-        ZIndex: =14
+        ZIndex: =16
 
-        Icon7_1 As icon.DetailList:
+        Icon7_2 As icon.DetailList:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =58
+            Height: =54
             Icon: =Icon.DetailList
             OnSelect: =Navigate(scr_userDT)
-            Width: =28
-            X: =21
-            Y: =102
+            Width: =29
+            X: =23
+            Y: =110
             ZIndex: =1
 
-        Icon8_1 As icon.Home:
+        Icon8_2 As icon.Home:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =58
+            Height: =54
             Icon: =Icon.Home
             OnSelect: =Navigate(Admin_screen)
             Width: =31
-            X: =16
-            Y: =20
+            X: =18
+            Y: =27
             ZIndex: =2
 
-        Icon9_1 As icon.Trending:
+        Icon9_2 As icon.Trending:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =67
             Icon: =Icon.Trending
             OnSelect: =Navigate(scr_powerBI)
-            Width: =28
-            X: =21
-            Y: =163
+            Width: =29
+            X: =23
+            Y: =171
             ZIndex: =3
-
-    Icon1_3 As icon.ChevronLeft:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =50
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Navigate(Main_screen)
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =33
-        X: =13
-        Y: =7
-        ZIndex: =15
 

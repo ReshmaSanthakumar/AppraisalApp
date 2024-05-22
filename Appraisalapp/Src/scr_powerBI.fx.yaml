@@ -5,11 +5,119 @@ scr_powerBI As screen:
     PowerBI1 As powerbi:
         BorderColor: =App.Theme.Colors.Darker40
         DashboardId: ="5ee62ef8-f197-4349-b386-8ddab8e35788"
-        Height: =675
+        Height: =659
         TileUrl: |-
             ="https://app.powerbi.com/embed?dashboardId=5ee62ef8-f197-4349-b386-8ddab8e35788&tileId=4c249b35-15c1-4e60-ab68-2fd6cc024a80&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUlORElBLVdFU1QtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7fX0%3d"
-        Width: =1366
+        Width: =1253
         WorkspaceId: ="8173dcd3-f74d-4706-872f-75517dddd04e"
-        Y: =93
+        X: =93
+        Y: =78
         ZIndex: =1
+
+    Container1_2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(21, 68, 18, 1)
+        Height: =722
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =68
+        Y: =46
+        ZIndex: =2
+
+        Icon7_3 As icon.DetailList:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =54
+            Icon: =Icon.DetailList
+            OnSelect: =Navigate(scr_userDT)
+            Width: =29
+            X: =23
+            Y: =110
+            ZIndex: =1
+
+        Icon8_3 As icon.Home:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =54
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Admin_screen)
+            Width: =31
+            X: =18
+            Y: =27
+            ZIndex: =2
+
+        Icon9_3 As icon.Trending:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Icon: =Icon.Trending
+            OnSelect: =Navigate(scr_powerBI)
+            Width: =29
+            X: =23
+            Y: =171
+            ZIndex: =3
+
+    Rectangle3_1 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(21, 68, 18, 1)
+        Height: =57
+        Width: =1366
+        ZIndex: =3
+
+    Image7_1 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Image: ='logo-colour-1_5'
+        Width: =107
+        X: =80
+        Y: =7
+        ZIndex: =4
+
+    Label9_1 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =57
+        Size: =20
+        Text: ="Performance Analysis"
+        Width: =974
+        X: =210
+        ZIndex: =5
+
+    Button4_3 As button:
+        BorderColor: =App.Theme.Colors.Primary
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(0, 134, 208, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(5, 117, 48, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =29
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
+        OnSelect: =Exit(true)
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =15
+        Text: ="Logout"
+        Width: =139
+        X: =1196
+        Y: =17
+        ZIndex: =6
 
