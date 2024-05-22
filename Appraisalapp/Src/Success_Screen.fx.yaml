@@ -83,3 +83,13 @@
             Y: =218
             ZIndex: =4
 
+    Image5 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Image: ='logo-colour-1_3'
+        Width: =124
+        X: =626
+        Y: =632
+        ZIndex: =6
+

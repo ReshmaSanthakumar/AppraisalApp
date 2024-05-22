@@ -1,11 +1,10 @@
 Admin_screen As screen:
     BackgroundImage: =
-    Fill: =RGBA(214, 221, 224, 1)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
-        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =1
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         Height: =604
@@ -207,7 +206,7 @@ Admin_screen As screen:
         ZIndex: =10
 
     FormViewer1 As formViewer:
-        BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =1
         DataSource: =AppraisalUserList
         Fill: =RGBA(255, 255, 255, 1)
         Height: =628
@@ -228,7 +227,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =0
             ZIndex: =12
@@ -275,7 +274,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =1
             ZIndex: =12
@@ -322,7 +321,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =2
             ZIndex: =12
@@ -370,7 +369,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =3
             ZIndex: =12
@@ -418,7 +417,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =4
             ZIndex: =12
@@ -466,7 +465,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =5
             ZIndex: =12
@@ -513,7 +512,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =6
             ZIndex: =12
@@ -560,7 +559,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =7
             ZIndex: =12
@@ -610,7 +609,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =8
             ZIndex: =12
@@ -657,7 +656,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =9
             ZIndex: =12
@@ -704,7 +703,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =10
             ZIndex: =12
@@ -752,7 +751,7 @@ Admin_screen As screen:
             Fill: =RGBA(2, 89, 38, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =11
             ZIndex: =12
@@ -800,7 +799,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =12
             ZIndex: =12
@@ -848,7 +847,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =13
             ZIndex: =12
@@ -896,7 +895,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =14
             ZIndex: =12
@@ -944,7 +943,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =15
             ZIndex: =12
@@ -992,7 +991,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =16
             ZIndex: =12
@@ -1040,7 +1039,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =17
             ZIndex: =12
@@ -1088,7 +1087,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =18
             ZIndex: =12
@@ -1136,7 +1135,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =19
             ZIndex: =12
@@ -1185,7 +1184,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =20
             ZIndex: =12
@@ -1233,7 +1232,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =21
             ZIndex: =12
@@ -1281,7 +1280,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =22
             ZIndex: =12
@@ -1329,7 +1328,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =23
             ZIndex: =12
@@ -1377,7 +1376,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =24
             ZIndex: =12
@@ -1425,7 +1424,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =923
+            Width: =922
             X: =0
             Y: =25
             ZIndex: =12
