@@ -8,16 +8,16 @@ Admin_screen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =573
+        Height: =604
         Items: =SortByColumns(Search(AppraisalUserList,TextInput1.Text, Name,Title), "Name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: =If(ThisItem.IsSelected,ColorFade(RGBA(209,232,178,1),-30%),RGBA(0, 0, 0, 0))
         TemplatePadding: =0
         TemplateSize: =90
-        Width: =396
-        X: =21
-        Y: =168
+        Width: =327
+        X: =89
+        Y: =137
         ZIndex: =1
 
         Title2 As label:
@@ -105,9 +105,9 @@ Admin_screen As screen:
         Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =64
-        Size: =25
-        Text: ="Feedback"
+        Height: =68
+        Size: =20
+        Text: ="Perfomance Feedback"
         Width: =1366.00
         X: =0.00
         ZIndex: =2
@@ -133,8 +133,8 @@ Admin_screen As screen:
         Size: =15
         Text: ="Add Feedback"
         Width: =176
-        X: =817
-        Y: =713
+        X: =815
+        Y: =727
         ZIndex: =5
 
     TextInput1 As text:
@@ -148,46 +148,45 @@ Admin_screen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =App.Theme.Font
-        Height: =59
+        Height: =46
         HintText: ="Search items"
         HoverBorderColor: =App.Theme.Colors.Darker40
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         PaddingRight: =5.00
         PaddingTop: =5.00
-        Size: =22.00
-        Width: =396
-        X: =21
-        Y: =93
+        Size: =15
+        Width: =285
+        X: =89
+        Y: =83
         ZIndex: =7
 
     Icon3 As icon.Search:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =50
+        Height: =47
         Icon: =Icon.Search
         PaddingRight: =0.00
         PaddingTop: =0.00
         Tooltip: ="Search"
-        Width: =37
-        X: =40
-        Y: =101
+        Width: =25
+        X: =107
+        Y: =82
         ZIndex: =8
 
     Icon5 As icon.Reload:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =50
+        Height: =34
         Icon: =Icon.Reload
         OnSelect: =Refresh(AppraisalUserList)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =36
-        X: =77
-        Y: =7
+        Width: =26
+        X: =402
+        Y: =90
         ZIndex: =9
 
     Icon6 As icon.ArrowsUpDown:
@@ -195,28 +194,28 @@ Admin_screen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =76
+        Height: =63
         Icon: =Icon.Sort
         OnSelect: |-
             =UpdateContext({SortDescending1: !SortDescending1})
         PaddingRight: =0.00
         PaddingTop: =0.00
         Tooltip: =If(SortDescending1, "Sort list in reverse alphabetical order", "Sort list in alphabetical order")
-        Width: =43
-        X: =417
-        Y: =88
+        Width: =28
+        X: =374
+        Y: =74
         ZIndex: =10
 
     FormViewer1 As formViewer:
         BorderColor: =App.Theme.Colors.Darker40
         DataSource: =AppraisalUserList
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =594
+        Height: =628
         Item: =Gallery1.Selected
         NumberOfColumns: =1
-        Width: =892
-        X: =474
-        Y: =93
+        Width: =923
+        X: =442
+        Y: =82
         ZIndex: =11
 
         Title_DataCard5 As typedDataCard.textualViewCard:
@@ -229,7 +228,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =0
             ZIndex: =12
@@ -276,7 +275,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =1
             ZIndex: =12
@@ -323,7 +322,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =2
             ZIndex: =12
@@ -371,7 +370,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =3
             ZIndex: =12
@@ -419,7 +418,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =4
             ZIndex: =12
@@ -467,7 +466,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =5
             ZIndex: =12
@@ -514,7 +513,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =6
             ZIndex: =12
@@ -561,7 +560,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =7
             ZIndex: =12
@@ -611,7 +610,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =8
             ZIndex: =12
@@ -658,7 +657,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =9
             ZIndex: =12
@@ -705,7 +704,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =10
             ZIndex: =12
@@ -753,7 +752,7 @@ Admin_screen As screen:
             Fill: =RGBA(2, 89, 38, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =11
             ZIndex: =12
@@ -801,7 +800,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =12
             ZIndex: =12
@@ -849,7 +848,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =13
             ZIndex: =12
@@ -897,7 +896,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =14
             ZIndex: =12
@@ -945,7 +944,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =15
             ZIndex: =12
@@ -993,7 +992,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =16
             ZIndex: =12
@@ -1041,7 +1040,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =17
             ZIndex: =12
@@ -1089,7 +1088,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =18
             ZIndex: =12
@@ -1137,7 +1136,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =19
             ZIndex: =12
@@ -1186,7 +1185,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =20
             ZIndex: =12
@@ -1234,7 +1233,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =21
             ZIndex: =12
@@ -1282,7 +1281,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =22
             ZIndex: =12
@@ -1330,7 +1329,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =23
             ZIndex: =12
@@ -1378,7 +1377,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =24
             ZIndex: =12
@@ -1426,7 +1425,7 @@ Admin_screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =892
+            Width: =923
             X: =0
             Y: =25
             ZIndex: =12
@@ -1494,13 +1493,72 @@ Admin_screen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =50
+        Height: =61
         Icon: =Icon.ChevronLeft
         OnSelect: =Navigate(Main_screen)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =37
+        Width: =36
         X: =21
         Y: =7
         ZIndex: =13
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(21, 68, 18, 1)
+        Height: =711
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =80
+        Y: =57
+        ZIndex: =14
+
+    Icon7 As icon.DetailList:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =61
+        Icon: =Icon.DetailList
+        Width: =37
+        X: =21
+        Y: =151
+        ZIndex: =15
+
+    Icon8 As icon.Home:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =61
+        Icon: =Icon.Home
+        Width: =40
+        X: =16
+        Y: =68
+        ZIndex: =16
+
+    Icon9 As icon.Trending:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =71
+        Icon: =Icon.Trending
+        Width: =37
+        X: =21
+        Y: =212
+        ZIndex: =17
+
+    Image1 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =46
+        Image: ='logo-colour-1_1'
+        Width: =120
+        X: =89
+        Y: =11
+        ZIndex: =18
 
