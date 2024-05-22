@@ -14,11 +14,11 @@ scr_userDT As screen:
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Normal
         HeadingColor: =RGBA(255, 255, 255, 1)
-        HeadingFill: =App.Theme.Colors.Primary
+        HeadingFill: =RGBA(45, 128, 40, 1)
         HeadingFont: =App.Theme.Font
         HeadingFontWeight: =FontWeight.Normal
         HeadingSize: =13
-        Height: =615
+        Height: =571
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter80
         InputFill: =RGBA(255, 255, 255, 1)
@@ -96,11 +96,11 @@ scr_userDT As screen:
         PrimaryColor2: =App.Theme.Colors.Darker30
         PrimaryColor3: =App.Theme.Colors.Lighter70
         SelectedColor: =RGBA(0, 0, 0, 1)
-        SelectedFill: =App.Theme.Colors.Lighter70
+        SelectedFill: =RGBA(166, 215, 153, 1)
         Size: =13
         Width: =1329
         X: =15
-        Y: =87
+        Y: =129
         ZIndex: =1
 
         Title_Column1 As dataTableColumn.textualColumn:
@@ -234,7 +234,7 @@ scr_userDT As screen:
         Height: =32
         Width: =320
         X: =267
-        Y: =36
+        Y: =82
         ZIndex: =5
 
     Label8 As label:
@@ -247,8 +247,8 @@ scr_userDT As screen:
         Text: |-
             ="Filter By Employee Name: "
         Width: =226
-        X: =46
-        Y: =36
+        X: =41
+        Y: =82
         ZIndex: =6
 
     drp_rating As Dropdown.pcfdataset:
@@ -257,8 +257,8 @@ scr_userDT As screen:
         Height: =32
         Items: =[0,1,2,3,4,5]
         Width: =55
-        X: =845
-        Y: =36
+        X: =853
+        Y: =82
         ZIndex: =7
 
     Label8_1 As label:
@@ -271,7 +271,7 @@ scr_userDT As screen:
         Text: |-
             ="Filter By Manager Rating: "
         Width: =226
-        X: =630
-        Y: =36
+        X: =640
+        Y: =82
         ZIndex: =8
 
