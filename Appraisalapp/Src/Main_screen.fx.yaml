@@ -1,6 +1,6 @@
 Main_screen As screen:
     BackgroundImage: =picccs
-    Fill: =RGBA(152, 208, 70, 1)
+    Fill: =RGBA(0, 0, 0, 0)
     ImagePosition: =ImagePosition.Stretch
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 

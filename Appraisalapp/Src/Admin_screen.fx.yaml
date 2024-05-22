@@ -7,7 +7,7 @@ Admin_screen As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =604
+        Height: =618
         Items: =SortByColumns(Search(AppraisalUserList,TextInput1.Text, Name,Title), "Name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -282,7 +282,7 @@ Admin_screen As screen:
 
             DataCardKey37 As label:
                 AutoHeight: =true
-                Color: =RGBA(1, 89, 27, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
@@ -297,7 +297,7 @@ Admin_screen As screen:
             DataCardValue37 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 92, 29, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -329,7 +329,7 @@ Admin_screen As screen:
 
             DataCardKey38 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 110, 33, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
@@ -344,7 +344,7 @@ Admin_screen As screen:
             DataCardValue38 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 112, 48, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -376,7 +376,7 @@ Admin_screen As screen:
 
             DataCardKey39 As label:
                 AutoHeight: =true
-                Color: =RGBA(3, 102, 21, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -392,7 +392,7 @@ Admin_screen As screen:
             DataCardValue39 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 99, 8, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -424,7 +424,7 @@ Admin_screen As screen:
 
             DataCardKey40 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 110, 34, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -440,7 +440,7 @@ Admin_screen As screen:
             DataCardValue40 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(3, 102, 33, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -472,7 +472,7 @@ Admin_screen As screen:
 
             DataCardKey41 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 107, 41, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -488,7 +488,7 @@ Admin_screen As screen:
             DataCardValue41 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 102, 47, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -520,7 +520,7 @@ Admin_screen As screen:
 
             DataCardKey42 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 105, 45, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -535,7 +535,7 @@ Admin_screen As screen:
             DataCardValue42 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 87, 31, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -567,7 +567,7 @@ Admin_screen As screen:
 
             DataCardKey43 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 94, 30, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -582,7 +582,7 @@ Admin_screen As screen:
             DataCardValue43 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(3, 102, 38, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -614,7 +614,7 @@ Admin_screen As screen:
 
             DataCardKey44 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 115, 49, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -630,7 +630,7 @@ Admin_screen As screen:
             DataCardValue44 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 102, 47, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -664,7 +664,7 @@ Admin_screen As screen:
 
             DataCardKey45 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 107, 39, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -679,7 +679,7 @@ Admin_screen As screen:
             DataCardValue45 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(1, 105, 23, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -711,7 +711,7 @@ Admin_screen As screen:
 
             DataCardKey46 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 94, 16, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -726,7 +726,7 @@ Admin_screen As screen:
             DataCardValue46 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 89, 38, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -758,7 +758,7 @@ Admin_screen As screen:
 
             DataCardKey47 As label:
                 AutoHeight: =true
-                Color: =RGBA(3, 97, 31, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -774,7 +774,7 @@ Admin_screen As screen:
             DataCardValue47 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 94, 22, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -806,7 +806,7 @@ Admin_screen As screen:
 
             DataCardKey48 As label:
                 AutoHeight: =true
-                Color: =RGBA(3, 92, 34, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -822,7 +822,7 @@ Admin_screen As screen:
             DataCardValue48 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 92, 41, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -854,7 +854,7 @@ Admin_screen As screen:
 
             DataCardKey49 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 110, 47, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -870,7 +870,7 @@ Admin_screen As screen:
             DataCardValue49 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 107, 27, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -902,7 +902,7 @@ Admin_screen As screen:
 
             DataCardKey50 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 102, 29, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -918,7 +918,7 @@ Admin_screen As screen:
             DataCardValue50 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 102, 42, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -950,7 +950,7 @@ Admin_screen As screen:
 
             DataCardKey51 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 115, 34, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -966,7 +966,7 @@ Admin_screen As screen:
             DataCardValue51 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(1, 110, 48, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -998,7 +998,7 @@ Admin_screen As screen:
 
             DataCardKey52 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 107, 53, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1014,7 +1014,7 @@ Admin_screen As screen:
             DataCardValue52 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 94, 34, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -1046,7 +1046,7 @@ Admin_screen As screen:
 
             DataCardKey53 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 102, 44, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1062,7 +1062,7 @@ Admin_screen As screen:
             DataCardValue53 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 102, 19, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -1094,7 +1094,7 @@ Admin_screen As screen:
 
             DataCardKey54 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 115, 19, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1110,7 +1110,7 @@ Admin_screen As screen:
             DataCardValue54 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 125, 41, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
@@ -1142,7 +1142,7 @@ Admin_screen As screen:
 
             DataCardKey55 As label:
                 AutoHeight: =true
-                Color: =RGBA(2, 115, 51, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
@@ -1158,7 +1158,7 @@ Admin_screen As screen:
             DataCardValue55 As label:
                 AutoHeight: =true
                 BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(2, 117, 44, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 Font: =App.Theme.Font
