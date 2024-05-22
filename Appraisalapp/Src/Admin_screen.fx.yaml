@@ -1522,6 +1522,7 @@ Admin_screen As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =61
         Icon: =Icon.DetailList
+        OnSelect: =Navigate(scr_userDT)
         Width: =37
         X: =21
         Y: =151
@@ -1534,6 +1535,7 @@ Admin_screen As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =61
         Icon: =Icon.Home
+        OnSelect: =Navigate(Admin_screen)
         Width: =40
         X: =16
         Y: =68
@@ -1546,6 +1548,7 @@ Admin_screen As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =71
         Icon: =Icon.Trending
+        OnSelect: =Navigate(scr_powerBI)
         Width: =37
         X: =21
         Y: =212
