@@ -18,7 +18,7 @@ scr_userDT As screen:
         HeadingFont: =App.Theme.Font
         HeadingFontWeight: =FontWeight.Normal
         HeadingSize: =13
-        Height: =571
+        Height: =572
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter80
         InputFill: =RGBA(255, 255, 255, 1)
@@ -98,8 +98,8 @@ scr_userDT As screen:
         SelectedColor: =RGBA(0, 0, 0, 1)
         SelectedFill: =RGBA(166, 215, 153, 1)
         Size: =13
-        Width: =1329
-        X: =15
+        Width: =1245
+        X: =100
         Y: =129
         ZIndex: =1
 
@@ -174,6 +174,7 @@ scr_userDT As screen:
             ZIndex: =29
 
         EmployeeId_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =true
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="EmployeeId"
             FieldName: ="EmployeeId"
@@ -233,7 +234,7 @@ scr_userDT As screen:
         FontColor: =
         Height: =32
         Width: =320
-        X: =267
+        X: =430
         Y: =82
         ZIndex: =5
 
@@ -247,7 +248,7 @@ scr_userDT As screen:
         Text: |-
             ="Filter By Employee Name: "
         Width: =226
-        X: =41
+        X: =213
         Y: =82
         ZIndex: =6
 
@@ -257,7 +258,7 @@ scr_userDT As screen:
         Height: =32
         Items: =[0,1,2,3,4,5]
         Width: =55
-        X: =853
+        X: =1037
         Y: =82
         ZIndex: =7
 
@@ -271,7 +272,130 @@ scr_userDT As screen:
         Text: |-
             ="Filter By Manager Rating: "
         Width: =226
-        X: =640
-        Y: =82
+        X: =826
+        Y: =79
         ZIndex: =8
+
+    Rectangle3 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(21, 68, 18, 1)
+        Height: =68
+        Width: =1366
+        ZIndex: =9
+
+    Image7 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =46
+        Image: ='logo-colour-1_5'
+        Width: =120
+        X: =70
+        Y: =7
+        ZIndex: =11
+
+    Label9 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =68
+        Size: =20
+        Text: ="Performance List"
+        Width: =974
+        X: =210
+        ZIndex: =12
+
+    Button4_2 As button:
+        BorderColor: =App.Theme.Colors.Primary
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(0, 134, 208, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(5, 117, 48, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =29
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
+        OnSelect: =Exit(true)
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =15
+        Text: ="Logout"
+        Width: =139
+        X: =1196
+        Y: =17
+        ZIndex: =13
+
+    Container1_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(21, 68, 18, 1)
+        Height: =711
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =80
+        Y: =57
+        ZIndex: =14
+
+        Icon7_1 As icon.DetailList:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =61
+            Icon: =Icon.DetailList
+            OnSelect: =Navigate(scr_userDT)
+            Width: =37
+            X: =21
+            Y: =99
+            ZIndex: =1
+
+        Icon8_1 As icon.Home:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =61
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Admin_screen)
+            Width: =40
+            X: =16
+            Y: =16
+            ZIndex: =2
+
+        Icon9_1 As icon.Trending:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =71
+            Icon: =Icon.Trending
+            OnSelect: =Navigate(scr_powerBI)
+            Width: =37
+            X: =21
+            Y: =160
+            ZIndex: =3
+
+    Icon1_3 As icon.ChevronLeft:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =61
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Navigate(Main_screen)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =36
+        X: =11
+        Y: =7
+        ZIndex: =15
 
