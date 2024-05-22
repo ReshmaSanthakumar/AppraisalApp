@@ -279,7 +279,7 @@ scr_userDT As screen:
     Rectangle3 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =RGBA(21, 68, 18, 1)
-        Height: =68
+        Height: =57
         Width: =1366
         ZIndex: =9
 
@@ -287,10 +287,10 @@ scr_userDT As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =46
+        Height: =39
         Image: ='logo-colour-1_5'
-        Width: =120
-        X: =70
+        Width: =107
+        X: =80
         Y: =7
         ZIndex: =11
 
@@ -301,7 +301,7 @@ scr_userDT As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =68
+        Height: =57
         Size: =20
         Text: ="Performance List"
         Width: =974
@@ -336,13 +336,13 @@ scr_userDT As screen:
     Container1_1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(21, 68, 18, 1)
-        Height: =711
+        Height: =722
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =80
-        Y: =57
+        Width: =63
+        Y: =46
         ZIndex: =14
 
         Icon7_1 As icon.DetailList:
@@ -350,12 +350,12 @@ scr_userDT As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =61
+            Height: =58
             Icon: =Icon.DetailList
             OnSelect: =Navigate(scr_userDT)
-            Width: =37
+            Width: =28
             X: =21
-            Y: =99
+            Y: =102
             ZIndex: =1
 
         Icon8_1 As icon.Home:
@@ -363,12 +363,12 @@ scr_userDT As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =61
+            Height: =58
             Icon: =Icon.Home
             OnSelect: =Navigate(Admin_screen)
-            Width: =40
+            Width: =31
             X: =16
-            Y: =16
+            Y: =20
             ZIndex: =2
 
         Icon9_1 As icon.Trending:
@@ -376,12 +376,12 @@ scr_userDT As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =71
+            Height: =67
             Icon: =Icon.Trending
             OnSelect: =Navigate(scr_powerBI)
-            Width: =37
+            Width: =28
             X: =21
-            Y: =160
+            Y: =163
             ZIndex: =3
 
     Icon1_3 As icon.ChevronLeft:
@@ -389,13 +389,13 @@ scr_userDT As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =61
+        Height: =50
         Icon: =Icon.ChevronLeft
         OnSelect: =Navigate(Main_screen)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =36
-        X: =11
+        Width: =33
+        X: =13
         Y: =7
         ZIndex: =15
 
