@@ -3122,7 +3122,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Rate the Employee_Column1": {
+    "RatetheEmployee_Column1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "FieldName",
@@ -3147,7 +3147,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Rate the Employee_Column1",
+      "Name": "RatetheEmployee_Column1",
       "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,

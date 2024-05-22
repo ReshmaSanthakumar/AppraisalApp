@@ -73,6 +73,7 @@
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(3, 102, 34, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
             Height: =56

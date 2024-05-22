@@ -61,11 +61,11 @@ scr_userDT As screen:
                 And(txt_ip.Text="",drp_rating.Selected.Value<>0), //3. Rating filter only
                 If(varPageNumber=1,
                     Sort(
-                    FirstN(Filter(col1,(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
+                    FirstN(Filter(col1,(drp_rating.Selected.Value = ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
                         )
                     ,
                     Sort(LastN(
-                        FirstN(Filter(col1,(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),
+                        FirstN(Filter(col1,(drp_rating.Selected.Value = ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),
                         If( CountRows(Filter(col1,(txt_ip.Text in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)
                             drp_row_limit.Selected.Value * 1,
                             drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
@@ -77,11 +77,11 @@ scr_userDT As screen:
                 And(txt_ip.Text<>"",drp_rating.Selected.Value<>0), //4. Name and Rating filters
                 If(varPageNumber=1,
                     Sort(
-                    FirstN(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
+                    FirstN(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(drp_rating.Selected.Value = ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),'Rate the Employee',SortOrder.Descending
                         )
                     ,
                     Sort(LastN(
-                        FirstN(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(drp_rating.Selected.Value in ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),
+                        FirstN(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(drp_rating.Selected.Value = ThisRecord.'Rate the Employee')),drp_row_limit.Selected.Value * varPageNumber),
                         If( CountRows(Filter(Filter(col1,(txt_ip.Text in ThisRecord.Name)),(txt_ip.Text in ThisRecord.Name))) > drp_row_limit.Selected.Value * varPageNumber, 
                             drp_row_limit.Selected.Value * 1,
                             drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)
@@ -149,20 +149,6 @@ scr_userDT As screen:
             Y: =0
             ZIndex: =2
 
-        "'Rate the Employee_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Rate the Employee"
-            FieldName: ="RatetheEmployee"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =30
-            Text: =ThisItem.'Rate the Employee'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =27
-
         JeevanReportingManagerName_Column1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="JeevanReportingManagerName"
@@ -205,6 +191,20 @@ scr_userDT As screen:
             X: =0
             Y: =0
             ZIndex: =30
+
+        RatetheEmployee_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="RatetheEmployee"
+            FieldName: ="RatetheEmployee"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =30
+            Text: =ThisItem.RatetheEmployee
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =31
 
     drp_row_limit As Dropdown.pcfdataset:
         DefaultSelectedItems: =["10"]
