@@ -2,6 +2,7 @@ Admin_screen As screen:
     BackgroundImage: =
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =Set(col1,AppraisalUserList)
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         BorderThickness: =1
