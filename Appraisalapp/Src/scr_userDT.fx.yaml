@@ -157,7 +157,7 @@ scr_userDT As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =29
-            Text: =ThisItem.JeevanReportingManagerName
+            Text: =ThisItem.'Jeevan Reporting Manager Name'
             Width: =100
             X: =0
             Y: =0
@@ -171,7 +171,7 @@ scr_userDT As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =28
-            Text: =ThisItem.Team
+            Text: =Concat(ThisItem.Team,ThisRecord.Value,",")
             Width: =100
             X: =0
             Y: =0
@@ -186,7 +186,7 @@ scr_userDT As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =1
-            Text: =ThisItem.EmployeeId
+            Text: =ThisItem.'Employee Id'
             Width: =100
             X: =0
             Y: =0
@@ -200,7 +200,7 @@ scr_userDT As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =30
-            Text: =ThisItem.RatetheEmployee
+            Text: =ThisItem.'Rate the Employee'
             Width: =100
             X: =0
             Y: =0

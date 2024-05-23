@@ -8,11 +8,10 @@ Admin_screen As screen:
         If( varCat="Team Lead",
             Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
-                Set(colRoleTable,Filter(AppraisalUserList,varAdminTeam in ThisRecord.Team ))
+                Set(colRoleTable,Filter(AppraisalUserList,varAdminTeam in Concat(AppraisalUserList,Team,","))
             )
             
-            
-            );
+           );
         
          
          Set(col1,colRoleTable)
@@ -237,7 +236,7 @@ Admin_screen As screen:
             DataField: ="RatetheEmployee"
             Default: =ThisItem.'Rate the Employee'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,RatetheEmployee)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate the Employee')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false

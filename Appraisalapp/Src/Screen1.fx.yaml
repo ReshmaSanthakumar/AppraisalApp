@@ -26,3 +26,26 @@ Screen1 As screen:
         Y: =260
         ZIndex: =2
 
+    Table1 As Table.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+        Items: =Filter(AppraisalUserList,"resh" in Title && "Rpa" in Team.Value)
+        onCellValueChange: =false
+        onFilter: =false
+        onNavigate: =false
+        onRowSelect: =false
+        onSave: =false
+        OnSelect: =false
+        Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+        X: =462
+        Y: =213
+        ZIndex: =4
+
+        Team1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Team"
+            FieldName: ="Team"
+            FieldType: ="E"
+            FieldVariantName: ="textualColumn"
+            Order: =25
+            ZIndex: =25
+

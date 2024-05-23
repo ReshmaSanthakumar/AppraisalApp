@@ -20,10 +20,10 @@ Feedback_Screen As screen:
             DataField: ="RatetheEmployee"
             Default: =ThisItem.'Rate the Employee'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,RatetheEmployee)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate the Employee')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =139
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, RatetheEmployee)
+            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Rate the Employee')
             Required: =false
             Update: =Rating1.Value
             Width: =1224
