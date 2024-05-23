@@ -29,13 +29,14 @@ App As appinfo:
             If( varCat="Team Lead",
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
-                    Set(colRoleTable, Filter(AppraisalUserList,varAdminTeam in Concat(Choices(AppraisalUserList.Team),Value,",") ))//Concat(ThisRecord.Team,Value,","))
-            )
+                    Set(colRoleTable, Filter(AppraisalUserList,varAdminTeam in Choices(AppraisalUserList.Team) ))
+                    //Concat(ThisRecord.Team,Value,","))
+            
             ,
             If( varCat="Super Admin",
                     Set(colRoleTable,AppraisalUserList)
                 )
-            )
+            ))
         );
         If(is_admin,Set(col1,colRoleTable))
     StartScreen: =Main_screen
