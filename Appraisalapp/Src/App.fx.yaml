@@ -1,11 +1,12 @@
 App As appinfo:
     BackEnabled: =true
     OnStart: |-
-        =If(
+        =Set(varEmail,User().Email);
+        If(
             Not(IsBlank(
                 LookUp( AppraisalAdminList,
                    
-                    Title = User().Email
+                    Title = varEmail
                 )
             )),
             Set(
@@ -17,6 +18,7 @@ App As appinfo:
                 false
             )
         );
+        Set(varCat,LookUp(AppraisalAdminList,Title = User().Email).Category)
     StartScreen: =Main_screen
     Theme: =PowerAppsTheme
 

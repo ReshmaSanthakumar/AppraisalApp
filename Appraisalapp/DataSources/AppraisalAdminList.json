@@ -25,6 +25,8 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "Category": "Category",
+      "Category#Id": "Category Id",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "Editor": "Modified By",
@@ -32,6 +34,9 @@
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
+      "Team": "Team",
+      "Team#Id": "Team Id",
+      "Team@odata.type": "Team (Team@odata.type)",
       "Title": "Title"
     },
     "DatasetName": "https://jeevanportal.sharepoint.com/sites/PowerAppsProjects",
