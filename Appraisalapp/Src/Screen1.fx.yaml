@@ -1,0 +1,28 @@
+Screen1 As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    Label10 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =13
+        Text: =If("rpa" in Concat(LookUp(AppraisalAdminList, "sharmila.chandrasekaran@jeevantechnologies.com" in Title).Team,Value," "),"Resh  True"," Resh False")
+        Width: =382
+        X: =269
+        Y: =158
+        ZIndex: =1
+
+    Label10_1 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Size: =13
+        Text: =Concat(LookUp(AppraisalAdminList, "Reshma" in Title).Team,Value," ")
+        Width: =417
+        X: =180
+        Y: =260
+        ZIndex: =2
+
