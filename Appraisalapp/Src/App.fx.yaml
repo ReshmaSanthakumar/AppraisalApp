@@ -29,7 +29,7 @@ App As appinfo:
             If( varCat="Team Lead",
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
-                    Set(colRoleTable, Filter(AppraisalUserList,varAdminTeam in Choices(AppraisalUserList.Team) ))
+                    Set(colRoleTable, Filter(AppraisalUserList, "Rpa" in ThisRecord.Team ))
                     //Concat(ThisRecord.Team,Value,","))
             
             ,
