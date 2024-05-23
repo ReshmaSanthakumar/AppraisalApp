@@ -108,8 +108,7 @@ Admin_screen As screen:
             Text: |-
                 ="Status:"
             Width: =86
-            X: =4
-            Y: =81
+            Y: =62
             ZIndex: =6
 
         Label12 As label:
@@ -127,7 +126,7 @@ Admin_screen As screen:
                     "Pending","Reviewed"
                 )
             X: =61
-            Y: =81
+            Y: =62
             ZIndex: =7
 
     Label1_2 As label:
