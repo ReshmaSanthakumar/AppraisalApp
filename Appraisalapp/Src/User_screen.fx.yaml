@@ -195,7 +195,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =32
-                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -212,7 +212,7 @@ User_screen As screen:
                     =If(
                         Not(IsBlank(DataCardValue110.Value)) && IsMatch(
                             DataCardValue110.Value,
-                           Match.MultipleDigits
+                           Match.OptionalDigits
                         ),
                         "Enter the Name properly"
                     )
