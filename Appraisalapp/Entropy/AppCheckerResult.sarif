@@ -23,6 +23,43 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 1,
+                  "charOffset": 1105,
+                  "snippet": {
+                    "text": ")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnStart",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadToken",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.OnStart"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.OnStart",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 2,
                   "charOffset": 482,
                   "snippet": {
@@ -47,7 +84,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -87,7 +124,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -127,7 +164,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -167,7 +204,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-InOpRhs",
-          "ruleIndex": 1
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -208,7 +245,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -248,7 +285,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -289,7 +326,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrArgNotApplicableToColumnArg2-Arg1-Arg2",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -329,7 +366,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -370,7 +407,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -410,7 +447,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -450,7 +487,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -490,7 +527,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -530,7 +567,4211 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 131,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 124,
+                  "snippet": {
+                    "text": "FirstN"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "FirstN"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 57,
+                  "charOffset": 124,
+                  "snippet": {
+                    "text": "FirstN(col1,drp_row_limit.Selected.Value * varPageNumber)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 105,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 182,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 296,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 289,
+                  "snippet": {
+                    "text": "FirstN"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "FirstN"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 387,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 377,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 616,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 606,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 270,
+                  "snippet": {
+                    "text": "LastN"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LastN"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 57,
+                  "charOffset": 289,
+                  "snippet": {
+                    "text": "FirstN(col1,drp_row_limit.Selected.Value * varPageNumber)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Table",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 437,
+                  "charOffset": 270,
+                  "snippet": {
+                    "text": "LastN(\n            FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),\n            If\n            ( CountRows(col1) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)\n                drp_row_limit.Selected.Value * 1,\n                drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)\n                                                    )\n            )\n                )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 251,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 709,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 914,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 907,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 935,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 945,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 999,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 886,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 1110,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1103,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 1131,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 1141,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 1229,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1222,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 1250,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 1260,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 1492,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 1482,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 1584,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 1072,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 1784,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 1777,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 1818,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 1828,
+                  "snippet": {
+                    "text": ".'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1816,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 1897,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 1756,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 2008,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 2001,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 2042,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 2052,
+                  "snippet": {
+                    "text": ".'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 2040,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 2155,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 2148,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 2176,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 2186,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 2418,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 2408,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 2510,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 1970,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 2723,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 2716,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 2744,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 2754,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 2801,
+                  "snippet": {
+                    "text": ".'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 2789,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 2870,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 2688,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 2988,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 2981,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 3009,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 3019,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 3066,
+                  "snippet": {
+                    "text": ".'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 3054,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 3176,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 3169,
+                  "snippet": {
+                    "text": "Filter"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 3197,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 3207,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 3241,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 3456,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 3446,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 3548,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 2943,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 3705,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 3698,
+                  "snippet": {
+                    "text": "FirstN"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "FirstN"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 57,
+                  "charOffset": 3698,
+                  "snippet": {
+                    "text": "FirstN(col1,drp_row_limit.Selected.Value * varPageNumber)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 3679,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 3756,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 3870,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 3863,
+                  "snippet": {
+                    "text": "FirstN"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "FirstN"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 3961,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 3951,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 4190,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 4180,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 3844,
+                  "snippet": {
+                    "text": "LastN"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LastN"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 57,
+                  "charOffset": 3863,
+                  "snippet": {
+                    "text": "FirstN(col1,drp_row_limit.Selected.Value * varPageNumber)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Table",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 437,
+                  "charOffset": 3844,
+                  "snippet": {
+                    "text": "LastN(\n            FirstN(col1,drp_row_limit.Selected.Value * varPageNumber),\n            If\n            ( CountRows(col1) > drp_row_limit.Selected.Value * varPageNumber, //CountRows(col1)\n                drp_row_limit.Selected.Value * 1,\n                drp_row_limit.Selected.Value * 1 - (drp_row_limit.Selected.Value*varPageNumber - CountRows(col1)\n                                                    )\n            )\n                )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 3825,
+                  "snippet": {
+                    "text": "Sort"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 4283,
+                  "snippet": {
+                    "text": "'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.EmployeeId_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.EmployeeId_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Employee Id'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.EmployeeId_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Title_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Title_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Title"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.Title_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Title"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Name_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Name_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.Name_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 15,
+                  "snippet": {
+                    "text": ".Team"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.Team_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Team"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Concat"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.Team_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Concat"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 21,
+                  "snippet": {
+                    "text": "ThisRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.Team_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.Team_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.Team_Column1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.JeevanReportingManagerName_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.JeevanReportingManagerName_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 32,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Jeevan Reporting Manager Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.JeevanReportingManagerName_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Jeevan Reporting Manager Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.RatetheEmployee_Column1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.DataTable1.RatetheEmployee_Column1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Rate the Employee'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "scr_userDT",
+                "type": "scr_userDT.DataTable1.RatetheEmployee_Column1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Rate the Employee"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.Icon2.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.Icon2.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 56,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "scr_userDT",
+                "type": "scr_userDT.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.Icon2.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.Icon2.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 46,
+                  "snippet": {
+                    "text": "CountRows"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "scr_userDT",
+                "type": "scr_userDT.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.tmr_delay.OnTimerEnd"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.tmr_delay.OnTimerEnd",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 35,
+                  "snippet": {
+                    "text": "col1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnTimerEnd",
+                "module": "scr_userDT",
+                "type": "scr_userDT.tmr_delay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "col1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "scr_userDT.tmr_delay.OnTimerEnd"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "scr_userDT.tmr_delay.OnTimerEnd",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 27,
+                  "snippet": {
+                    "text": "Refresh"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnTimerEnd",
+                "module": "scr_userDT",
+                "type": "scr_userDT.tmr_delay"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Refresh"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -571,7 +4812,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -612,7 +4853,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrArgNotApplicableToColumnArg2-Arg1-Arg2",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -652,7 +4893,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 5
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -693,7 +4934,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -723,7 +4964,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -753,7 +4994,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -783,7 +5024,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -813,7 +5054,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -843,7 +5084,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -873,7 +5114,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -903,7 +5144,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -933,7 +5174,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -963,7 +5204,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -993,7 +5234,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1023,7 +5264,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1053,7 +5294,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1083,7 +5324,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1113,7 +5354,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1143,7 +5384,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1173,7 +5414,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1203,7 +5444,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1233,7 +5474,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1263,7 +5504,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1293,7 +5534,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1323,7 +5564,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1353,7 +5594,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1383,7 +5624,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1413,7 +5654,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1443,7 +5684,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1472,7 +5713,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 14
         },
         {
           "locations": [
@@ -1502,7 +5743,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1532,7 +5773,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1562,7 +5803,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1592,7 +5833,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1622,7 +5863,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1652,7 +5893,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1682,7 +5923,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1712,7 +5953,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1742,7 +5983,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1772,7 +6013,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1802,7 +6043,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1832,7 +6073,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1862,7 +6103,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1892,7 +6133,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1922,7 +6163,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1952,7 +6193,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1982,7 +6223,37 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.colRoleTable"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.colRoleTable",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "colRoleTable",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 15
         },
         {
           "locations": [
@@ -2012,7 +6283,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2042,7 +6313,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2072,7 +6343,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2102,7 +6373,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2132,7 +6403,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2162,7 +6433,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2192,7 +6463,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2222,7 +6493,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2252,7 +6523,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2282,7 +6553,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 16
         },
         {
           "locations": [
@@ -2312,7 +6583,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 11
+          "ruleIndex": 17
         }
       ],
       "tool": {
@@ -2320,6 +6591,23 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-ErrBadToken",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or replace the unexpected characters."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
@@ -2418,6 +6706,83 @@
               },
               "properties": {
                 "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadType",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid argument type."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadType-ExpectedType-ProvidedType",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid argument type ({1}). Expecting a {0} value instead."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
+                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
