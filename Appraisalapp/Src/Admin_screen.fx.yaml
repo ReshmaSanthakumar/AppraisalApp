@@ -2,19 +2,7 @@ Admin_screen As screen:
     BackgroundImage: =
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: |-
-        =
-        
-        If( varCat="Team Lead",
-            Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
-            If( varCat="Manager",
-                Set(colRoleTable,Filter(AppraisalUserList,varAdminTeam in Concat(AppraisalUserList,Team,","))
-            )
-            )
-            );
-        
-         
-         Set(col1,colRoleTable)
+    OnVisible: =
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         BorderThickness: =1

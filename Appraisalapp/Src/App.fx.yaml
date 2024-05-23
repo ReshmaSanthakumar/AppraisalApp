@@ -27,13 +27,17 @@ App As appinfo:
             );
         If(is_admin,
             If( varCat="Team Lead",
-            Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
+                    Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
-                Set(colRoleTable,Filter(AppraisalUserList,varAdminTeam in Concat(ThisRecord.Team,Value,","))
+                     Set(colRoleTable,Filter(AppraisalUserList,varAdminTeam in Concat(ThisRecord.Team,Value,","))
             )
-            )
-            )
-        )
+            ,
+            If( varCat="Super Admin",
+                    Set(colRoleTable,AppraisalUserList)
+                )
+            ))
+        );
+        If(is_admin,Set(col1,colRoleTable))
     StartScreen: =Main_screen
     Theme: =PowerAppsTheme
 
