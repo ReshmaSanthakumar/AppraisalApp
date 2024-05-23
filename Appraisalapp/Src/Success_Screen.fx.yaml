@@ -5,7 +5,7 @@
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     Button4_1 As button:
-        BorderColor: =App.Theme.Colors.Primary
+        BorderColor: =RGBA(72, 163, 62, 1)
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -13,15 +13,15 @@
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =32
-        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =App.Theme.Colors.Darker10
+        HoverFill: =RGBA(72, 163, 62, 1)
         OnSelect: =Exit(true)
         PaddingRight: =5.00
         PaddingTop: =5.00
-        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedBorderColor: =RGBA(72, 163, 62, 1)
         PressedColor: =Self.Color
-        PressedFill: =App.Theme.Colors.Darker40
+        PressedFill: =RGBA(72, 163, 62, 1)
         Size: =15
         Text: ="Logout"
         Width: =137

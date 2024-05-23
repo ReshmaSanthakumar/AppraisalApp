@@ -102,6 +102,7 @@ Admin_screen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
         Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
@@ -113,7 +114,7 @@ Admin_screen As screen:
         ZIndex: =2
 
     Button3 As button:
-        BorderColor: =App.Theme.Colors.Primary
+        BorderColor: =RGBA(72, 163, 62, 1)
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -121,15 +122,15 @@ Admin_screen As screen:
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =28
-        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =App.Theme.Colors.Darker10
+        HoverFill: =RGBA(72, 163, 62, 1)
         OnSelect: =Navigate(Feedback_Screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
-        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedBorderColor: =RGBA(72, 163, 62, 1)
         PressedColor: =Self.Color
-        PressedFill: =App.Theme.Colors.Darker40
+        PressedFill: =RGBA(72, 163, 62, 1)
         Size: =15
         Text: ="Add Feedback"
         Width: =176
@@ -1512,7 +1513,7 @@ Admin_screen As screen:
                 ZIndex: =2
 
     Button4 As button:
-        BorderColor: =App.Theme.Colors.Primary
+        BorderColor: =RGBA(72, 163, 62, 1)
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1520,15 +1521,15 @@ Admin_screen As screen:
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =29
-        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =App.Theme.Colors.Darker10
+        HoverFill: =RGBA(72, 163, 62, 1)
         OnSelect: =Exit(true)
         PaddingRight: =5.00
         PaddingTop: =5.00
-        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedBorderColor: =RGBA(72, 163, 62, 1)
         PressedColor: =Self.Color
-        PressedFill: =App.Theme.Colors.Darker40
+        PressedFill: =RGBA(72, 163, 62, 1)
         Size: =15
         Text: ="Logout"
         Width: =139

@@ -209,6 +209,7 @@ Feedback_Screen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
         Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
@@ -220,7 +221,7 @@ Feedback_Screen As screen:
         ZIndex: =2
 
     Button3_1 As button:
-        BorderColor: =App.Theme.Colors.Primary
+        BorderColor: =RGBA(72, 163, 62, 1)
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -228,15 +229,15 @@ Feedback_Screen As screen:
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =36
-        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =App.Theme.Colors.Darker10
+        HoverFill: =RGBA(72, 163, 62, 1)
         OnSelect: =SubmitForm(Form2);Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
-        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedBorderColor: =RGBA(72, 163, 62, 1)
         PressedColor: =Self.Color
-        PressedFill: =App.Theme.Colors.Darker40
+        PressedFill: =RGBA(72, 163, 62, 1)
         Size: =15
         Text: ="Submit Feedback"
         Width: =196
