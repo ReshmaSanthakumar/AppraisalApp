@@ -35,7 +35,7 @@ App As appinfo:
             If( varCat="Super Admin",
                     Set(colRoleTable,AppraisalUserList)
                 )
-            ))
+            )
         );
         If(is_admin,Set(col1,colRoleTable))
     StartScreen: =Main_screen
