@@ -14,8 +14,8 @@ Admin_screen As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: =If(ThisItem.IsSelected,ColorFade(RGBA(209,232,178,1),-30%),RGBA(0, 0, 0, 0))
         TemplatePadding: =0
-        TemplateSize: =90
-        Width: =327
+        TemplateSize: =111
+        Width: =339
         X: =89
         Y: =137
         ZIndex: =1
@@ -25,7 +25,7 @@ Admin_screen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =25
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -33,9 +33,9 @@ Admin_screen As screen:
             PaddingTop: =0.00
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
-            Width: =395.00
-            X: =16.01
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+            Width: =323
+            X: =4
+            Y: =19
             ZIndex: =1
 
         Subtitle2 As label:
@@ -43,7 +43,7 @@ Admin_screen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =36
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -52,8 +52,8 @@ Admin_screen As screen:
             Size: =12
             Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
-            Width: =395.00
-            X: =16.01
+            Width: =323
+            X: =4
             Y: =Title2.Y + Title2.Height
             ZIndex: =2
 
@@ -95,6 +95,40 @@ Admin_screen As screen:
             Width: =4.00
             X: =0.00
             ZIndex: =5
+
+        Label11 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =22
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                ="Status:"
+            Width: =86
+            X: =4
+            Y: =81
+            ZIndex: =6
+
+        Label12 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: |-
+                =If(
+                    IsBlank(ThisItem.'Reporting Manager Feedback '),
+                    "Pending","Reviewed"
+                )
+            X: =61
+            Y: =81
+            ZIndex: =7
 
     Label1_2 As label:
         Align: =Align.Center
