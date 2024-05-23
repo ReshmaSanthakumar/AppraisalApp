@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |-
         =Set(varEmail,User().Email);// User's Email
         If(
             Not(IsBlank(
@@ -25,6 +25,15 @@ App As appinfo:
             // Admin's Teams list seperated by comma
             Set(varAdminTeam,Concat(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,","))
             );
+        If(is_admin,
+            If( varCat="Team Lead",
+            Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
+            If( varCat="Manager",
+                Set(colRoleTable,Filter(AppraisalUserList,varAdminTeam in Concat(ThisRecord.Team,Value,","))
+            )
+            )
+            )
+        )
     StartScreen: =Main_screen
     Theme: =PowerAppsTheme
 

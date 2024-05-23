@@ -10,8 +10,8 @@ Admin_screen As screen:
             If( varCat="Manager",
                 Set(colRoleTable,Filter(AppraisalUserList,varAdminTeam in Concat(AppraisalUserList,Team,","))
             )
-            
-           );
+            )
+            );
         
          
          Set(col1,colRoleTable)
