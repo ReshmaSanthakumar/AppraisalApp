@@ -39,15 +39,3 @@ Screen1 As screen:
         Y: =460
         ZIndex: =3
 
-    Label10_3 As label:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =App.Theme.Font
-        Size: =13
-        Text: =varAdminTeam
-        Width: =417
-        X: =208
-        Y: =360
-        ZIndex: =4
-
