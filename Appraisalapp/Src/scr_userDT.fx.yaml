@@ -393,32 +393,6 @@ scr_userDT As screen:
             Y: =171
             ZIndex: =3
 
-    tmr_delay As timer:
-        AutoPause: =false
-        AutoStart: =true
-        BorderColor: =App.Theme.Colors.Primary
-        DisabledBorderColor: =RGBA(244, 244, 244, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: =DisplayMode.Disabled
-        Duration: =4000
-        Fill: =App.Theme.Colors.Primary
-        Font: =App.Theme.Font
-        Height: =12
-        HoverBorderColor: =App.Theme.Colors.Darker10
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =App.Theme.Colors.Darker10
-        OnTimerEnd: =Refresh(AppraisalUserList);Refresh(col1)
-        PressedBorderColor: =App.Theme.Colors.Darker40
-        PressedColor: =Self.Color
-        PressedFill: =App.Theme.Colors.Darker40
-        Repeat: =true
-        Visible: =false
-        Width: =24
-        X: =100
-        Y: =756
-        ZIndex: =15
-
     txt_ip As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2

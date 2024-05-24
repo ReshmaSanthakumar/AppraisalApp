@@ -34,7 +34,7 @@ App As appinfo:
               //Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") = varAdminTeam);
               //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
               //Set(colRoleTable,AppraisalUserList)
-              Collect(colRoleTable,ForAll(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam))
+              ForAll(AppraisalUserList, Collect(colRoleTable,ForAll(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam)))
               
                 ,
             If( varCat="Super Admin",
