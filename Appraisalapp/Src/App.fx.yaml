@@ -23,8 +23,8 @@ App As appinfo:
             // User's Manager Email
             Set(varManager,LookUp(AppraisalUserList,varEmail in Title).'Jeevan Reporting Manager Name'),
             // Admin's Teams list seperated by comma
-            Set(varAdminTeam,Concat(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,","))
-            //Set(varAdminTeam,LookUp(AppraisalAdminList, varEmail in Title).Team)
+            //Set(varAdminTeam,Concat(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,","))
+            Set(varAdminTeam,LookUp(AppraisalAdminList, varEmail in Title).Team)
             );
         If(is_admin,
             If( varCat="Team Lead",

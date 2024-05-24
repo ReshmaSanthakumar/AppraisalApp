@@ -109,7 +109,7 @@ Screen1 As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =25
-            Text: =Concat(ThisItem.Team,varAdminTeam,",")
+            Text: =Concat(ThisItem.Team,Value,",")
             Width: =100
             X: =0
             Y: =0
