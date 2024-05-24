@@ -31,10 +31,11 @@ App As appinfo:
             If( varCat="Team Lead",
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
-              //Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") = varAdminTeam);
+              //Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam);
               //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
-              //Set(colRoleTable,AppraisalUserList)
-              ForAll(AppraisalUserList, Collect(colRoleTable,ForAll(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam)))
+              Set(varCmp,varAdminTeam&",");
+              Set(colRoleTable,Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varCmp))
+              
               
                 ,
             If( varCat="Super Admin",
