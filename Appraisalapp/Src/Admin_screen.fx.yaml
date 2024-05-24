@@ -9,7 +9,7 @@ Admin_screen As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         Height: =618
-        Items: =SortByColumns(Search(AppraisalUserList,TextInput1.Text, Name,Title), "Name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
+        Items: =SortByColumns(Search(col1,TextInput1.Text, Name,Title), "Name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: =If(ThisItem.IsSelected,ColorFade(RGBA(209,232,178,1),-30%),RGBA(0, 0, 0, 0))
