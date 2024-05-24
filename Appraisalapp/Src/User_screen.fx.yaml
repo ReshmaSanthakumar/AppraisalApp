@@ -56,7 +56,7 @@ User_screen As screen:
         HoverFill: =RGBA(72, 163, 62, 1)
         OnSelect: |-
             =If(
-                IsBlank(DataCardValue109.Value) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue112.Value) || IsBlank(DataCardValue113.Value) || IsBlank(DataCardValue114.Value) || IsBlank(DataCardValue115.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue116.Selected.Value) || IsBlank(DataCardValue117.Value) || IsBlank(DataCardValue118.Value) || IsBlank(DataCardValue119.Selected.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue120.Value) || IsBlank(DataCardValue121.Value) || IsBlank(DataCardValue122.Value) || IsBlank(DataCardValue123.Value) || IsBlank(DataCardValue124.Selected.Value) || IsBlank(DataCardValue125.Value) || IsBlank(DataCardValue126.Value) || IsBlank(DataCardValue127.Value) || IsBlank(DataCardValue128.Selected.Value) || IsBlank(DataCardValue129.Selected.Value) || IsBlank(DataCardValue130.Selected.Value) || IsBlank(DataCardValue131.Selected.Value) || IsBlank(DataCardValue133.Value),
+                IsBlank(DataCardValue109.Value) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue112.Value) || IsBlank(DataCardValue113.Value) || IsBlank(DataCardValue114.Value) || IsBlank(DataCardValue115.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue116.Selected.Value) || IsBlank(DataCardValue117.Value) || IsBlank(DataCardValue118.Value) || IsBlank(DataCardValue119.Selected.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue120.Value) || IsBlank(DataCardValue121.Value) || IsBlank(DataCardValue122.Value) || IsBlank(DataCardValue123.Value) || IsBlank(DataCardValue124.Selected.Value) || IsBlank(DataCardValue125.Value) || IsBlank(DataCardValue126.Value) || IsBlank(DataCardValue127.Value) || IsBlank(DataCardValue128.Selected.Value) || IsBlank(DataCardValue129.Selected.Value) || IsBlank(DataCardValue130.Selected.Value) || IsBlank(DataCardValue131.Selected.Value) || IsBlank(DataCardValue3.Selected.Value),
                 Notify("please Fill all the fields properly"),
                 SubmitForm(Form4);
                 Navigate(Success_Screen)
@@ -83,6 +83,68 @@ User_screen As screen:
         X: =30
         Y: =66
         ZIndex: =21
+
+        Team_DataCard1 As typedDataCard.fluentV9ComboBoxMultiSelectEditCard:
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Team"
+            Default: =ThisItem.Team
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Team)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue3.SelectedItems
+            Width: =435
+            X: =0
+            Y: =8
+            ZIndex: =1
+
+            DataCardKey3 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DefaultSelectedItems: =[Parent.Default]
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Items: =Choices([@AppraisalUserList].Team)
+                SelectMultiple: =true
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 4
+                ZIndex: =2
+
+            ErrorMessage2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =20
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey3.Y
+                ZIndex: =4
 
         Title_DataCard3 As typedDataCard.fluentV9TextualEditCard:
             BorderColor: =App.Theme.Colors.Darker40
@@ -1719,74 +1781,6 @@ User_screen As screen:
                 Width: =30
                 X: =0
                 Y: =DataCardKey132.Y
-                ZIndex: =4
-
-        Team_DataCard5 As typedDataCard.fluentV9TextualEditCard:
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Team"
-            Default: =ThisItem.Team
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Team)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =87
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Team)
-            Required: =false
-            Update: =DataCardValue133.Value
-            Width: =435
-            X: =0
-            Y: =8
-            ZIndex: =22
-
-            DataCardKey133 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue133 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey133.Y + DataCardKey133.Height + 4
-                ZIndex: =2
-
-            ErrorMessage107 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue133.Y + DataCardValue133.Height
-                ZIndex: =3
-
-            StarVisible107 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey133.Y
                 ZIndex: =4
 
     Image4 As image:
