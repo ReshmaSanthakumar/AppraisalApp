@@ -134,46 +134,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.OnStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.OnStart",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 249,
-                  "charOffset": 1329,
-                  "snippet": {
-                    "text": "If(Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\" , \")) <> \"\",\n                                Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\" , \")) in Lower(varAdminTeamStr)\n                                                    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnStart",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen1.Label10.Text"
                 }
               ],
