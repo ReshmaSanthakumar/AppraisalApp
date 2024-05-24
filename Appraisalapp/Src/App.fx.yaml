@@ -25,11 +25,10 @@ App As appinfo:
             Set(varManager,LookUp(AppraisalUserList,varEmail in Title).'Jeevan Reporting Manager Name');
             // Admin's Teams list seperated by comma
             Set(varAdminTeam,Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending));
-            If(CountRows(varAdminTeam)>1,
-                Set(varAdminTeamStr,Concat(varAdminTeam,Value,",")),
-                Set(varAdminTeamStr,Concat(varAdminTeam,Value,""))
+            
+                Set(varAdminTeamStr,Concat(varAdminTeam,Value,","))
                 
-            )
+            
             
             );
         Notify("Your teams are " & varAdminTeamStr,NotificationType.Success,5000);
@@ -41,12 +40,9 @@ App As appinfo:
               //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
               
               //Set(varCmp,varAdminTeam&",");
-              Set(colRoleTable,Filter(AppraisalUserList,If(CountRows(Team)<>0 && CountRows(Team)<>1,
+              Set(colRoleTable,Filter(AppraisalUserList,
                                         Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,",")) in Lower(varAdminTeamStr)
-                                        ),
-                                        If(CountRows(Team)<>0 && CountRows(Team)=1,
-                                        Lower(varAdminTeamStr) in Lower(Concat(Team,Value,""))
-                                        )
+                                       
                                      )
                 ) 
                 ,

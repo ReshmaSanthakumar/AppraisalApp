@@ -45,7 +45,7 @@ Screen1 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
         Size: =13
-        Text: =Concat(["hello"],Value,"")
+        Text: =Concat(["hello"],Value,",")
         Width: =417
         X: =524
         Y: =360
