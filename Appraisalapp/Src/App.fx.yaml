@@ -43,7 +43,7 @@ App As appinfo:
               Set(colCmp,AppraisalUserList);
               Set(colRoleTable,Filter(colCmp, If(Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> "",
                                         Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr)
-                                                            )
+                                                            ),If(CountRows(Team)>1, 'Are you working in more than one team?' = true)
                                      )
                 ) 
                 ,
