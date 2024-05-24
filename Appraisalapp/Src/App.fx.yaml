@@ -26,7 +26,7 @@ App As appinfo:
             Set(varAdminTeam,Concat(Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending),Value,","))
             //Set(varAdminTeam,Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending))
             );
-        Notify("Your tems are " & varAdminTeam);
+        Notify("Your teams are " & varAdminTeam,NotificationType.Success,5000);
         If(is_admin,
             If( varCat="Team Lead",
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
