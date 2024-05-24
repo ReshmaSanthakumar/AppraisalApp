@@ -24,10 +24,14 @@ App As appinfo:
             // User's Manager Email
             Set(varManager,LookUp(AppraisalUserList,varEmail in Title).'Jeevan Reporting Manager Name');
             // Admin's Teams list seperated by comma
-            Set(varAdminTeam,Concat(Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending),Value,","))
-            //Set(varAdminTeam,Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending))
+            Set(varAdminTeam,Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending));
+            If(CountRows(varAdminTeam)=1,
+                Set(varAdminTeamStr,Concat(Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending),Value,",")),
+                Set(varAdminTeamStr,Concat(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,""))
+            )
+            
             );
-        Notify("Your teams are " & varAdminTeam,NotificationType.Success,5000);
+        Notify("Your teams are " & varAdminTeamStr,NotificationType.Success,5000);
         If(is_admin,
             If( varCat="Team Lead",
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
@@ -37,10 +41,10 @@ App As appinfo:
               
               //Set(varCmp,varAdminTeam&",");
               Set(colRoleTable,Filter(AppraisalUserList,If(CountRows(Team)<>0 && CountRows(Team)<>1,
-                                        Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,"")) in Lower(varAdminTeam)
+                                        Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,",")) in Lower(varAdminTeamStr)
                                         ),
                                         If(CountRows(Team)<>0 && CountRows(Team)=1,
-                                        Lower(varAdminTeam) in Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,","))
+                                        Lower(varAdminTeamStr) in Lower(Concat(Team,Value,""))
                                         )
                                      )
                 )
