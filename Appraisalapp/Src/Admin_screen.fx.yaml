@@ -1453,7 +1453,7 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Team"
-            Default: =ThisItem.Team
+            Default: =Concat(ThisItem.Team,Value,",")
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Team)
             Fill: =RGBA(0, 0, 0, 0)

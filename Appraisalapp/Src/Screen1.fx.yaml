@@ -1,13 +1,7 @@
 Screen1 As screen:
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: |-
-        = Set(colUser,AppraisalUserList);
-                    ForAll(
-                        colUser,
-                        Collect(colRoleTable,
-                            Filter(colUser
-                                ,varAdminTeam in ThisRecord.Team )))
+    OnVisible: =
 
     Label10 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -33,26 +27,119 @@ Screen1 As screen:
         Y: =260
         ZIndex: =2
 
-    Table1 As Table.pcfdataset:
+    DataTable2 As dataTable.datatable:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         DisplayMode: =DisplayMode.Edit
-        Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-        Items: =colRoleTable
-        onCellValueChange: =false
-        onFilter: =false
-        onNavigate: =false
-        onRowSelect: =false
-        onSave: =false
-        OnSelect: =false
-        Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
-        X: =462
-        Y: =213
-        ZIndex: =4
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =App.Theme.Colors.Primary
+        HeadingFont: =App.Theme.Font
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =500
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter80
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =Filter(AppraisalUserList,CountRows(Filter(Team, ThisRecord.Value in varAdminTeam))<>0)
+        LinkColor: =App.Theme.Colors.Lighter10
+        PrimaryColor1: =App.Theme.Colors.Primary
+        PrimaryColor2: =App.Theme.Colors.Darker30
+        PrimaryColor3: =App.Theme.Colors.Lighter70
+        SelectedColor: =RGBA(0, 0, 0, 1)
+        SelectedFill: =App.Theme.Colors.Lighter70
+        Size: =13
+        Width: =800
+        X: =518
+        Y: =144
+        ZIndex: =3
 
-        Team1 As pcfDataField.textualColumn:
+        Title_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Title"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Title
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Name_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="Name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'Employee Id_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Employee Id"
+            FieldName: ="EmployeeId"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Employee Id'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        Team_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Team"
             FieldName: ="Team"
-            FieldType: ="E"
             FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
             Order: =25
+            Text: =Concat(ThisItem.Team,varAdminTeam,",")
+            Width: =100
+            X: =0
+            Y: =0
             ZIndex: =25
+
+        "'Reporting Manager Feedback _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Reporting Manager Feedback "
+            FieldName: ="ReportingManagerFeedback"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =26
+            Text: =ThisItem.'Reporting Manager Feedback '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =26
+
+        "'Rate the Employee_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Rate the Employee"
+            FieldName: ="RatetheEmployee"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =27
+            Text: =ThisItem.'Rate the Employee'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =27
 

@@ -34,12 +34,8 @@ App As appinfo:
                 //Set(colRoleTable, Filter(AppraisalUserList, "Rpa" in ThisRecord.Team ))
                     //Set(colRoleTable, Filter(AppraisalUserList, "Rpa" in ThisRecord.Team ))
                     //Concat(ThisRecord.Team,Value,","))
-                    Set(colUser,AppraisalUserList);
-                    ForAll(
-                        colUser,
-                        Collect(colRoleTable,
-                            Filter(colUser
-                                ,varAdminTeam in ThisRecord.Team )))
+                        //Set(colUser,AppraisalUserList);ForAll(colUser,Collect(colRoleTable,Filter(colUser,varAdminTeam in //ThisRecord.Team )))
+            Filter(AppraisalUserList,CountRows(Filter(Team, ThisRecord.Value in varAdminTeam))<>0)
                 ,
             If( varCat="Super Admin",
                     Set(colRoleTable,AppraisalUserList)
