@@ -46,7 +46,7 @@ Screen1 As screen:
         HoverFill: =App.Theme.Colors.Lighter80
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: =Filter(AppraisalUserList,CountRows(Filter(Team, ThisRecord.Value in varAdminTeam))<>0)
+        Items: =Filter(AppraisalUserList, Concat(Team,Value,",") in varAdminTeam)
         LinkColor: =App.Theme.Colors.Lighter10
         PrimaryColor1: =App.Theme.Colors.Primary
         PrimaryColor2: =App.Theme.Colors.Darker30
