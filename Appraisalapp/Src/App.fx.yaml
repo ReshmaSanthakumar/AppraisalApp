@@ -42,7 +42,7 @@ App As appinfo:
                                         Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,",")) in Lower(varAdminTeam)
                                         )
                                      )
-                ))
+                )
               
               
                 ,
