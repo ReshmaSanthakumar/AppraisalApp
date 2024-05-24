@@ -26,7 +26,7 @@ App As appinfo:
             // Admin's Teams list seperated by comma
             Set(varAdminTeam,Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending));
             
-                Set(varAdminTeamStr,Concat(varAdminTeam,Value,","))
+                Set(varAdminTeamStr,Concat(varAdminTeam,Value," , "))
                 
             
             
@@ -40,8 +40,8 @@ App As appinfo:
               //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
               
               //Set(varCmp,varAdminTeam&",");
-              Set(colRoleTable,Filter(AppraisalUserList, If(Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,",")) <> "",
-                                        Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,",")) in Lower(varAdminTeamStr)
+              Set(colRoleTable,Filter(AppraisalUserList, If(Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> "",
+                                        Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr)
                                                             )
                                      )
                 ) 

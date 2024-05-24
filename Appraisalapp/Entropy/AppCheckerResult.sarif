@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 959,
+                  "charOffset": 961,
                   "snippet": {
                     "text": "in"
                   }
@@ -143,10 +143,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 245,
-                  "charOffset": 1327,
+                  "charLength": 249,
+                  "charOffset": 1329,
                   "snippet": {
-                    "text": "If(Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\")) <> \"\",\n                                Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\")) in Lower(varAdminTeamStr)\n                                                    )"
+                    "text": "If(Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\" , \")) <> \"\",\n                                Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\" , \")) in Lower(varAdminTeamStr)\n                                                    )"
                   }
                 }
               },
