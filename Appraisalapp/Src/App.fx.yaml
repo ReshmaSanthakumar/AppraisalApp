@@ -24,17 +24,23 @@ App As appinfo:
             Set(varManager,LookUp(AppraisalUserList,varEmail in Title).'Jeevan Reporting Manager Name'),
             // Admin's Teams list seperated by comma
             Set(varAdminTeam,Concat(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,","))
+            //Set(varAdminTeam,LookUp(AppraisalAdminList, varEmail in Title).Team)
             );
         If(is_admin,
             If( varCat="Team Lead",
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
             //ForAll(AppraisalUserList,Collect('AppraisalAdminList',Filter(AppraisalAdminList, Value in Team)))
-                Set(colRoleTable, Filter(AppraisalUserList, "Rpa" in ThisRecord.Team ))
+                //Set(colRoleTable, Filter(AppraisalUserList, "Rpa" in ThisRecord.Team ))
                     //Set(colRoleTable, Filter(AppraisalUserList, "Rpa" in ThisRecord.Team ))
                     //Concat(ThisRecord.Team,Value,","))
-            
-            ,
+                    Set(colUser,AppraisalUserList);
+                    ForAll(
+                        colUser,
+                        Collect(colRoleTable,
+                            Filter(colUser
+                                ,varAdminTeam in ThisRecord.Team )))
+                ,
             If( varCat="Super Admin",
                     Set(colRoleTable,AppraisalUserList)
                 )

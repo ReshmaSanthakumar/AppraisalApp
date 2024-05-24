@@ -1,6 +1,13 @@
 Screen1 As screen:
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: |-
+        = Set(colUser,AppraisalUserList);
+                    ForAll(
+                        colUser,
+                        Collect(colRoleTable,
+                            Filter(colUser
+                                ,varAdminTeam in ThisRecord.Team )))
 
     Label10 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -29,7 +36,7 @@ Screen1 As screen:
     Table1 As Table.pcfdataset:
         DisplayMode: =DisplayMode.Edit
         Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-        Items: =Filter(AppraisalUserList,"resh" in Title && "Rpa" in Team.Value)
+        Items: =colRoleTable
         onCellValueChange: =false
         onFilter: =false
         onNavigate: =false
