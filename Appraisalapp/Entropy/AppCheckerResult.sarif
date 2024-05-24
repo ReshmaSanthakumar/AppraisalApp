@@ -143,10 +143,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 295,
+                  "charLength": 415,
                   "charOffset": 1363,
                   "snippet": {
-                    "text": "If(CountRows(Team)<>0,\n      \n                                Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\")) in Lower(varAdminTeam);\n                                Lower(varAdminTeam) in Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\"))\n                             )"
+                    "text": "If(CountRows(Team)<>0,\n      \n                                //Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\")) in Lower(varAdminTeam);\n                                Lower(varAdminTeam) in Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\"));\n                                Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\")) in Lower(varAdminTeam)\n                             )"
                   }
                 }
               },
