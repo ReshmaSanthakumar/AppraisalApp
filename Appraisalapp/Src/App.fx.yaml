@@ -25,9 +25,10 @@ App As appinfo:
             Set(varManager,LookUp(AppraisalUserList,varEmail in Title).'Jeevan Reporting Manager Name');
             // Admin's Teams list seperated by comma
             Set(varAdminTeam,Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending));
-            If(CountRows(varAdminTeam)=1,
-                Set(varAdminTeamStr,Concat(Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending),Value,",")),
-                Set(varAdminTeamStr,Concat(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,""))
+            If(CountRows(varAdminTeam)>1,
+                Set(varAdminTeamStr,Concat(varAdminTeam,Value,",")),
+                Set(varAdminTeamStr,Concat(varAdminTeam,Value,""))
+                
             )
             
             );
@@ -47,9 +48,7 @@ App As appinfo:
                                         Lower(varAdminTeamStr) in Lower(Concat(Team,Value,""))
                                         )
                                      )
-                )
-              
-              
+                ) 
                 ,
             If( varCat="Super Admin",
                     Set(colRoleTable,AppraisalUserList);
