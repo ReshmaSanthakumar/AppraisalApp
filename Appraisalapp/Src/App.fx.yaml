@@ -32,8 +32,9 @@ App As appinfo:
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
               //Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") = varAdminTeam);
-              Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
-              Set(colRoleTable,AppraisalUserList)
+              //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
+              //Set(colRoleTable,AppraisalUserList)
+              Collect(colRoleTable,ForAll(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam))
               
                 ,
             If( varCat="Super Admin",
