@@ -23,7 +23,7 @@ Feedback_Screen As screen:
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate the Employee')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =139
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Rate the Employee')
+            MaxLength: =
             Required: =false
             Update: =Rating1.Value
             Width: =1224
@@ -287,7 +287,7 @@ Feedback_Screen As screen:
         PressedFill: =Self.Fill
         RatingFill: =RGBA(21, 68, 18, 1)
         Width: =324
-        X: =104
-        Y: =484
+        X: =99
+        Y: =477
         ZIndex: =6
 
