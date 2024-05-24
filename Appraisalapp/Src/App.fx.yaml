@@ -2,6 +2,7 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |-
         =Set(varEmail,User().Email);// User's Email
+        Set(varBI,false);
         If(
             Not(IsBlank(
                 LookUp( AppraisalAdminList,
@@ -33,13 +34,15 @@ App As appinfo:
             If( varCat="Manager",
               //Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam);
               //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
+              
               Set(varCmp,varAdminTeam&",");
               Set(colRoleTable,Filter(AppraisalUserList,If(CountRows(Team)<>0, Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varCmp)))
               
               
                 ,
             If( varCat="Super Admin",
-                    Set(colRoleTable,AppraisalUserList)
+                    Set(colRoleTable,AppraisalUserList);
+                    Set(varBI,true)
                 )
             ))
         );

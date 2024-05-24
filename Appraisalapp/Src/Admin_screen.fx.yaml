@@ -1616,6 +1616,7 @@ Admin_screen As screen:
             Height: =46
             Icon: =Icon.Trending
             OnSelect: =Navigate(scr_powerBI)
+            Visible: =varBI
             Width: =25
             X: =23
             Y: =171

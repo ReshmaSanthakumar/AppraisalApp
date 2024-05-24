@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 476,
+                  "charOffset": 494,
                   "snippet": {
                     "text": "in"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 634,
+                  "charOffset": 652,
                   "snippet": {
                     "text": "in"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 978,
+                  "charOffset": 996,
                   "snippet": {
                     "text": "in"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 88,
-                  "charOffset": 1336,
+                  "charOffset": 1361,
                   "snippet": {
                     "text": "If(CountRows(Team)<>0, Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\") in varCmp)"
                   }
