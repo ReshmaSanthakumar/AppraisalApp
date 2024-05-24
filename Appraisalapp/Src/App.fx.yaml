@@ -32,7 +32,7 @@ App As appinfo:
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
               //Filter(AppraisalUserList,CountRows(Filter(Team, ThisRecord.Value in varAdminTeam))<>0);
-              Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam);
+              Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") = varAdminTeam);
               Set(colRoleTable,AppraisalUserList)
               
                 ,
