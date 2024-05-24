@@ -143,10 +143,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 140,
+                  "charLength": 194,
                   "charOffset": 1363,
                   "snippet": {
-                    "text": "If(CountRows(Team)<>0,\n                                Lower(varAdminTeam) in Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\",\")))"
+                    "text": "If(CountRows(Team)<>0 && CountRows(Team)<>1,\n                                Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,\"\")) in Lower(varAdminTeam)\n                                )"
                   }
                 }
               },

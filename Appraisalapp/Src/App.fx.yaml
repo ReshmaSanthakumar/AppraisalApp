@@ -36,10 +36,11 @@ App As appinfo:
               //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
               
               //Set(varCmp,varAdminTeam&",");
-              Set(colRoleTable,Filter(AppraisalUserList,If(CountRows(Team)<>0,
-                                        Lower(varAdminTeam) in Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,","))),
-                                        If(CountRows(Team)<>0,
-                                        Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,",")) in Lower(varAdminTeam)
+              Set(colRoleTable,Filter(AppraisalUserList,If(CountRows(Team)<>0 && CountRows(Team)<>1,
+                                        Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,"")) in Lower(varAdminTeam)
+                                        ),
+                                        If(CountRows(Team)<>0 && CountRows(Team)=1,
+                                        Lower(varAdminTeam) in Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value,","))
                                         )
                                      )
                 )
