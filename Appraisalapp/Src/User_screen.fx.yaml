@@ -84,6 +84,68 @@ User_screen As screen:
         Y: =66
         ZIndex: =21
 
+        "'Are you working in more than one team?_DataCard1' As typedDataCard.fluentV9ToggleEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Areyouworkinginmorethanoneteam_x"
+            Default: =ThisItem.'Are you working in more than one team?'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Areyouworkinginmorethanoneteam_x)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue4.Checked
+            Width: =435
+            X: =1
+            Y: =8
+            ZIndex: =1
+
+            DataCardKey4 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =18
+                ZIndex: =1
+
+            DataCardValue4 As Toggle:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                Checked: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Label: =""
+                OnCheck: =false
+                OnUncheck: =false
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 4
+                ZIndex: =2
+
+            ErrorMessage3 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible3 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
         Team_DataCard1 As typedDataCard.fluentV9ComboBoxMultiSelectEditCard:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
