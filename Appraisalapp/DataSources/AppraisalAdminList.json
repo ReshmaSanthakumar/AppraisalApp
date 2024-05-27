@@ -34,7 +34,6 @@
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "SharedResource": "Shared Resource",
       "Team": "Team",
       "Team#Id": "Team Id",
       "Team@odata.type": "Team (Team@odata.type)",
