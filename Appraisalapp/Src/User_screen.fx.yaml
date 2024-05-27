@@ -1087,7 +1087,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =96
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1155,7 +1155,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =92
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1223,7 +1223,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =95
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1355,7 +1355,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1423,7 +1423,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1491,7 +1491,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1815,7 +1815,7 @@ User_screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FontColor: =
                 Height: =73
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
