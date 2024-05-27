@@ -42,7 +42,7 @@ User_screen As screen:
         ZIndex: =19
 
     Button2 As button:
-        BorderColor: =RGBA(72, 163, 62, 1)
+        BorderColor: =RGBA(21, 68, 18, 1)
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
