@@ -20,7 +20,7 @@ scr_userDT As screen:
         HeadingSize: =13
         Height: =572
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =App.Theme.Colors.Lighter80
+        HoverFill: =RGBA(220, 255, 209, 1)
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
         Items: |-
