@@ -303,7 +303,7 @@ User_screen As screen:
                 FontColor: =
                 Height: =32
                 HoverBorderColor: =""
-                Mode: ='TextInputCanvas.Mode'.Multiline
+                Mode: ='TextInputCanvas.Mode'.SingleLine
                 PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -1603,9 +1603,16 @@ User_screen As screen:
                 BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
-                FontColor: =
+                FontColor: =RGBA(215, 58, 60, 1)
                 Height: =30
-                Text: =Parent.Error
+                Text: |-
+                    =If(
+                        !IsBlank(DataCardValue125.Value) && !IsMatch(
+                            DataCardValue125.Value,
+                           Match.OptionalDigits
+                        ),
+                        "Enter the CTC properly"
+                    )
                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
                 Width: =Parent.Width - 48
                 Wrap: =true
