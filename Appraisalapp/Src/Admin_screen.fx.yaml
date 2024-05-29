@@ -1068,9 +1068,9 @@ Admin_screen As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="WhatisyourcurrentCTC_x003f_"
-            Default: =ThisItem.'What is your current CTC?'
+            Default: =ThisItem.'Current CTC (Rs.)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'What is your current CTC?')
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Current CTC (Rs.)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
