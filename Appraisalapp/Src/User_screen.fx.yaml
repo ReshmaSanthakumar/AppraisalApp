@@ -56,7 +56,7 @@ User_screen As screen:
         HoverFill: =RGBA(72, 163, 62, 1)
         OnSelect: |-
             =If(
-                IsBlank(DataCardValue109.Value) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue112.Value) || IsBlank(DataCardValue113.Value) || IsBlank(DataCardValue114.Value) || IsBlank(DataCardValue115.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue116.Selected.Value) || IsBlank(DataCardValue117.Value) || IsBlank(DataCardValue118.Value) || IsBlank(DataCardValue119.Selected.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue120.Value) || IsBlank(DataCardValue121.Value) || IsBlank(DataCardValue122.Value) || IsBlank(DataCardValue123.Value) || IsBlank(DataCardValue124.Selected.Value) || IsBlank(DataCardValue125.Value) || IsBlank(DataCardValue126.Value) || IsBlank(DataCardValue127.Value) || IsBlank(DataCardValue128.Selected.Value) || IsBlank(DataCardValue129.Selected.Value) || IsBlank(DataCardValue130.Selected.Value) || IsBlank(DataCardValue131.Selected.Value) || IsBlank(DataCardValue3.Selected.Value),
+                IsBlank(DataCardValue109.Value) || IsBlank(DataCardValue110.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue112.Value) || IsBlank(DataCardValue113.Value) || IsBlank(DataCardValue114.Value) || IsBlank(DataCardValue115.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue116.Selected.Value) || IsBlank(DataCardValue117.Value) || IsBlank(DataCardValue118.Value) || IsBlank(DataCardValue119.Selected.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue111.Value) || IsBlank(DataCardValue120.Value) || IsBlank(DataCardValue121.Value) || IsBlank(DataCardValue122.Value) || IsBlank(DataCardValue123.Value) || IsBlank(DataCardValue124.Selected.Value) || IsBlank(DataCardValue4.Value) || IsBlank(DataCardValue126.Value) || IsBlank(DataCardValue127.Value) || IsBlank(DataCardValue128.Selected.Value) || IsBlank(DataCardValue129.Selected.Value) || IsBlank(DataCardValue130.Selected.Value) || IsBlank(DataCardValue131.Selected.Value) || IsBlank(DataCardValue3.Selected.Value),
                 Notify("please Fill all the fields properly"),
                 SubmitForm(Form4);
                 Navigate(Success_Screen)
@@ -83,6 +83,67 @@ User_screen As screen:
         X: =30
         Y: =66
         ZIndex: =21
+
+        "'Current CTC (Rs.)_DataCard1' As typedDataCard.fluentV9NumberEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="WhatisyourcurrentCTC_x003f_"
+            Default: =ThisItem.'Current CTC (Rs.)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourcurrentCTC_x003f_)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =Value(DataCardValue4.Value)
+            Width: =435
+            X: =1
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey4 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue4 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 4
+                ZIndex: =2
+
+            ErrorMessage3 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(215, 58, 60, 1)
+                Height: =30
+                Text: =
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible3 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey4.Y
+                ZIndex: =4
 
         Team_DataCard1 As typedDataCard.fluentV9ComboBoxMultiSelectEditCard:
             BorderColor: =App.Theme.Colors.Darker40
@@ -1543,98 +1604,6 @@ User_screen As screen:
                 Y: =DataCardKey124.Y
                 ZIndex: =4
 
-        "'What is your current CTC?_DataCard5' As typedDataCard.fluentV9TextualEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="WhatisyourcurrentCTC_x003f_"
-            Default: =ThisItem.'Current CTC (Rs.)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Current CTC (Rs.)')
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Current CTC (Rs.)')
-            Required: =false
-            Update: =DataCardValue125.Value
-            Width: =435
-            X: =1
-            Y: =5
-            ZIndex: =22
-
-            DataCardKey125 As Text:
-                BorderColor: =""
-                BorderStyle: =""
-                DisplayMode: =DisplayMode.Edit
-                Fill: =
-                FontColor: =
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue125 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                Appearance: ="FilledDarker"
-                BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
-                DisplayMode: =Parent.DisplayMode
-                Fill: =
-                FocusedBorderColor: =""
-                FontColor: =
-                Height: =32
-                HoverBorderColor: =""
-                Mode: ='TextInputCanvas.Mode'.SingleLine
-                PressedBorderColor: =""
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey125.Y + DataCardKey125.Height + 4
-                ZIndex: =2
-
-            ErrorMessage99 As Text:
-                BorderColor: =""
-                BorderStyle: =""
-                DisplayMode: =DisplayMode.Edit
-                Fill: =
-                FontColor: =RGBA(215, 58, 60, 1)
-                Height: =30
-                Text: |-
-                    =If(
-                        !IsBlank(DataCardValue125.Value) && !IsMatch(
-                            DataCardValue125.Value,
-                           Match.OptionalDigits
-                        ),
-                        "Enter the CTC properly"
-                    )
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue125.Y + DataCardValue125.Height
-                ZIndex: =3
-
-            StarVisible99 As Text:
-                Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
-                DisplayMode: =DisplayMode.Edit
-                Fill: =
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey125.Y
-                ZIndex: =4
-
         "'What is your expected CTC? _DataCard5' As typedDataCard.fluentV9TextualEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
@@ -1728,7 +1697,7 @@ User_screen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Explain how it (expected CTC) is rightfully yours! ')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =107
+            Height: =167
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Explain how it (expected CTC) is rightfully yours! ')
             Required: =false
             Update: =DataCardValue127.Value
@@ -1763,9 +1732,9 @@ User_screen As screen:
                 Fill: =
                 FocusedBorderColor: =""
                 FontColor: =
-                Height: =32
+                Height: =103
                 HoverBorderColor: =""
-                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Mode: ='TextInputCanvas.Mode'.Multiline
                 PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
