@@ -54,7 +54,7 @@
     "Name": "PowerApps_CoreControls_ComboboxCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Combobox",
-    "Version": "0.0.27"
+    "Version": "0.0.30"
   },
   "dataTable": {
     "CustomGroupControlTemplateName": "",
@@ -68,7 +68,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "dataTable",
     "OverridableProperties": {},
-    "Version": "1.0.2"
+    "Version": "1.0.3"
   },
   "dataTableColumn": {
     "CustomGroupControlTemplateName": "",
@@ -97,7 +97,7 @@
     "Name": "PowerApps_CoreControls_DropdownCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Dropdown",
-    "Version": "0.0.29"
+    "Version": "0.0.32"
   },
   "form": {
     "CustomGroupControlTemplateName": "",
@@ -125,7 +125,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "formViewer",
     "OverridableProperties": {},
-    "Version": "2.3.3"
+    "Version": "2.3.4"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -319,7 +319,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
-    "Version": "0.0.25"
+    "Version": "0.0.30"
   },
   "Text input": {
     "CustomGroupControlTemplateName": "",
@@ -334,22 +334,7 @@
     "Name": "PowerApps_CoreControls_TextInputCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text input",
-    "Version": "0.0.26"
-  },
-  "Toggle": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Toggle",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_Toggle",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Toggle",
-    "Version": "1.0.29"
+    "Version": "0.0.29"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
