@@ -36,14 +36,6 @@ App As appinfo:
             If( varCat="Team Lead",
                     Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
-              //Filter(AppraisalUserList,Concat(Sort(Team,Value,SortOrder.Ascending),Value,",") in varAdminTeam);
-              //Filter(AppraisalUserList,"Php,Rpa" in Concat(Sort(Team,Value,SortOrder.Ascending),Value,","));
-        
-              //If(Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> "",Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr))
-              // Set(colRoleTable,Filter(AppraisalUserList, varAdminTeamStr in Team ) )
-              // Collect(colRoleTable,ForAll(AppraisalUserList , varAdminTeamStr in Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , "))))
-              //Set(varCmp,varAdminTeam&",");
-              //Set(colCmp,AppraisalUserList);
                 If( CountRows(varAdminTeam) = 1,
                     ClearCollect(colRoleTable,Filter(AppraisalUserList, varAdminTeamStr in Team.Value ) ) ,
                     ClearCollect(colRoleTable,Filter(AppraisalUserList, Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr) && Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> "") )
