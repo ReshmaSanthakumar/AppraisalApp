@@ -26,15 +26,18 @@ App As appinfo:
             // Admin's Teams list seperated by comma
             Set(varAdminTeam,Sort(LookUp(AppraisalAdminList, varEmail in Title).Team,Value,SortOrder.Ascending));
             
-            Set(varAdminTeamStr,Concat(Sort(varAdminTeam,Value,SortOrder.Ascending),Value," , "))
+            Set(varAdminTeamStr,Concat(Sort(varAdminTeam,Value,SortOrder.Ascending),Value," , "));
+            Set(varAdminRole,LookUp(AppraisalAdminList, varEmail in Title).Category)
                 
             
             
             );
-        Notify("Your teams are " & varAdminTeamStr,NotificationType.Success,5000);
+        
+        Notify("! Your teams are " & varAdminTeamStr,NotificationType.Success,5000);
+        
         If(is_admin,
             If( varCat="Team Lead",
-                    Set(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
+                    ClearCollect(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
                 If( CountRows(varAdminTeam) = 1,
                     ClearCollect(colRoleTable,Filter(AppraisalUserList, varAdminTeamStr in Team.Value ) ) ,
@@ -43,7 +46,7 @@ App As appinfo:
                
                 ,
             If( varCat="Super Admin",
-                    Set(colRoleTable,AppraisalUserList);
+                    ClearCollect(colRoleTable,AppraisalUserList);
                     Set(varBI,true)
                 )
             ))
