@@ -183,7 +183,7 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =DataCardValue7.Value
             Width: =419
-            X: =2
+            X: =0
             Y: =0
             ZIndex: =1
 
@@ -309,7 +309,7 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =DataCardValue5.Value
             Width: =419
-            X: =0
+            X: =2
             Y: =0
             ZIndex: =1
 
@@ -427,9 +427,8 @@ Admin_screen_1 As screen:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                OnChange: =Reset(DataCardValue9)
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Value(ThisItem.Hike)
+                Value: =Parent.Default
                 Width: =Parent.Width - 48
                 X: =24
                 Y: =DataCardKey10.Y + DataCardKey10.Height + 4
