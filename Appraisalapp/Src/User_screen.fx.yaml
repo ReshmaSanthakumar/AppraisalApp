@@ -239,12 +239,12 @@ User_screen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,Title)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, Title)
-            Required: =true
+            Required: =false
             Update: =DataCardValue109.Value
             Width: =435
             X: =0
@@ -284,7 +284,7 @@ User_screen As screen:
                 PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
+                Value: =User().Email
                 Width: =Parent.Width - 48
                 X: =24
                 Y: =DataCardKey109.Y + DataCardKey109.Height + 4
@@ -298,13 +298,13 @@ User_screen As screen:
                 FontColor: =RGBA(215, 58, 60, 1)
                 Height: =30
                 Text: |-
-                    =If(
-                        !IsBlank(DataCardValue109.Value) && !IsMatch(
-                            DataCardValue109.Value,
-                            Match.Email
-                        ),
-                        "Enter the Email properly"
-                    )
+                    =//If(
+                     //   !IsBlank(DataCardValue109.Value) && !IsMatch(
+                      //      DataCardValue109.Value,
+                      //      Match.Email
+                      //  ),
+                       // "Enter the Email properly"
+                    //)
                 Visible: =true
                 Width: =Parent.Width - 48
                 Wrap: =true
@@ -321,7 +321,7 @@ User_screen As screen:
                 FontColor: =
                 Height: =30
                 Text: ="*"
-                Visible: =true
+                Visible: =false
                 Width: =30
                 X: =0
                 Y: =DataCardKey109.Y
