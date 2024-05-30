@@ -109,66 +109,6 @@ Admin_screen_1 As screen:
         Y: =83
         ZIndex: =20
 
-        "'Basic Salary_DataCard3' As typedDataCard.fluentV9NumberEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="BasicSalary"
-            Default: =ThisItem.'Basic Salary'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,BasicSalary)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =Value(DataCardValue89.Value)
-            Width: =417
-            X: =1
-            Y: =1
-            ZIndex: =21
-
-            DataCardKey89 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue89 As 'Text input'":
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey89.Y + DataCardKey89.Height + 4
-                ZIndex: =2
-
-            ErrorMessage38 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue89.Y + DataCardValue89.Height
-                ZIndex: =3
-
-            StarVisible38 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey89.Y
-                ZIndex: =4
-
         "'Employee Id_DataCard6' As typedDataCard.fluentV9ComboBoxEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
@@ -350,6 +290,126 @@ Admin_screen_1 As screen:
                 Width: =30
                 X: =0
                 Y: =DataCardKey93.Y
+                ZIndex: =4
+
+        Hike_DataCard3 As typedDataCard.fluentV9NumberEditCard:
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Hike"
+            Default: =ThisItem.Hike
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Hike)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =Value(DataCardValue99.Value)
+            Width: =417
+            X: =0
+            Y: =1
+            ZIndex: =21
+
+            DataCardKey99 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue99 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey99.Y + DataCardKey99.Height + 4
+                ZIndex: =2
+
+            ErrorMessage46 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue99.Y + DataCardValue99.Height
+                ZIndex: =3
+
+            StarVisible46 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey99.Y
+                ZIndex: =4
+
+        "'Basic Salary_DataCard3' As typedDataCard.fluentV9NumberEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="BasicSalary"
+            Default: =ThisItem.'Basic Salary'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,BasicSalary)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =Value(DataCardValue89.Value)
+            Width: =417
+            X: =1
+            Y: =1
+            ZIndex: =21
+
+            DataCardKey89 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue89 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey89.Y + DataCardKey89.Height + 4
+                ZIndex: =2
+
+            ErrorMessage38 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue89.Y + DataCardValue89.Height
+                ZIndex: =3
+
+            StarVisible38 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey89.Y
                 ZIndex: =4
 
         "'House Rent Allowance_DataCard3' As typedDataCard.fluentV9NumberEditCard":
@@ -628,66 +688,6 @@ Admin_screen_1 As screen:
                 Width: =30
                 X: =0
                 Y: =DataCardKey98.Y
-                ZIndex: =4
-
-        Hike_DataCard3 As typedDataCard.fluentV9NumberEditCard:
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Hike"
-            Default: =ThisItem.Hike
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Hike)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =Value(DataCardValue99.Value)
-            Width: =417
-            X: =0
-            Y: =1
-            ZIndex: =21
-
-            DataCardKey99 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue99 As 'Text input'":
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey99.Y + DataCardKey99.Height + 4
-                ZIndex: =2
-
-            ErrorMessage46 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue99.Y + DataCardValue99.Height
-                ZIndex: =3
-
-            StarVisible46 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey99.Y
                 ZIndex: =4
 
         "'Provident Fund_DataCard3' As typedDataCard.fluentV9NumberEditCard":
