@@ -363,14 +363,14 @@ Admin_screen_1 As screen:
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="New_x0020_CTC"
-            Default: =(Value(DataCardValue8.Value) * Value(DataCardValue10.Value)/100)+Value(DataCardValue8.Value)
+            Default: =(Value(DataCardValue8.Value) * Value(DataCardValue10.Value))+Value(DataCardValue8.Value)
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'New CTC')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
             Width: =419
-            X: =1
+            X: =2
             Y: =1
             ZIndex: =1
 
@@ -396,6 +396,66 @@ Admin_screen_1 As screen:
                 Y: =DataCardKey9.Y + DataCardKey9.Height + 4
                 ZIndex: =2
 
+        Hike_DataCard1 As typedDataCard.fluentV9NumberEditCard:
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Hike"
+            Default: =ThisItem.Hike
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Hike)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =Value(DataCardValue10.Value)
+            Width: =419
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey10 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue10 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 4
+                ZIndex: =2
+
+            ErrorMessage8 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue10.Y + DataCardValue10.Height
+                ZIndex: =3
+
+            StarVisible8 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey10.Y
+                ZIndex: =4
+
         "'Basic Salary_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
@@ -408,8 +468,8 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue89.Value)
             Width: =419
-            X: =2
-            Y: =1
+            X: =0
+            Y: =2
             ZIndex: =21
 
             DataCardKey89 As Text:
@@ -468,7 +528,7 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue94.Value)
             Width: =419
-            X: =0
+            X: =1
             Y: =2
             ZIndex: =21
 
@@ -528,7 +588,7 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue95.Value)
             Width: =419
-            X: =1
+            X: =2
             Y: =2
             ZIndex: =21
 
@@ -588,8 +648,8 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue96.Value)
             Width: =419
-            X: =2
-            Y: =2
+            X: =0
+            Y: =3
             ZIndex: =21
 
             DataCardKey96 As Text:
@@ -647,7 +707,7 @@ Admin_screen_1 As screen:
             Height: =70
             Required: =false
             Width: =419
-            X: =0
+            X: =1
             Y: =3
             ZIndex: =21
 
@@ -685,7 +745,7 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue100.Value)
             Width: =419
-            X: =1
+            X: =2
             Y: =3
             ZIndex: =21
 
@@ -744,8 +804,8 @@ Admin_screen_1 As screen:
             Height: =81
             Required: =false
             Width: =419
-            X: =2
-            Y: =3
+            X: =0
+            Y: =4
             ZIndex: =21
 
             DataCardKey101 As Text:
@@ -782,7 +842,7 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue102.Value)
             Width: =419
-            X: =0
+            X: =1
             Y: =4
             ZIndex: =21
 
@@ -842,7 +902,7 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue103.Value)
             Width: =419
-            X: =1
+            X: =2
             Y: =4
             ZIndex: =21
 
@@ -902,8 +962,8 @@ Admin_screen_1 As screen:
             Required: =false
             Update: =Value(DataCardValue104.Value)
             Width: =419
-            X: =2
-            Y: =4
+            X: =0
+            Y: =5
             ZIndex: =21
 
             DataCardKey104 As Text:
@@ -961,7 +1021,7 @@ Admin_screen_1 As screen:
             Height: =70
             Required: =false
             Width: =419
-            X: =0
+            X: =1
             Y: =5
             ZIndex: =21
 
@@ -998,7 +1058,7 @@ Admin_screen_1 As screen:
             Height: =70
             Required: =false
             Width: =419
-            X: =1
+            X: =2
             Y: =5
             ZIndex: =21
 
