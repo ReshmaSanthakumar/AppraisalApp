@@ -1674,8 +1674,8 @@ Admin_screen As screen:
         Size: =15
         Text: ="Add CTC"
         Visible: =varbtn
-        Width: =162
-        X: =1023
+        Width: =147
+        X: =1038
         Y: =727
         ZIndex: =20
 

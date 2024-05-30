@@ -1046,10 +1046,10 @@ Admin_screen_1 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Lighter
-        Height: =32
-        Size: =15
+        Height: =44
+        Size: =18
         Text: |-
-            ="Please Fill the Hike feild:"
+            ="Please Fill the Hike field:"
         Width: =558
         X: =80
         Y: =182
