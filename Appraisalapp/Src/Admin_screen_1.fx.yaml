@@ -33,7 +33,7 @@ Admin_screen_1 As screen:
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(72, 163, 62, 1)
-        OnSelect: =SubmitForm(Form5);Navigate(Admin_screen)
+        OnSelect: =SubmitForm(Form5); Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
         PressedBorderColor: =RGBA(72, 163, 62, 1)
@@ -429,7 +429,7 @@ Admin_screen_1 As screen:
                 Height: =32
                 OnChange: =Reset(DataCardValue9)
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
+                Value: =Value(ThisItem.Hike)
                 Width: =Parent.Width - 48
                 X: =24
                 Y: =DataCardKey10.Y + DataCardKey10.Height + 4
