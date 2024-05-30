@@ -31,5 +31,27 @@
     "dependencies": {},
     "dependents": [],
     "id": "fa7faab7-9e2c-4fc3-9f27-cbcaaf032570"
+  },
+  "feb79c97-e82d-45fc-a08c-5935893ef1c0": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1685/1.0.1685.3700/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://jeevanportal.sharepoint.com/sites/PowerAppsProjects": {
+        "dataSources": {
+          "Appraisal CTC Breakage": {
+            "tableName": "09c1d1ef-86ba-4d30-b2f8-a31983af4fec"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Appraisal CTC Breakage"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "feb79c97-e82d-45fc-a08c-5935893ef1c0"
   }
 }
