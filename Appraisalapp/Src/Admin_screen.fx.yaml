@@ -1603,6 +1603,7 @@ Admin_screen As screen:
             Height: =46
             Icon: =Icon.Home
             OnSelect: =Navigate(Admin_screen)
+            Tooltip: ="Home"
             Width: =26
             X: =18
             Y: =27
@@ -1647,4 +1648,28 @@ Admin_screen As screen:
         X: =21
         Y: =8
         ZIndex: =19
+
+    Button5 As button:
+        BorderColor: =RGBA(45, 128, 40, 1)
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(21, 68, 18, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
+        OnSelect: =Navigate(Admin_screen_1)
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Size: =15
+        Text: ="Add CTC"
+        Visible: =varbtn
+        Width: =150
+        X: =1023
+        Y: =727
+        ZIndex: =20
 

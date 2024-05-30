@@ -2,6 +2,7 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |-
         =Set(varEmail,User().Email);// User's Email
+        Set(varbtn,false);
         Set(varBI,false);
         If(
             Not(IsBlank(
@@ -41,13 +42,15 @@ App As appinfo:
             If( varCat="Manager",
                 If( CountRows(varAdminTeam) = 1,
                     ClearCollect(colRoleTable,Filter(AppraisalUserList, varAdminTeamStr in Team.Value ) ) ,
-                    ClearCollect(colRoleTable,Filter(AppraisalUserList, Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr) && Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> "") )
+                    ClearCollect(colRoleTable,Filter(AppraisalUserList, Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr) && Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> ""));
+                 Set(varbtn,true)
                 )
                
                 ,
             If( varCat="Super Admin",
                     ClearCollect(colRoleTable,AppraisalUserList);
-                    Set(varBI,true)
+                    Set(varBI,true);
+                    Set(varbtn,true)
                 )
             ))
         );

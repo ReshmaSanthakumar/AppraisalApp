@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 494,
+                  "charOffset": 513,
                   "snippet": {
                     "text": "in"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 645,
+                  "charOffset": 664,
                   "snippet": {
                     "text": "in"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 842,
+                  "charOffset": 861,
                   "snippet": {
                     "text": "in"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1080,
+                  "charOffset": 1099,
                   "snippet": {
                     "text": "in"
                   }
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1266,
+                  "charOffset": 1285,
                   "snippet": {
                     "text": "in"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1414,
+                  "charOffset": 1433,
                   "snippet": {
                     "text": "in"
                   }
@@ -264,7 +264,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1440,
+                  "charOffset": 1459,
                   "snippet": {
                     "text": "&&"
                   }
@@ -1743,19 +1743,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Annual Performance Bonus_DataCard2'.DataCardValue73.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Total Gross (A)_DataCard3'.DataCardValue97.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Annual Performance Bonus_DataCard2'.DataCardValue73.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Total Gross (A)_DataCard3'.DataCardValue97.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Annual Performance Bonus_DataCard2'.DataCardValue73"
+                "type": "Admin_screen_1.Form5.'Total Gross (A)_DataCard3'.DataCardValue97"
               }
             }
           ],
@@ -1773,19 +1773,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Target Incentives_DataCard2'.DataCardValue72.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Retirals Component (B)_DataCard3'.DataCardValue101.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Target Incentives_DataCard2'.DataCardValue72.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Retirals Component (B)_DataCard3'.DataCardValue101.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Target Incentives_DataCard2'.DataCardValue72"
+                "type": "Admin_screen_1.Form5.'Retirals Component (B)_DataCard3'.DataCardValue101"
               }
             }
           ],
@@ -1803,19 +1803,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Project Incentives_DataCard2'.DataCardValue71.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Total other Components (C)_DataCard3'.DataCardValue105.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Project Incentives_DataCard2'.DataCardValue71.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Total other Components (C)_DataCard3'.DataCardValue105.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Project Incentives_DataCard2'.DataCardValue71"
+                "type": "Admin_screen_1.Form5.'Total other Components (C)_DataCard3'.DataCardValue105"
               }
             }
           ],
@@ -1833,259 +1833,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Provident Fund_DataCard2'.DataCardValue69.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Total (A+B+C)_DataCard3'.DataCardValue106.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Provident Fund_DataCard2'.DataCardValue69.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Total (A+B+C)_DataCard3'.DataCardValue106.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Provident Fund_DataCard2'.DataCardValue69"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Leave Travel Allowance_DataCard2'.DataCardValue65.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Leave Travel Allowance_DataCard2'.DataCardValue65.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Leave Travel Allowance_DataCard2'.DataCardValue65"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Special Personal Allowance_DataCard2'.DataCardValue64.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Special Personal Allowance_DataCard2'.DataCardValue64.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Special Personal Allowance_DataCard2'.DataCardValue64"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Id_DataCard3'.DataCardValue34.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Id_DataCard3'.DataCardValue34.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Employee Id_DataCard3'.DataCardValue34"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'House Rent Allowance_DataCard2'.DataCardValue63.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'House Rent Allowance_DataCard2'.DataCardValue63.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'House Rent Allowance_DataCard2'.DataCardValue63"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Basic Salary_DataCard2'.DataCardValue33.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Basic Salary_DataCard2'.DataCardValue33.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Basic Salary_DataCard2'.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Name_DataCard2'.DataCardValue35.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Name_DataCard2'.DataCardValue35.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Employee Name_DataCard2'.DataCardValue35"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Current CTC_DataCard2'.DataCardValue67.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Current CTC_DataCard2'.DataCardValue67.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Current CTC_DataCard2'.DataCardValue67"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Email_DataCard2'.DataCardValue36.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Email_DataCard2'.DataCardValue36.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Employee Email_DataCard2'.DataCardValue36"
+                "type": "Admin_screen_1.Form5.'Total (A+B+C)_DataCard3'.DataCardValue106"
               }
             }
           ],
@@ -2523,19 +2283,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Current CTC_DataCard1'.DataCardValue14.DefaultSelectedItems"
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Employee Email_DataCard4'.DataCardValue93.DefaultSelectedItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Current CTC_DataCard1'.DataCardValue14.DefaultSelectedItems",
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Employee Email_DataCard4'.DataCardValue93.DefaultSelectedItems",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DefaultSelectedItems",
                 "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form1.'Current CTC_DataCard1'.DataCardValue14"
+                "type": "Admin_screen_1.Form5.'Employee Email_DataCard4'.DataCardValue93"
               }
             }
           ],
@@ -2553,19 +2313,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Id_DataCard3'.DataCardValue34.DefaultSelectedItems"
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Employee Name_DataCard4'.DataCardValue92.DefaultSelectedItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form3.'Employee Id_DataCard3'.DataCardValue34.DefaultSelectedItems",
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Employee Name_DataCard4'.DataCardValue92.DefaultSelectedItems",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DefaultSelectedItems",
                 "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form3.'Employee Id_DataCard3'.DataCardValue34"
+                "type": "Admin_screen_1.Form5.'Employee Name_DataCard4'.DataCardValue92"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Employee Id_DataCard6'.DataCardValue91.DefaultSelectedItems"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_screen_1.Form5.'Employee Id_DataCard6'.DataCardValue91.DefaultSelectedItems",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DefaultSelectedItems",
+                "module": "Admin_screen_1",
+                "type": "Admin_screen_1.Form5.'Employee Id_DataCard6'.DataCardValue91"
               }
             }
           ],

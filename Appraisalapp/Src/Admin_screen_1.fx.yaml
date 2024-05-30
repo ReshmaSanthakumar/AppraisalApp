@@ -33,17 +33,17 @@ Admin_screen_1 As screen:
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(72, 163, 62, 1)
-        OnSelect: =Navigate(Feedback_Screen)
+        OnSelect: =SubmitForm(Form5);Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
         PressedBorderColor: =RGBA(72, 163, 62, 1)
         PressedColor: =Self.Color
         PressedFill: =RGBA(72, 163, 62, 1)
         Size: =15
-        Text: ="Add Feedback"
+        Text: ="Submit"
         Width: =176
-        X: =126
-        Y: =681
+        X: =603
+        Y: =692
         ZIndex: =5
 
     Button4_4 As button:
@@ -97,333 +97,18 @@ Admin_screen_1 As screen:
         Y: =8
         ZIndex: =19
 
-    Form1 As form.PowerApps_CoreControls_Form:
+    Form5 As form.PowerApps_CoreControls_Form:
         BorderColor: =App.Theme.Colors.Darker40
         DataSource: ='Appraisal CTC Breakage'
         DefaultMode: =FormMode.New
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =563
-        NumberOfColumns: =1
+        Height: =565
         UseFluentV9Cards: =true
-        Width: =473
-        X: =11
-        Y: =84
+        Width: =1251
+        X: =60
+        Y: =83
         ZIndex: =20
 
-        "'Employee Email_DataCard3' As typedDataCard.fluentV9ComboBoxEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeEmail"
-            Default: =ThisItem.'Employee Email'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeEmail)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue87.Selected
-            Width: =473
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            DataCardKey87 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue87 As Combobox.pcfdataset:
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DefaultSelectedItems: =[Parent.Default]
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].EmployeeEmail)
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey87.Y + DataCardKey87.Height + 4
-                ZIndex: =2
-
-            ErrorMessage36 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue87.Y + DataCardValue87.Height
-                ZIndex: =3
-
-            StarVisible36 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =20
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey87.Y
-                ZIndex: =4
-
-        "'Employee Name_DataCard3' As typedDataCard.fluentV9ComboBoxEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeName"
-            Default: =ThisItem.'Employee Name'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeName)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue86.Selected
-            Width: =473
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            DataCardKey86 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue86 As Combobox.pcfdataset:
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DefaultSelectedItems: =[Parent.Default]
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].EmployeeName)
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey86.Y + DataCardKey86.Height + 4
-                ZIndex: =2
-
-            ErrorMessage35 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue86.Y + DataCardValue86.Height
-                ZIndex: =3
-
-            StarVisible35 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =20
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey86.Y
-                ZIndex: =4
-
-        "'Employee Id_DataCard4' As typedDataCard.fluentV9ComboBoxEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeId"
-            Default: =ThisItem.'Employee Id'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeId)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue85.Selected
-            Width: =473
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey85 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue85 As Combobox.pcfdataset:
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DefaultSelectedItems: =[Parent.Default]
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].EmployeeId)
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey85.Y + DataCardKey85.Height + 4
-                ZIndex: =2
-
-            ErrorMessage34 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue85.Y + DataCardValue85.Height
-                ZIndex: =3
-
-            StarVisible34 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =20
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey85.Y
-                ZIndex: =4
-
-        "'Current CTC_DataCard1' As typedDataCard.fluentV9ComboBoxEditCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="CTC"
-            Default: =ThisItem.'Current CTC'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,CTC)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =124
-            Required: =false
-            Update: =DataCardValue14.Selected
-            Width: =473
-            X: =0
-            Y: =3
-            ZIndex: =21
-
-            DataCardKey14 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue14 As Combobox.pcfdataset:
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DefaultSelectedItems: =[Gallery1.Selected.'Current CTC (Rs.)']
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].CTC)
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 4
-                ZIndex: =2
-
-            ErrorMessage12 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue14.Y + DataCardValue14.Height
-                ZIndex: =3
-
-            StarVisible12 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =20
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey14.Y
-                ZIndex: =4
-
-        Hike_DataCard1 As typedDataCard.fluentV9NumberEditCard:
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Hike"
-            Default: =ThisItem.Hike
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Hike)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =97
-            Required: =false
-            Update: =Value(DataCardValue15.Value)
-            Width: =473
-            X: =0
-            Y: =4
-            ZIndex: =21
-
-            DataCardKey15 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue15 As 'Text input'":
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey15.Y + DataCardKey15.Height + 4
-                ZIndex: =2
-
-            ErrorMessage13 As Text:
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue15.Y + DataCardValue15.Height
-                ZIndex: =3
-
-            StarVisible13 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey15.Y
-                ZIndex: =4
-
-    Form3 As form:
-        BorderColor: =App.Theme.Colors.Darker40
-        DataSource: ='Appraisal CTC Breakage'
-        Height: =659
-        Width: =894
-        X: =472
-        Y: =84
-        ZIndex: =21
-
-        "'Basic Salary_DataCard2' As typedDataCard.numberEditCard":
+        "'Basic Salary_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="BasicSalary"
@@ -431,90 +116,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,BasicSalary)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue33.Text)
-            Width: =298
-            X: =0
+            Update: =Value(DataCardValue89.Value)
+            Width: =417
+            X: =1
             Y: =1
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey33 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey89 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue33 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue89 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey33.Y + DataCardKey33.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey89.Y + DataCardKey89.Height + 4
                 ZIndex: =2
 
-            ErrorMessage20 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage38 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue33.Y + DataCardValue33.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue89.Y + DataCardValue89.Height
                 ZIndex: =3
 
-            StarVisible20 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey33.Height
-                Size: =13
+            StarVisible38 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey33.Y
+                X: =0
+                Y: =DataCardKey89.Y
                 ZIndex: =4
 
-        "'Employee Id_DataCard3' As typedDataCard.comboBoxEditCard":
+        "'Employee Id_DataCard6' As typedDataCard.fluentV9ComboBoxEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmployeeId"
@@ -522,281 +176,182 @@ Admin_screen_1 As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeId)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =110
+            Height: =162
             Required: =false
-            Update: =DataCardValue34.Selected
-            Width: =298
+            Update: =DataCardValue91.Selected
+            Width: =417
             X: =0
             Y: =0
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey34 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey91 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue34 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =App.Theme.Colors.Primary
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =App.Theme.Colors.Darker10
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DataCardValue91 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DefaultSelectedItems: =[Gallery1.Selected.'Employee Id']
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                Height: =32
                 Items: =Choices([@'Appraisal CTC Breakage'].EmployeeId)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =App.Theme.Colors.Darker30
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Appraisal CTC Breakage'.EmployeeId,DataCardValue34.SearchText)
-                SelectionFill: =App.Theme.Colors.Primary
-                SelectMultiple: =false
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey34.Y + DataCardKey34.Height + 5
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey91.Y + DataCardKey91.Height + 4
                 ZIndex: =2
 
-            ErrorMessage21 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage39 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue34.Y + DataCardValue34.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue91.Y + DataCardValue91.Height
                 ZIndex: =3
 
-            StarVisible21 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey34.Height
-                Size: =13
+            StarVisible39 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey34.Y
+                X: =0
+                Y: =DataCardKey91.Y
                 ZIndex: =4
 
-        "'Employee Name_DataCard2' As typedDataCard.comboBoxEditCard":
+        "'Employee Name_DataCard4' As typedDataCard.fluentV9ComboBoxEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmployeeName"
             Default: =ThisItem.'Employee Name'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeName)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =DataCardValue35.Selected
-            Width: =298
+            Update: =DataCardValue92.Selected
+            Width: =417
             X: =1
             Y: =0
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey35 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey92 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue35 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =App.Theme.Colors.Primary
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =App.Theme.Colors.Darker10
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
+            DataCardValue92 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DefaultSelectedItems: =[Gallery1.Selected.Name]
                 DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                Height: =32
                 Items: =Choices([@'Appraisal CTC Breakage'].EmployeeName)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =App.Theme.Colors.Darker30
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Appraisal CTC Breakage'.EmployeeName,DataCardValue35.SearchText)
-                SelectionFill: =App.Theme.Colors.Primary
-                SelectMultiple: =false
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey35.Y + DataCardKey35.Height + 5
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey92.Y + DataCardKey92.Height + 4
                 ZIndex: =2
 
-            ErrorMessage22 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage40 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue35.Y + DataCardValue35.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue92.Y + DataCardValue92.Height
                 ZIndex: =3
 
-            StarVisible22 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey35.Height
-                Size: =13
+            StarVisible40 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey35.Y
+                X: =0
+                Y: =DataCardKey92.Y
                 ZIndex: =4
 
-        "'Employee Email_DataCard2' As typedDataCard.comboBoxEditCard":
+        "'Employee Email_DataCard4' As typedDataCard.fluentV9ComboBoxEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmployeeEmail"
             Default: =ThisItem.'Employee Email'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeEmail)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =DataCardValue36.Selected
-            Width: =298
+            Update: =DataCardValue93.Selected
+            Width: =417
             X: =2
             Y: =0
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey36 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey93 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue36 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =App.Theme.Colors.Primary
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =App.Theme.Colors.Darker10
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
+            DataCardValue93 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DefaultSelectedItems: =[Gallery1.Selected.Title]
                 DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                Height: =32
                 Items: =Choices([@'Appraisal CTC Breakage'].EmployeeEmail)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =App.Theme.Colors.Darker30
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Appraisal CTC Breakage'.EmployeeEmail,DataCardValue36.SearchText)
-                SelectionFill: =App.Theme.Colors.Primary
-                SelectMultiple: =false
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey93.Y + DataCardKey93.Height + 4
                 ZIndex: =2
 
-            ErrorMessage23 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage41 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue36.Y + DataCardValue36.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue93.Y + DataCardValue93.Height
                 ZIndex: =3
 
-            StarVisible23 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey36.Height
-                Size: =13
+            StarVisible41 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey36.Y
+                X: =0
+                Y: =DataCardKey93.Y
                 ZIndex: =4
 
-        "'House Rent Allowance_DataCard2' As typedDataCard.numberEditCard":
+        "'House Rent Allowance_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="HouseRentAllowance"
@@ -804,90 +359,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,HouseRentAllowance)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue63.Text)
-            Width: =298
-            X: =1
+            Update: =Value(DataCardValue94.Value)
+            Width: =417
+            X: =2
             Y: =1
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey63 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey94 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue63 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue94 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey63.Y + DataCardKey63.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey94.Y + DataCardKey94.Height + 4
                 ZIndex: =2
 
-            ErrorMessage24 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage42 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue63.Y + DataCardValue63.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue94.Y + DataCardValue94.Height
                 ZIndex: =3
 
-            StarVisible24 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey63.Height
-                Size: =13
+            StarVisible42 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey63.Y
+                X: =0
+                Y: =DataCardKey94.Y
                 ZIndex: =4
 
-        "'Special Personal Allowance_DataCard2' As typedDataCard.numberEditCard":
+        "'Special Personal Allowance_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="SpecialPersonalAllowance"
@@ -895,90 +419,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,SpecialPersonalAllowance)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue64.Text)
-            Width: =298
-            X: =2
-            Y: =1
-            ZIndex: =22
+            Update: =Value(DataCardValue95.Value)
+            Width: =417
+            X: =0
+            Y: =2
+            ZIndex: =21
 
-            DataCardKey64 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey95 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue64 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue95 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey64.Y + DataCardKey64.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey95.Y + DataCardKey95.Height + 4
                 ZIndex: =2
 
-            ErrorMessage25 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage43 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue64.Y + DataCardValue64.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue95.Y + DataCardValue95.Height
                 ZIndex: =3
 
-            StarVisible25 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey64.Height
-                Size: =13
+            StarVisible43 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey64.Y
+                X: =0
+                Y: =DataCardKey95.Y
                 ZIndex: =4
 
-        "'Leave Travel Allowance_DataCard2' As typedDataCard.numberEditCard":
+        "'Leave Travel Allowance_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="LeaveTravelAllowance"
@@ -986,90 +479,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,LeaveTravelAllowance)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue65.Text)
-            Width: =298
-            X: =0
+            Update: =Value(DataCardValue96.Value)
+            Width: =417
+            X: =1
             Y: =2
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey65 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey96 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue65 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue96 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey65.Y + DataCardKey65.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey96.Y + DataCardKey96.Height + 4
                 ZIndex: =2
 
-            ErrorMessage26 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage44 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue65.Y + DataCardValue65.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue96.Y + DataCardValue96.Height
                 ZIndex: =3
 
-            StarVisible26 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey65.Height
-                Size: =13
+            StarVisible44 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey65.Y
+                X: =0
+                Y: =DataCardKey96.Y
                 ZIndex: =4
 
-        "'Total Gross (A)_DataCard2' As typedDataCard.textualViewCard":
+        "'Total Gross (A)_DataCard3' As typedDataCard.fluentV9TextualViewCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Total_x0020_Gross_x0020__x0028_A"
@@ -1077,46 +539,36 @@ Admin_screen_1 As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020_Gross_x0020__x0028_A)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =70
             Required: =false
-            Width: =298
-            X: =1
+            Width: =417
+            X: =2
             Y: =2
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey66 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey97 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue66 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+            "DataCardValue97 As 'Text input'":
+                DisplayMode: =DisplayMode.View
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey97.Y + DataCardKey97.Height + 4
                 ZIndex: =2
 
-        "'Current CTC_DataCard2' As typedDataCard.comboBoxEditCard":
+        "'Current CTC_DataCard3' As typedDataCard.fluentV9ComboBoxEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="CTC"
@@ -1124,93 +576,120 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,CTC)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =DataCardValue67.Selected
-            Width: =298
-            X: =2
-            Y: =2
-            ZIndex: =22
+            Update: =DataCardValue98.Selected
+            Width: =417
+            X: =0
+            Y: =3
+            ZIndex: =21
 
-            DataCardKey67 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey98 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue67 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =App.Theme.Colors.Primary
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =App.Theme.Colors.Darker10
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["Value"]
+            DataCardValue98 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                Height: =32
                 Items: =Choices([@'Appraisal CTC Breakage'].CTC)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =App.Theme.Colors.Darker30
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Appraisal CTC Breakage'.CTC,DataCardValue67.SearchText)
-                SelectionFill: =App.Theme.Colors.Primary
-                SelectMultiple: =false
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey67.Y + DataCardKey67.Height + 5
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey98.Y + DataCardKey98.Height + 4
                 ZIndex: =2
 
-            ErrorMessage27 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage45 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue67.Y + DataCardValue67.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue98.Y + DataCardValue98.Height
                 ZIndex: =3
 
-            StarVisible27 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey67.Height
-                Size: =13
+            StarVisible45 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =20
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey67.Y
+                X: =0
+                Y: =DataCardKey98.Y
                 ZIndex: =4
 
-        "'Provident Fund_DataCard2' As typedDataCard.numberEditCard":
+        Hike_DataCard3 As typedDataCard.fluentV9NumberEditCard:
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Hike"
+            Default: =ThisItem.Hike
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Hike)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =Value(DataCardValue99.Value)
+            Width: =417
+            X: =0
+            Y: =1
+            ZIndex: =21
+
+            DataCardKey99 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue99 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey99.Y + DataCardKey99.Height + 4
+                ZIndex: =2
+
+            ErrorMessage46 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue99.Y + DataCardValue99.Height
+                ZIndex: =3
+
+            StarVisible46 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey99.Y
+                ZIndex: =4
+
+        "'Provident Fund_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="ProvidentFund"
@@ -1218,90 +697,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,ProvidentFund)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue69.Text)
-            Width: =298
-            X: =0
+            Update: =Value(DataCardValue100.Value)
+            Width: =417
+            X: =1
             Y: =3
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey69 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey100 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue69 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue100 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey100.Y + DataCardKey100.Height + 4
                 ZIndex: =2
 
-            ErrorMessage29 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage47 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue69.Y + DataCardValue69.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue100.Y + DataCardValue100.Height
                 ZIndex: =3
 
-            StarVisible29 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey69.Height
-                Size: =13
+            StarVisible47 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey69.Y
+                X: =0
+                Y: =DataCardKey100.Y
                 ZIndex: =4
 
-        "'Retirals Component (B)_DataCard2' As typedDataCard.textualViewCard":
+        "'Retirals Component (B)_DataCard3' As typedDataCard.fluentV9TextualViewCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Retirals_x0020_Component_x0020__"
@@ -1309,46 +757,36 @@ Admin_screen_1 As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Retirals_x0020_Component_x0020__)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =70
             Required: =false
-            Width: =298
-            X: =1
+            Width: =417
+            X: =2
             Y: =3
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey70 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey101 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue70 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey70.Y + DataCardKey70.Height + 5
+            "DataCardValue101 As 'Text input'":
+                DisplayMode: =DisplayMode.View
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey101.Y + DataCardKey101.Height + 4
                 ZIndex: =2
 
-        "'Project Incentives_DataCard2' As typedDataCard.numberEditCard":
+        "'Project Incentives_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Project_x0020_Incentives"
@@ -1356,90 +794,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Project_x0020_Incentives)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue71.Text)
-            Width: =298
-            X: =2
-            Y: =3
-            ZIndex: =22
+            Update: =Value(DataCardValue102.Value)
+            Width: =417
+            X: =0
+            Y: =4
+            ZIndex: =21
 
-            DataCardKey71 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey102 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue71 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue102 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey71.Y + DataCardKey71.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey102.Y + DataCardKey102.Height + 4
                 ZIndex: =2
 
-            ErrorMessage30 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage48 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue71.Y + DataCardValue71.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue102.Y + DataCardValue102.Height
                 ZIndex: =3
 
-            StarVisible30 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey71.Height
-                Size: =13
+            StarVisible48 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey71.Y
+                X: =0
+                Y: =DataCardKey102.Y
                 ZIndex: =4
 
-        "'Target Incentives_DataCard2' As typedDataCard.numberEditCard":
+        "'Target Incentives_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Target_x0020_Incentives"
@@ -1447,90 +854,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Target_x0020_Incentives)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue72.Text)
-            Width: =298
-            X: =0
+            Update: =Value(DataCardValue103.Value)
+            Width: =417
+            X: =1
             Y: =4
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey72 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey103 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue72 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue103 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey72.Y + DataCardKey72.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey103.Y + DataCardKey103.Height + 4
                 ZIndex: =2
 
-            ErrorMessage31 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage49 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue72.Y + DataCardValue72.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue103.Y + DataCardValue103.Height
                 ZIndex: =3
 
-            StarVisible31 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey72.Height
-                Size: =13
+            StarVisible49 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey72.Y
+                X: =0
+                Y: =DataCardKey103.Y
                 ZIndex: =4
 
-        "'Annual Performance Bonus_DataCard2' As typedDataCard.numberEditCard":
+        "'Annual Performance Bonus_DataCard3' As typedDataCard.fluentV9NumberEditCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Annual_x0020_Performance_x0020_B"
@@ -1538,90 +914,59 @@ Admin_screen_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Annual_x0020_Performance_x0020_B)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
-            Update: =Value(DataCardValue73.Text)
-            Width: =298
-            X: =1
+            Update: =Value(DataCardValue104.Value)
+            Width: =417
+            X: =2
             Y: =4
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey73 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey104 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue73 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+            "DataCardValue104 As 'Text input'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =App.Theme.Font
-                Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =13
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey73.Y + DataCardKey73.Height + 5
+                Height: =32
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey104.Y + DataCardKey104.Height + 4
                 ZIndex: =2
 
-            ErrorMessage32 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+            ErrorMessage50 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue73.Y + DataCardValue73.Height
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue104.Y + DataCardValue104.Height
                 ZIndex: =3
 
-            StarVisible32 As label:
-                Align: =Align.Center
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =DataCardKey73.Height
-                Size: =13
+            StarVisible50 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
-                Wrap: =false
-                Y: =DataCardKey73.Y
+                X: =0
+                Y: =DataCardKey104.Y
                 ZIndex: =4
 
-        "'Total other Components (C)_DataCard2' As typedDataCard.textualViewCard":
+        "'Total other Components (C)_DataCard3' As typedDataCard.fluentV9TextualViewCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Total_x0020_other_x0020_Componen"
@@ -1629,46 +974,36 @@ Admin_screen_1 As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020_other_x0020_Componen)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =70
             Required: =false
-            Width: =298
-            X: =2
-            Y: =4
-            ZIndex: =22
+            Width: =417
+            X: =0
+            Y: =5
+            ZIndex: =21
 
-            DataCardKey74 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey105 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue74 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey74.Y + DataCardKey74.Height + 5
+            "DataCardValue105 As 'Text input'":
+                DisplayMode: =DisplayMode.View
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey105.Y + DataCardKey105.Height + 4
                 ZIndex: =2
 
-        "'Total (A+B+C)_DataCard2' As typedDataCard.textualViewCard":
+        "'Total (A+B+C)_DataCard3' As typedDataCard.fluentV9TextualViewCard":
             BorderColor: =App.Theme.Colors.Darker40
             BorderStyle: =BorderStyle.Solid
             DataField: ="Total_x0020__x0028_A_x002b_B_x00"
@@ -1676,418 +1011,47 @@ Admin_screen_1 As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020__x0028_A_x002b_B_x00)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =70
             Required: =false
-            Width: =298
-            X: =0
-            Y: =5
-            ZIndex: =22
-
-            DataCardKey75 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue75 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey75.Y + DataCardKey75.Height + 5
-                ZIndex: =2
-
-        "'Basic Salary(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Basic_x0020_Salary_x0028_Rs_x002"
-            Default: =ThisItem.'Basic Salary(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Basic_x0020_Salary_x0028_Rs_x002)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
+            Width: =417
             X: =1
             Y: =5
-            ZIndex: =22
+            ZIndex: =21
 
-            DataCardKey76 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
+            DataCardKey106 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
                 Wrap: =false
-                X: =30
+                X: =24
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue76 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey76.Y + DataCardKey76.Height + 5
+            "DataCardValue106 As 'Text input'":
+                DisplayMode: =DisplayMode.View
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey106.Y + DataCardKey106.Height + 4
                 ZIndex: =2
 
-        "'House Rent Allowance(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="House_x0020_Rent_x0020_Allowance"
-            Default: =ThisItem.'House Rent Allowance(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,House_x0020_Rent_x0020_Allowance)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
-            X: =2
-            Y: =5
-            ZIndex: =22
-
-            DataCardKey77 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue77 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey77.Y + DataCardKey77.Height + 5
-                ZIndex: =2
-
-        "'Special Personal Allowance(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Special_x0020_Personal_x0020_All"
-            Default: =ThisItem.'Special Personal Allowance(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Special_x0020_Personal_x0020_All)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
-            X: =0
-            Y: =6
-            ZIndex: =22
-
-            DataCardKey78 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue78 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey78.Y + DataCardKey78.Height + 5
-                ZIndex: =2
-
-        "'Leave Travel Allowance(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Leave_x0020_Travel_x0020_Allowan"
-            Default: =ThisItem.'Leave Travel Allowance(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Leave_x0020_Travel_x0020_Allowan)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
-            X: =1
-            Y: =6
-            ZIndex: =22
-
-            DataCardKey79 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue79 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey79.Y + DataCardKey79.Height + 5
-                ZIndex: =2
-
-        "'Provident Fund(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Provident_x0020_Fund_x0028_Rs_x0"
-            Default: =ThisItem.'Provident Fund(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Provident_x0020_Fund_x0028_Rs_x0)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
-            X: =2
-            Y: =6
-            ZIndex: =22
-
-            DataCardKey80 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue80 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey80.Y + DataCardKey80.Height + 5
-                ZIndex: =2
-
-        "'Project Incentives(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Project_x0020_Incentives_x0028_R"
-            Default: =ThisItem.'Project Incentives(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Project_x0020_Incentives_x0028_R)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
-            X: =0
-            Y: =7
-            ZIndex: =22
-
-            DataCardKey81 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue81 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey81.Y + DataCardKey81.Height + 5
-                ZIndex: =2
-
-        "'Target Incentives(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Target_x0020_Incentives_x0028_Rs"
-            Default: =ThisItem.'Target Incentives(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Target_x0020_Incentives_x0028_Rs)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
-            X: =1
-            Y: =7
-            ZIndex: =22
-
-            DataCardKey82 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue82 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey82.Y + DataCardKey82.Height + 5
-                ZIndex: =2
-
-        "'Annual Performance Bonus(Rs.)_DataCard2' As typedDataCard.textualViewCard":
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Annual_x0020_Performance_x0020_B0"
-            Default: =ThisItem.'Annual Performance Bonus(Rs.)'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Annual_x0020_Performance_x0020_B0)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =298
-            X: =2
-            Y: =7
-            ZIndex: =22
-
-            DataCardKey83 As label:
-                AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =App.Theme.Font
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue83 As label:
-                AutoHeight: =true
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                Font: =App.Theme.Font
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey83.Y + DataCardKey83.Height + 5
-                ZIndex: =2
+    Label13 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        Size: =15
+        Text: |-
+            ="Please Fill the Hike feild:"
+        Width: =558
+        X: =80
+        Y: =182
+        ZIndex: =21
 
