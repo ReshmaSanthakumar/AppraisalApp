@@ -115,7 +115,7 @@ Admin_screen_1 As screen:
             DataField: ="EmployeeId"
             Default: =ThisItem.'Employee Id'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeId)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Employee Id')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =162
             Required: =false
@@ -141,7 +141,7 @@ Admin_screen_1 As screen:
                 DefaultSelectedItems: =[Gallery1.Selected.'Employee Id']
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].EmployeeId)
+                Items: =Choices([@'Appraisal CTC Breakage'].'Employee Id')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -176,7 +176,7 @@ Admin_screen_1 As screen:
             DataField: ="EmployeeName"
             Default: =ThisItem.'Employee Name'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeName)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Employee Name')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -202,7 +202,7 @@ Admin_screen_1 As screen:
                 DefaultSelectedItems: =[Gallery1.Selected.Name]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].EmployeeName)
+                Items: =Choices([@'Appraisal CTC Breakage'].'Employee Name')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -237,7 +237,7 @@ Admin_screen_1 As screen:
             DataField: ="EmployeeEmail"
             Default: =ThisItem.'Employee Email'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeEmail)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Employee Email')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -263,7 +263,7 @@ Admin_screen_1 As screen:
                 DefaultSelectedItems: =[Gallery1.Selected.Title]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].EmployeeEmail)
+                Items: =Choices([@'Appraisal CTC Breakage'].'Employee Email')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -358,7 +358,7 @@ Admin_screen_1 As screen:
             DataField: ="BasicSalary"
             Default: =ThisItem.'Basic Salary'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,BasicSalary)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Basic Salary')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -418,7 +418,7 @@ Admin_screen_1 As screen:
             DataField: ="HouseRentAllowance"
             Default: =ThisItem.'House Rent Allowance'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,HouseRentAllowance)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'House Rent Allowance')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -478,7 +478,7 @@ Admin_screen_1 As screen:
             DataField: ="SpecialPersonalAllowance"
             Default: =ThisItem.'Special Personal Allowance'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,SpecialPersonalAllowance)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Special Personal Allowance')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -538,7 +538,7 @@ Admin_screen_1 As screen:
             DataField: ="LeaveTravelAllowance"
             Default: =ThisItem.'Leave Travel Allowance'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,LeaveTravelAllowance)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Leave Travel Allowance')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -598,7 +598,7 @@ Admin_screen_1 As screen:
             DataField: ="Total_x0020_Gross_x0020__x0028_A"
             Default: =ThisItem.'Total Gross (A)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020_Gross_x0020__x0028_A)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Total Gross (A)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -635,7 +635,7 @@ Admin_screen_1 As screen:
             DataField: ="CTC"
             Default: =ThisItem.'Current CTC'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,CTC)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Current CTC')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -661,7 +661,7 @@ Admin_screen_1 As screen:
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
-                Items: =Choices([@'Appraisal CTC Breakage'].CTC)
+                Items: =Choices([@'Appraisal CTC Breakage'].'Current CTC')
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -696,7 +696,7 @@ Admin_screen_1 As screen:
             DataField: ="ProvidentFund"
             Default: =ThisItem.'Provident Fund'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,ProvidentFund)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Provident Fund')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -756,7 +756,7 @@ Admin_screen_1 As screen:
             DataField: ="Retirals_x0020_Component_x0020__"
             Default: =ThisItem.'Retirals Component (B)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Retirals_x0020_Component_x0020__)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Retirals Component (B)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -793,7 +793,7 @@ Admin_screen_1 As screen:
             DataField: ="Project_x0020_Incentives"
             Default: =ThisItem.'Project Incentives'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Project_x0020_Incentives)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Project Incentives')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -853,7 +853,7 @@ Admin_screen_1 As screen:
             DataField: ="Target_x0020_Incentives"
             Default: =ThisItem.'Target Incentives'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Target_x0020_Incentives)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Target Incentives')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -913,7 +913,7 @@ Admin_screen_1 As screen:
             DataField: ="Annual_x0020_Performance_x0020_B"
             Default: =ThisItem.'Annual Performance Bonus'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Annual_x0020_Performance_x0020_B)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Annual Performance Bonus')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -973,7 +973,7 @@ Admin_screen_1 As screen:
             DataField: ="Total_x0020_other_x0020_Componen"
             Default: =ThisItem.'Total other Components (C)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020_other_x0020_Componen)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Total other Components (C)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -1010,7 +1010,7 @@ Admin_screen_1 As screen:
             DataField: ="Total_x0020__x0028_A_x002b_B_x00"
             Default: =ThisItem.'Total (A+B+C)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020__x0028_A_x002b_B_x00)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Total (A+B+C)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =false
@@ -1050,7 +1050,7 @@ Admin_screen_1 As screen:
         Height: =44
         Size: =18
         Text: |-
-            ="Please Fill the Hike field:"
+            ="Please Fill the Hike field(%):"
         Width: =558
         X: =80
         Y: =182
