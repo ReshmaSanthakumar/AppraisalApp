@@ -1087,7 +1087,7 @@ Admin_screen_1 As screen:
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(72, 163, 62, 1)
-        OnSelect: =SubmitForm(Form1)
+        OnSelect: =SubmitForm(Form1);NewForm(Form1);
         PaddingRight: =5.00
         PaddingTop: =5.00
         PressedBorderColor: =RGBA(72, 163, 62, 1)
