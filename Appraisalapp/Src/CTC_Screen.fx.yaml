@@ -1,4 +1,4 @@
-Admin_screen_1 As screen:
+CTC_Screen As screen:
     BackgroundImage: =
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary

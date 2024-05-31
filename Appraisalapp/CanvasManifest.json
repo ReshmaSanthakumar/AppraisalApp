@@ -137,13 +137,13 @@
     "Main_screen",
     "User_screen",
     "Admin_screen",
-    "Admin_screen_1",
+    "CTC_Screen",
     "Success_Screen",
     "Feedback_Screen",
     "scr_powerBI",
     "scr_userDT",
     "Screen1",
-    "Screen2",
+    "CTCDetail_Screen",
     "scr_flow"
   ]
 }
