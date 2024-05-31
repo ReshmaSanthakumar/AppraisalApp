@@ -47,17 +47,18 @@ Feedback_Screen As screen:
                 ZIndex: =1
 
             DataCardValue1 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =
                 BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
+                Height: =72
                 HoverBorderColor: =App.Theme.Colors.Darker40
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =App.Theme.Colors.Lighter70
@@ -232,7 +233,7 @@ Feedback_Screen As screen:
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(72, 163, 62, 1)
-        OnSelect: =SubmitForm(Form2);Navigate(Admin_screen)
+        OnSelect: =SubmitForm(Form2);Refresh(AppraisalUserList);Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
         PressedBorderColor: =RGBA(72, 163, 62, 1)
@@ -272,8 +273,8 @@ Feedback_Screen As screen:
         ZIndex: =5
 
     Rating1 As rating:
-        BorderColor: =App.Theme.Colors.Darker40
-        BorderStyle: =BorderStyle.Solid
+        BorderColor: =
+        BorderStyle: =BorderStyle.None
         BorderThickness: =0
         Default: =3
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -286,6 +287,7 @@ Feedback_Screen As screen:
         HoverFill: =Self.Fill
         PressedFill: =Self.Fill
         RatingFill: =RGBA(21, 68, 18, 1)
+        Visible: =true
         Width: =324
         X: =99
         Y: =477
