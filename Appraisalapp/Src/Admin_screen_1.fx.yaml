@@ -92,7 +92,6 @@ Admin_screen_1 As screen:
         DataSource: ='Appraisal CTC Breakage'
         DefaultMode: =FormMode.New
         Height: =604
-        Item: =First('Appraisal CTC Breakage')
         UseFluentV9Cards: =true
         Width: =1299
         X: =35
