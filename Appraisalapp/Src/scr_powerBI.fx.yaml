@@ -123,3 +123,17 @@ scr_powerBI As screen:
             Y: =171
             ZIndex: =3
 
+        Icon7_4 As icon.Mail:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =26
+            Icon: =Icon.Mail
+            OnSelect: =Navigate(scr_flow)
+            Visible: =varBI
+            Width: =25
+            X: =21
+            Y: =256
+            ZIndex: =4
+
