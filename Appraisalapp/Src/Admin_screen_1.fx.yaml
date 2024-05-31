@@ -90,7 +90,8 @@ Admin_screen_1 As screen:
     ButtonCanvas1 As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: =SubmitForm(Form3);NewForm(Form3)
+        OnSelect: |-
+            =Patch('Appraisal CTC Breakage',{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate});NewForm(Form3)
         Width: =96
         X: =643
         Y: =731
