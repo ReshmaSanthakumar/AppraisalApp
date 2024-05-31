@@ -63,7 +63,7 @@
       "MetaDataIDKey": "",
       "Name": "Annual Performance Bonus Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -198,7 +198,7 @@
       "MetaDataIDKey": "",
       "Name": "Annual Performance Bonus_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -333,7 +333,7 @@
       "MetaDataIDKey": "",
       "Name": "Approval Date_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 26,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -468,7 +468,7 @@
       "MetaDataIDKey": "",
       "Name": "Basic Salary Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -603,7 +603,7 @@
       "MetaDataIDKey": "",
       "Name": "Basic Salary_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -805,7 +805,7 @@
       "MetaDataIDKey": "",
       "Name": "Button3_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1065,7 +1065,7 @@
       "MetaDataIDKey": "",
       "Name": "Currency_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 29,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1200,7 +1200,7 @@
       "MetaDataIDKey": "",
       "Name": "Current CTC_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 24,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18416,7 +18416,7 @@
       "MetaDataIDKey": "",
       "Name": "Designation_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 28,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18551,7 +18551,7 @@
       "MetaDataIDKey": "",
       "Name": "Employee Email_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 23,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18686,7 +18686,7 @@
       "MetaDataIDKey": "",
       "Name": "Employee Id_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18821,7 +18821,7 @@
       "MetaDataIDKey": "",
       "Name": "Employee Name_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 22,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18934,7 +18934,7 @@
       "MetaDataIDKey": "",
       "Name": "FormViewer2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19064,7 +19064,7 @@
       "MetaDataIDKey": "",
       "Name": "Hike_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 27,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19199,7 +19199,7 @@
       "MetaDataIDKey": "",
       "Name": "House Rent Allowance Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19334,7 +19334,7 @@
       "MetaDataIDKey": "",
       "Name": "House Rent Allowance_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19489,7 +19489,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon1_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19705,7 +19705,7 @@
       "MetaDataIDKey": "",
       "Name": "Image1_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19974,7 +19974,7 @@
       "MetaDataIDKey": "",
       "Name": "Label1_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20239,7 +20239,7 @@
       "MetaDataIDKey": "",
       "Name": "Leave Travel Allowance Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20374,7 +20374,7 @@
       "MetaDataIDKey": "",
       "Name": "Leave Travel Allowance_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20509,7 +20509,7 @@
       "MetaDataIDKey": "",
       "Name": "New CTC in Words_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 30,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20644,7 +20644,7 @@
       "MetaDataIDKey": "",
       "Name": "New CTC_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 25,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20779,7 +20779,7 @@
       "MetaDataIDKey": "",
       "Name": "Project Incentives Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20914,7 +20914,7 @@
       "MetaDataIDKey": "",
       "Name": "Project Incentives_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21049,7 +21049,7 @@
       "MetaDataIDKey": "",
       "Name": "Provident Fund Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21184,7 +21184,7 @@
       "MetaDataIDKey": "",
       "Name": "Provident Fund_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21319,7 +21319,7 @@
       "MetaDataIDKey": "",
       "Name": "Retirals Component (B)_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21454,7 +21454,7 @@
       "MetaDataIDKey": "",
       "Name": "Schedule Send Email_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21658,7 +21658,7 @@
       "MetaDataIDKey": "",
       "Name": "Special Personal Allowance Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21793,7 +21793,7 @@
       "MetaDataIDKey": "",
       "Name": "Special Personal Allowance_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21928,7 +21928,7 @@
       "MetaDataIDKey": "",
       "Name": "Target Incentives Cur_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22063,7 +22063,7 @@
       "MetaDataIDKey": "",
       "Name": "Target Incentives_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22198,7 +22198,7 @@
       "MetaDataIDKey": "",
       "Name": "Total (A+B+C)_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22333,7 +22333,7 @@
       "MetaDataIDKey": "",
       "Name": "Total Gross (A)_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22468,7 +22468,7 @@
       "MetaDataIDKey": "",
       "Name": "Total other Components (C)_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
