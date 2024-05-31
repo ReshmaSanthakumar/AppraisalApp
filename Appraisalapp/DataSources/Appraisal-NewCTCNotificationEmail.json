@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "cb35d20e-7f2f-4ed0-ac6d-20570ab67788",
+    "Name": "Appraisal-NewCTCNotificationEmail",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "12db077b-671e-ef11-840a-002248d63ac4"
+  }
+]

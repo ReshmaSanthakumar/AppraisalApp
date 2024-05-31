@@ -1,0 +1,87 @@
+scr_flow As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =Set(varBlProgress,false)
+
+    Label1_6 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(21, 68, 18, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =57
+        Size: =20
+        Text: ="Appraisal Email Flow Trigger"
+        Width: =1366.00
+        X: =0.00
+        ZIndex: =2
+
+    Icon1_5 As icon.ChevronLeft:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =46
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Navigate(Admin_screen)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =25
+        X: =21
+        Y: =8
+        ZIndex: =4
+
+    Image1_3 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Image: ='logo-colour-1_1'
+        Width: =107
+        X: =80
+        Y: =7
+        ZIndex: =5
+
+    Button3_3 As button:
+        BorderColor: =RGBA(72, 163, 62, 1)
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(21, 68, 18, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =52
+        HoverBorderColor: =RGBA(72, 163, 62, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(72, 163, 62, 1)
+        OnSelect: =Set(varBlProgress,true);Set(varFlowOurput,'Appraisal-NewCTCNotificationEmail'.Run())
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        PressedBorderColor: =RGBA(72, 163, 62, 1)
+        PressedColor: =Self.Color
+        PressedFill: =RGBA(72, 163, 62, 1)
+        Size: =15
+        Text: ="Trigger the appraisal email with pdf attachment send flow now"
+        Width: =631
+        X: =367
+        Y: =140
+        ZIndex: =6
+
+    Label14 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =38
+        Size: =13
+        Text: =If(varFlowOurput,"Flow Completed","In Progress")
+        Visible: =varBlProgress
+        Width: =138
+        X: =614
+        Y: =274
+        ZIndex: =7
+

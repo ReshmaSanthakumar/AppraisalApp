@@ -1,4 +1,40 @@
 {
+  "ed9b2316-10cd-4bc8-920d-b37f1322ed40": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "Appraisal - New CTC Notification Email"
+        },
+        "workflowEntityId": {
+          "value": "12db077b-671e-ef11-840a-002248d63ac4"
+        },
+        "workflowName": {
+          "value": "70ff2787-3526-80fd-d5cc-4081ef558577"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "Appraisal - New CTC Notification Email"
+        },
+        "workflowEntityId": {
+          "value": "12db077b-671e-ef11-840a-002248d63ac4"
+        },
+        "workflowName": {
+          "value": "70ff2787-3526-80fd-d5cc-4081ef558577"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Appraisal-NewCTCNotificationEmail"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ed9b2316-10cd-4bc8-920d-b37f1322ed40"
+  },
   "fa7faab7-9e2c-4fc3-9f27-cbcaaf032570": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read",
