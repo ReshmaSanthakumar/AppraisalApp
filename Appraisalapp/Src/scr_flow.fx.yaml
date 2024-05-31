@@ -20,21 +20,6 @@ scr_flow As screen:
         X: =0.00
         ZIndex: =2
 
-    Icon1_5 As icon.ChevronLeft:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =46
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Navigate(Admin_screen)
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =25
-        X: =21
-        Y: =8
-        ZIndex: =4
-
     Image1_3 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -84,4 +69,71 @@ scr_flow As screen:
         X: =614
         Y: =274
         ZIndex: =7
+
+    Container1_3 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(21, 68, 18, 1)
+        Height: =722
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =68
+        Y: =46
+        ZIndex: =8
+
+        Icon7_7 As icon.DetailList:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =46
+            Icon: =Icon.DetailList
+            OnSelect: =Navigate(scr_userDT)
+            Width: =25
+            X: =19
+            Y: =99
+            ZIndex: =1
+
+        Icon8_4 As icon.Home:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =46
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Admin_screen)
+            Tooltip: ="Home"
+            Width: =26
+            X: =18
+            Y: =27
+            ZIndex: =2
+
+        Icon9_4 As icon.Trending:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =46
+            Icon: =Icon.Trending
+            OnSelect: =Navigate(scr_powerBI)
+            Visible: =varBI
+            Width: =25
+            X: =23
+            Y: =171
+            ZIndex: =3
+
+        Icon7_8 As icon.Mail:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =26
+            Icon: =Icon.Mail
+            OnSelect: =Navigate(scr_flow)
+            Visible: =varBI
+            Width: =25
+            X: =21
+            Y: =256
+            ZIndex: =4
 

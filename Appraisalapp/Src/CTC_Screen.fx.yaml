@@ -88,6 +88,7 @@ CTC_Screen As screen:
         ZIndex: =28
 
     ButtonCanvas1 As Button:
+        BasePaletteColor: =RGBA(6, 54, 23, 1)
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |-
@@ -96,11 +97,11 @@ CTC_Screen As screen:
             Patch('Appraisal CTC Breakage',{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate,'New CTC in Words':DataCardValue63.Text});NewForm(Form3)
             ,
             // Notify
-            Notify("Duplicate record can't be inserted",NotificationType.Error,10000)
+            Notify("Duplicate record can't be inserted, Please enter update button",NotificationType.Error,10000)
             );
         Text: ="Add Record"
         Width: =114
-        X: =507
+        X: =403
         Y: =717
         ZIndex: =30
 
@@ -108,7 +109,7 @@ CTC_Screen As screen:
         BorderColor: =RGBA(255, 255, 255, 1)
         DataSource: ='Appraisal CTC Breakage'
         DefaultMode: =FormMode.New
-        Height: =649
+        Height: =639
         Width: =1366
         Y: =57
         ZIndex: =31
@@ -132,9 +133,10 @@ CTC_Screen As screen:
 
             DataCardKey63 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -145,7 +147,7 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue63 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
@@ -154,13 +156,15 @@ CTC_Screen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(232, 232, 232, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -224,9 +228,10 @@ CTC_Screen As screen:
 
             DataCardKey86 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -316,9 +321,10 @@ CTC_Screen As screen:
 
             DataCardKey87 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -408,9 +414,10 @@ CTC_Screen As screen:
 
             DataCardKey88 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -499,9 +506,10 @@ CTC_Screen As screen:
 
             DataCardKey89 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -512,21 +520,23 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue89 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =2
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(235, 235, 235, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -591,9 +601,10 @@ CTC_Screen As screen:
 
             DataCardKey94 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -604,22 +615,26 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue94 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(235, 235, 235, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
+                PressedFill: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -682,9 +697,10 @@ CTC_Screen As screen:
 
             DataCardKey93 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -695,7 +711,8 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue93 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: |-
@@ -706,13 +723,16 @@ CTC_Screen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(232, 232, 232, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
+                PressedFill: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -776,9 +796,10 @@ CTC_Screen As screen:
 
             DataCardKey95 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -789,22 +810,26 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue95 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
+                PressedFill: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -867,9 +892,10 @@ CTC_Screen As screen:
 
             DataCardKey65 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -880,22 +906,26 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue65 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
+                PressedFill: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -958,9 +988,10 @@ CTC_Screen As screen:
 
             DataCardKey66 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -972,21 +1003,25 @@ CTC_Screen As screen:
 
             DataCardValue66 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
+                PressedFill: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1049,9 +1084,10 @@ CTC_Screen As screen:
 
             DataCardKey67 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1062,22 +1098,26 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue67 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
+                PressedFill: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1140,9 +1180,10 @@ CTC_Screen As screen:
 
             DataCardKey68 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1153,22 +1194,25 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue68 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(235, 235, 235, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1231,9 +1275,10 @@ CTC_Screen As screen:
 
             DataCardKey70 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1244,22 +1289,25 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue70 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1322,9 +1370,10 @@ CTC_Screen As screen:
 
             DataCardKey72 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1335,22 +1384,25 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue72 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =App.Theme.Colors.Lighter70
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1413,9 +1465,10 @@ CTC_Screen As screen:
 
             DataCardKey73 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1426,22 +1479,25 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue73 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1504,9 +1560,10 @@ CTC_Screen As screen:
 
             DataCardKey74 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1517,22 +1574,25 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue74 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 214, 214, 0)
+                BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
                 Format: =TextFormat.Number
-                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverBorderColor: =RGBA(214, 221, 224, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =App.Theme.Colors.Lighter70
+                HoverFill: =RGBA(214, 221, 224, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(214, 221, 224, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1595,9 +1655,10 @@ CTC_Screen As screen:
 
             DataCardKey85 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1608,7 +1669,8 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue85 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 CalendarHeaderFill: =App.Theme.Colors.Primary
                 Color: =RGBA(0, 0, 0, 1)
                 DefaultDate: |
@@ -1616,9 +1678,10 @@ CTC_Screen As screen:
                     LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Schedule Send Email')
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(255, 255, 255, 1)
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Fill: =RGBA(237, 237, 237, 1)
                 Font: =App.Theme.Font
                 HoverDateFill: =App.Theme.Colors.Lighter70
                 IconBackground: =App.Theme.Colors.Primary
@@ -1684,9 +1747,10 @@ CTC_Screen As screen:
 
             DataCardKey92 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1697,7 +1761,8 @@ CTC_Screen As screen:
                 ZIndex: =1
 
             DataCardValue92 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(214, 221, 224, 1)
+                BorderStyle: =BorderStyle.None
                 CalendarHeaderFill: =App.Theme.Colors.Primary
                 Color: =RGBA(0, 0, 0, 1)
                 DefaultDate: =Parent.Default
@@ -1706,6 +1771,7 @@ CTC_Screen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Fill: =RGBA(230, 230, 230, 1)
                 Font: =App.Theme.Font
                 HoverDateFill: =App.Theme.Colors.Lighter70
                 IconBackground: =App.Theme.Colors.Primary
@@ -1754,7 +1820,9 @@ CTC_Screen As screen:
                 ZIndex: =4
 
     ButtonCanvas1_1 As Button:
+        BasePaletteColor: =RGBA(7, 54, 21, 1)
         DisplayMode: =DisplayMode.Edit
+        FontColor: =RGBA(255, 255, 255, 1)
         Height: =32
         OnSelect: |-
             =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
@@ -1768,7 +1836,19 @@ CTC_Screen As screen:
             );
         Text: ="Update Record"
         Width: =133
-        X: =667
+        X: =602
         Y: =717
         ZIndex: =32
+
+    ButtonCanvas1_2 As Button:
+        BasePaletteColor: =RGBA(7, 54, 21, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =32
+        OnSelect: =Navigate(CTCDetail_Screen)
+        Text: ="View Record"
+        Width: =133
+        X: =810
+        Y: =717
+        ZIndex: =33
 
