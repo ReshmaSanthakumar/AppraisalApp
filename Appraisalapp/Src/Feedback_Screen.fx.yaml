@@ -233,7 +233,7 @@ Feedback_Screen As screen:
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(72, 163, 62, 1)
-        OnSelect: =SubmitForm(Form2);Navigate(Admin_screen); Refresh(AppraisalUserList); Reset(Gallery1)
+        OnSelect: =SubmitForm(Form2);ClearCollect(col1,AppraisalUserList);Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
         PressedBorderColor: =RGBA(72, 163, 62, 1)

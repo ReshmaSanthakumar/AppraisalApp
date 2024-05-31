@@ -90,7 +90,7 @@ User_screen As screen:
             DataField: ="WhatisyourcurrentCTC_x003f_"
             Default: =ThisItem.'Current CTC (Rs.)'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,WhatisyourcurrentCTC_x003f_)
+            DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Current CTC (Rs.)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Required: =true
