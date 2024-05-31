@@ -454,19 +454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.AccessibleLabel"
+                  "fullyQualifiedName": "User_screen.Icon1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.AccessibleLabel",
+                  "fullyQualifiedName": "User_screen.Icon1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Feedback_Screen",
-                "type": "Feedback_Screen.Icon1_2"
+                "module": "User_screen",
+                "type": "User_screen.Icon1"
               }
             }
           ],
@@ -484,19 +484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.TabIndex"
+                  "fullyQualifiedName": "User_screen.Icon1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.TabIndex",
+                  "fullyQualifiedName": "User_screen.Icon1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Feedback_Screen",
-                "type": "Feedback_Screen.Icon1_2"
+                "module": "User_screen",
+                "type": "User_screen.Icon1"
               }
             }
           ],
@@ -508,96 +508,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Feedback_Screen",
-                "type": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Rate the Employee_DataCard1'.DataCardValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Feedback_Screen.Form2.'Rate the Employee_DataCard1'.DataCardValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Feedback_Screen",
-                "type": "Feedback_Screen.Form2.'Rate the Employee_DataCard1'.DataCardValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Feedback_Screen.Rating1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Feedback_Screen.Rating1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Feedback_Screen",
-                "type": "Feedback_Screen.Rating1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
         },
         {
           "locations": [
@@ -647,66 +557,6 @@
                 "member": "TabIndex",
                 "module": "Admin_screen_1",
                 "type": "Admin_screen_1.Icon1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Icon1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_screen",
-                "type": "User_screen.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_screen.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_screen.Icon1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "User_screen",
-                "type": "User_screen.Icon1"
               }
             }
           ],
@@ -1743,6 +1593,156 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Feedback_Screen",
+                "type": "Feedback_Screen.Icon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Feedback_Screen.Icon1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Feedback_Screen",
+                "type": "Feedback_Screen.Icon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Feedback_Screen",
+                "type": "Feedback_Screen.Form2.'Reporting Manager Feedback _DataCard3'.DataCardValue90"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Feedback_Screen.Form2.'Rate the Employee_DataCard1'.DataCardValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Feedback_Screen.Form2.'Rate the Employee_DataCard1'.DataCardValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Feedback_Screen",
+                "type": "Feedback_Screen.Form2.'Rate the Employee_DataCard1'.DataCardValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Feedback_Screen.Rating1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Feedback_Screen.Rating1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Feedback_Screen",
+                "type": "Feedback_Screen.Rating1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varManager"
                 }
               ],
@@ -2146,126 +2146,6 @@
                 "member": "Item",
                 "module": "Feedback_Screen",
                 "type": "Feedback_Screen.Form2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Employee Id_DataCard1'.DataCardValue27.Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Employee Id_DataCard1'.DataCardValue27.Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Value",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form1.'Employee Id_DataCard1'.DataCardValue27"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Employee Name_DataCard1'.DataCardValue28.Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Employee Name_DataCard1'.DataCardValue28.Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Value",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form1.'Employee Name_DataCard1'.DataCardValue28"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Employee Email_DataCard1'.DataCardValue29.Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Employee Email_DataCard1'.DataCardValue29.Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Value",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form1.'Employee Email_DataCard1'.DataCardValue29"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Current CTC_DataCard1'.DataCardValue30.Value"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_screen_1.Form1.'Current CTC_DataCard1'.DataCardValue30.Value",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Value",
-                "module": "Admin_screen_1",
-                "type": "Admin_screen_1.Form1.'Current CTC_DataCard1'.DataCardValue30"
               }
             }
           ],
