@@ -1519,7 +1519,9 @@ Admin_screen_1 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 CalendarHeaderFill: =App.Theme.Colors.Primary
                 Color: =RGBA(0, 0, 0, 1)
-                DefaultDate: =Parent.Default
+                DefaultDate: |
+                    =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
+                    LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Schedule Send Email')
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
