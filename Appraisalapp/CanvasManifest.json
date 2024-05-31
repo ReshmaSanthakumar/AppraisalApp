@@ -100,7 +100,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 6,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -142,6 +142,7 @@
     "Feedback_Screen",
     "scr_powerBI",
     "scr_userDT",
-    "Screen1"
+    "Screen1",
+    "Screen2"
   ]
 }
