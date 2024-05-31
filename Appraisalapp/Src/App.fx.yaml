@@ -40,17 +40,19 @@ App As appinfo:
             If( varCat="Team Lead",
                     ClearCollect(colRoleTable,Filter(AppraisalUserList,varEmail in 'Jeevan Reporting Manager Name' )),
             If( varCat="Manager",
+                Set(varbtn,true);
                 If( CountRows(varAdminTeam) = 1,
                     ClearCollect(colRoleTable,Filter(AppraisalUserList, varAdminTeamStr in Team.Value ) ) ,
-                    ClearCollect(colRoleTable,Filter(AppraisalUserList, Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr) && Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> ""));
-                 Set(varbtn,true)
+                    ClearCollect(colRoleTable,Filter(AppraisalUserList, Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) in Lower(varAdminTeamStr) && Lower(Concat(Sort(Team,Value,SortOrder.Ascending),Value," , ")) <> ""))
+                 
                 )
                
                 ,
             If( varCat="Super Admin",
+                Set(varbtn,true);
                     ClearCollect(colRoleTable,AppraisalUserList);
-                    Set(varBI,true);
-                    Set(varbtn,true)
+                    Set(varBI,true)
+                   
                 )
             ))
         );

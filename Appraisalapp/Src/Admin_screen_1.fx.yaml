@@ -90,8 +90,7 @@ Admin_screen_1 As screen:
     ButtonCanvas1 As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: |-
-            =Patch('Appraisal CTC Breakage',{'Employee Id':DataCardValue139.Value,'Approval Date':DataCardValue144.SelectedDate})
+        OnSelect: =SubmitForm(Form3);NewForm(Form3)
         Width: =96
         X: =643
         Y: =731
