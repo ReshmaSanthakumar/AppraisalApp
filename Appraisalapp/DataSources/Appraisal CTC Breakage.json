@@ -33,6 +33,7 @@
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "CurrentCTC": "Current CTC",
+      "Designation": "Designation",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "EmployeeEmail": "Employee Email",
