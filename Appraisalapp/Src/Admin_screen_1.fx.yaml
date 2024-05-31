@@ -93,15 +93,15 @@ Admin_screen_1 As screen:
         OnSelect: |-
             =If(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title)),
             // Add record
-            Patch('Appraisal CTC Breakage',{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate});NewForm(Form3)
+            Patch('Appraisal CTC Breakage',{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate,'New CTC in Words':DataCardValue63.Text});NewForm(Form3)
             ,
             // Notify
             Notify("Duplicate record can't be inserted",NotificationType.Error,10000)
             );
         Text: ="Add Record"
         Width: =114
-        X: =920
-        Y: =706
+        X: =507
+        Y: =717
         ZIndex: =30
 
     Form3 As form:
@@ -112,6 +112,98 @@ Admin_screen_1 As screen:
         Width: =1366
         Y: =57
         ZIndex: =31
+
+        "'New CTC in Words_DataCard2' As typedDataCard.textualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NewCTCinWords"
+            Default: =ThisItem.'New CTC in Words'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,NewCTCinWords)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Appraisal CTC Breakage'], DataSourceInfo.MaxLength, NewCTCinWords)
+            Required: =false
+            Update: =DataCardValue63.Text
+            Width: =455
+            X: =2
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey63 As label:
+                AutoHeight: =true
+                Color: =App.Theme.Colors.Darker30
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue63 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =App.Theme.Font
+                HoverBorderColor: =App.Theme.Colors.Darker40
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =App.Theme.Colors.Lighter70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey63.Y + DataCardKey63.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue63.Y + DataCardValue63.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Color: =App.Theme.Colors.Darker30
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                Height: =DataCardKey63.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey63.Y
+                ZIndex: =4
 
         "'Employee Id_DataCard3' As typedDataCard.textualEditCard":
             BorderColor: =App.Theme.Colors.Darker40
@@ -1667,13 +1759,16 @@ Admin_screen_1 As screen:
         OnSelect: |-
             =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
             // Add record
-            Patch('Appraisal CTC Breakage',LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title),{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate});NewForm(Form3);
+            Patch('Appraisal CTC Breakage',LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title),{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate,'New CTC in Words':DataCardValue63.Text});NewForm(Form3);
             // Notify the update
-            Notify("Record updated successfully",NotificationType.Success,5000)
+            Notify("Record updated successfully",NotificationType.Success,5000),
+            // Notify the add the record
+            Notify("Please add the Record",NotificationType.Success,5000)
+            
             );
         Text: ="Update Record"
-        Width: =152
-        X: =1082
-        Y: =706
+        Width: =133
+        X: =667
+        Y: =717
         ZIndex: =32
 
