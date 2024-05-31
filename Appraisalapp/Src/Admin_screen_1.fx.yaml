@@ -606,7 +606,9 @@ Admin_screen_1 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: |-
+                    =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
+                    Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).Hike)*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1661,7 +1663,7 @@ Admin_screen_1 As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |-
-            =If(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title)),
+            =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
             // Add record
             Patch('Appraisal CTC Breakage',LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title),{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate});NewForm(Form3);
             // Notify the update
