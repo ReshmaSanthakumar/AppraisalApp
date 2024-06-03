@@ -36,31 +36,6 @@ CTC_Screen As screen:
         X: =0.00
         ZIndex: =25
 
-    Button4_4 As button:
-        BorderColor: =RGBA(72, 163, 62, 1)
-        DisabledBorderColor: =RGBA(244, 244, 244, 1)
-        DisabledColor: =RGBA(0, 134, 208, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(5, 117, 48, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =29
-        HoverBorderColor: =RGBA(72, 163, 62, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
-        OnSelect: =Exit(true)
-        PaddingRight: =5.00
-        PaddingTop: =5.00
-        PressedBorderColor: =RGBA(72, 163, 62, 1)
-        PressedColor: =Self.Color
-        PressedFill: =RGBA(72, 163, 62, 1)
-        Size: =15
-        Text: ="Logout"
-        Width: =139
-        X: =1196
-        Y: =17
-        ZIndex: =26
-
     Icon1_3 As icon.ChevronLeft:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
@@ -91,17 +66,34 @@ CTC_Screen As screen:
         BasePaletteColor: =RGBA(6, 54, 23, 1)
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: |-
-            =If(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title)),
+        OnSelect: |
+            =If(IsBlank(DataCardValue93.Text)||(DataCardValue94.Text),
+                Notify("please Fill all the fields properly")
+            );
+            
+            If(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title)),
             // Add record
+            
             Patch('Appraisal CTC Breakage',{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate,'New CTC in Words':DataCardValue63.Text});NewForm(Form3);Navigate(CTCDetail_Screen)
-            ,
+            //,
             // Notify
-            Notify("Duplicate record can't be inserted, Please enter update button",NotificationType.Error,10000)
+            //Notify("Duplicate record can't be inserted, Please enter update button",NotificationType.Error,10000)
             );
         Text: ="Add Record"
-        Width: =114
-        X: =403
+        Visible: |-
+            =If(
+                IsBlank(
+                    LookUp(
+                        'Appraisal CTC Breakage',
+                        'Employee Email' = DataCardValue88.Text
+                    )
+                ),
+                true// Admin btn visible
+            ,
+                false
+            )
+        Width: =128
+        X: =607
         Y: =717
         ZIndex: =30
 
@@ -1831,17 +1823,27 @@ CTC_Screen As screen:
         OnSelect: |-
             =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
             // Add record
-            Patch('Appraisal CTC Breakage',LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title),{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate,'New CTC in Words':DataCardValue63.Text});NewForm(Form3);Navigate(CTCDetail_Screen)
-            ,
-            // Notify the update
-            Notify("Record updated successfully",NotificationType.Success,5000),
-            // Notify the add the record
-            Notify("Please add the Record",NotificationType.Success,5000)
+            Patch('Appraisal CTC Breakage',LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title),{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate,'New CTC in Words':DataCardValue63.Text});NewForm(Form3);Navigate(CTCDetail_Screen);
             
-            );
+            // Notify the update
+            Notify("Data updated successfully",NotificationType.Success,5000)
+            
+            )
         Text: ="Update Record"
+        Visible: |-
+            =If(
+                !IsBlank(
+                    LookUp(
+                        'Appraisal CTC Breakage',
+                        'Employee Email' = DataCardValue88.Text
+                    )
+                ),
+                true// Admin btn visible
+            ,
+                false
+            )
         Width: =133
-        X: =602
+        X: =444
         Y: =717
         ZIndex: =32
 
@@ -1852,8 +1854,20 @@ CTC_Screen As screen:
         Height: =32
         OnSelect: =Navigate(CTCDetail_Screen)
         Text: ="View Record"
+        Visible: |-
+            =If(
+                !IsBlank(
+                    LookUp(
+                        'Appraisal CTC Breakage',
+                        'Employee Email' = DataCardValue88.Text
+                    )
+                ),
+                true// Admin btn visible
+            ,
+                false
+            )
         Width: =133
-        X: =810
+        X: =766
         Y: =717
         ZIndex: =33
 

@@ -2,6 +2,7 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |-
         =Set(varEmail,User().Email);// User's Email
+        Set(varaddbtn,false);Set(varupdatebtn,false);
         Set(varbtn,false);
         Set(varBI,false);
         If(

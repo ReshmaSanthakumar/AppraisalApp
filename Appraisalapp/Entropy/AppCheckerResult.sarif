@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 513,
+                  "charOffset": 559,
                   "snippet": {
                     "text": "in"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 664,
+                  "charOffset": 710,
                   "snippet": {
                     "text": "in"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 861,
+                  "charOffset": 907,
                   "snippet": {
                     "text": "in"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1099,
+                  "charOffset": 1145,
                   "snippet": {
                     "text": "in"
                   }
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1311,
+                  "charOffset": 1357,
                   "snippet": {
                     "text": "in"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1459,
+                  "charOffset": 1505,
                   "snippet": {
                     "text": "in"
                   }
@@ -264,7 +264,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 1485,
+                  "charOffset": 1531,
                   "snippet": {
                     "text": "&&"
                   }
@@ -2924,6 +2924,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varaddbtn"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varaddbtn",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varaddbtn",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varManager"
                 }
               ],
@@ -2965,6 +2995,36 @@
               },
               "properties": {
                 "member": "varAdminRole",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varupdatebtn"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varupdatebtn",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varupdatebtn",
                 "module": "App",
                 "type": "App"
               }
