@@ -6,7 +6,7 @@ Feedback_Screen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DataSource: =AppraisalUserList
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =557
+        Height: =563
         Item: =Gallery1.Selected
         NumberOfColumns: =1
         Width: =1224
@@ -22,7 +22,7 @@ Feedback_Screen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Rate the Employee')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =139
+            Height: =203
             MaxLength: =
             Required: =false
             Update: =Rating1.Value
@@ -43,7 +43,7 @@ Feedback_Screen As screen:
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =53
                 ZIndex: =1
 
             DataCardValue1 As text:
@@ -117,7 +117,7 @@ Feedback_Screen As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@AppraisalUserList],DataSourceInfo.DisplayName,'Reporting Manager Feedback ')
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =317
+            Height: =344
             MaxLength: =DataSourceInfo([@AppraisalUserList], DataSourceInfo.MaxLength, 'Reporting Manager Feedback ')
             Required: =false
             Update: =DataCardValue90.Text
@@ -152,7 +152,7 @@ Feedback_Screen As screen:
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =App.Theme.Font
-                Height: =220
+                Height: =278
                 HintText: ="Feedback"
                 HoverBorderColor: =App.Theme.Colors.Darker40
                 HoverColor: =RGBA(0, 0, 0, 1)
@@ -166,7 +166,7 @@ Feedback_Screen As screen:
                 RadiusTopRight: =0
                 Size: =13
                 Tooltip: =Parent.DisplayName
-                Width: =873
+                Width: =1164
                 X: =30
                 Y: =53
                 ZIndex: =2
@@ -283,13 +283,33 @@ Feedback_Screen As screen:
         Fill: =RGBA(0, 0, 0, 0)
         FocusedBorderColor: =Self.BorderColor
         FocusedBorderThickness: =2
-        Height: =45
+        Height: =57
         HoverFill: =Self.Fill
         PressedFill: =Self.Fill
         RatingFill: =RGBA(21, 68, 18, 1)
+        Tooltip: =
         Visible: =true
-        Width: =324
-        X: =99
-        Y: =477
+        Width: =403
+        X: =80
+        Y: =548
         ZIndex: =6
+
+    Label15 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =146
+        Size: =13
+        Text: |-
+            ="1 - Bad
+            2 - Unsatisfactory
+            3 - Needs development
+            4 - Good performance
+            5 - Exceeds expectations"
+        Width: =454
+        X: =808
+        Y: =495
+        ZIndex: =7
 

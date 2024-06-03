@@ -23291,7 +23291,14 @@
       "ControlPropertyState": [
         "Live",
         "Overflow",
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ThisItem.Name",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         {
           "AFDDataSourceName": "",
@@ -23354,7 +23361,7 @@
         {
           "Category": "Data",
           "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
@@ -24117,7 +24124,14 @@
       "ControlPropertyState": [
         "Live",
         "Overflow",
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ThisItem.Title",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         {
           "AFDDataSourceName": "",
@@ -24141,7 +24155,14 @@
         "PressedFill",
         "HoverFill",
         "Font",
-        "FontWeight",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FontWeight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Align",
         "VerticalAlign",
         "X",
@@ -24180,7 +24201,7 @@
         {
           "Category": "Data",
           "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
