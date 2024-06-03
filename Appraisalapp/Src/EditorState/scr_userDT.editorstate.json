@@ -1019,7 +1019,7 @@
       "MetaDataIDKey": "",
       "Name": "EmployeeId_Column1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2490,7 +2490,7 @@
       "MetaDataIDKey": "",
       "Name": "JeevanReportingManagerName_Column1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3408,7 +3408,7 @@
       "MetaDataIDKey": "",
       "Name": "Name_Column1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3898,7 +3898,7 @@
       "MetaDataIDKey": "",
       "Name": "Title_Column1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
