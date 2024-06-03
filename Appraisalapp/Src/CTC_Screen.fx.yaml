@@ -1684,7 +1684,7 @@ CTC_Screen As screen:
                 Fill: =RGBA(237, 237, 237, 1)
                 Font: =App.Theme.Font
                 HoverDateFill: =App.Theme.Colors.Lighter70
-                IconBackground: =App.Theme.Colors.Primary
+                IconBackground: =RGBA(21, 68, 18, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1774,7 +1774,7 @@ CTC_Screen As screen:
                 Fill: =RGBA(230, 230, 230, 1)
                 Font: =App.Theme.Font
                 HoverDateFill: =App.Theme.Colors.Lighter70
-                IconBackground: =App.Theme.Colors.Primary
+                IconBackground: =RGBA(21, 68, 18, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
