@@ -3494,6 +3494,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Current CTC_DataCard2'.DataCardValue89.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Current CTC_DataCard2'.DataCardValue89.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Current CTC_DataCard2'.DataCardValue89"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.Designation_DataCard2.DataCardValue94.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.Designation_DataCard2.DataCardValue94.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.Designation_DataCard2.DataCardValue94"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CTC_Screen.Form3.Hike_DataCard2.DataCardValue93.Default"
                 }
               ],
@@ -3524,6 +3584,246 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Basic Salary_DataCard2'.DataCardValue65.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Basic Salary_DataCard2'.DataCardValue65.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Basic Salary_DataCard2'.DataCardValue65"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'House Rent Allowance_DataCard2'.DataCardValue66.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'House Rent Allowance_DataCard2'.DataCardValue66.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'House Rent Allowance_DataCard2'.DataCardValue66"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Special Personal Allowance_DataCard2'.DataCardValue67.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Special Personal Allowance_DataCard2'.DataCardValue67.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Special Personal Allowance_DataCard2'.DataCardValue67"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Leave Travel Allowance_DataCard2'.DataCardValue68.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Leave Travel Allowance_DataCard2'.DataCardValue68.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Leave Travel Allowance_DataCard2'.DataCardValue68"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Provident Fund_DataCard2'.DataCardValue70.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Provident Fund_DataCard2'.DataCardValue70.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Provident Fund_DataCard2'.DataCardValue70"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Project Incentives_DataCard2'.DataCardValue72.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Project Incentives_DataCard2'.DataCardValue72.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Project Incentives_DataCard2'.DataCardValue72"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Target Incentives_DataCard2'.DataCardValue73.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Target Incentives_DataCard2'.DataCardValue73.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Target Incentives_DataCard2'.DataCardValue73"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Annual Performance Bonus_DataCard2'.DataCardValue74.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Annual Performance Bonus_DataCard2'.DataCardValue74.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Annual Performance Bonus_DataCard2'.DataCardValue74"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CTC_Screen.Form3.'Schedule Send Email_DataCard2'.DataCardValue85.DefaultDate"
                 }
               ],
@@ -3537,6 +3837,66 @@
                 "member": "DefaultDate",
                 "module": "CTC_Screen",
                 "type": "CTC_Screen.Form3.'Schedule Send Email_DataCard2'.DataCardValue85"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Approval Date_DataCard2'.DataCardValue92.DefaultDate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'Approval Date_DataCard2'.DataCardValue92.DefaultDate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DefaultDate",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'Approval Date_DataCard2'.DataCardValue92"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'New CTC in Words_DataCard2'.DataCardValue63.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CTC_Screen.Form3.'New CTC in Words_DataCard2'.DataCardValue63.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CTC_Screen",
+                "type": "CTC_Screen.Form3.'New CTC in Words_DataCard2'.DataCardValue63"
               }
             }
           ],

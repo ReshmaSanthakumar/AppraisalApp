@@ -150,7 +150,9 @@ CTC_Screen As screen:
                 BorderColor: =RGBA(214, 221, 224, 1)
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: |-
+                    =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
+                    LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'New CTC in Words')
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -524,7 +526,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =0
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Current CTC'))
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -619,7 +621,9 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: |-
+                    =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
+                    LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).Designation)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -715,9 +719,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: |-
-                    =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
-                    Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).Hike)*100)
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).Hike)*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -910,7 +912,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Basic Salary')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1006,7 +1008,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'House Rent Allowance')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1102,7 +1104,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Special Personal Allowance')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1198,7 +1200,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Leave Travel Allowance')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1293,7 +1295,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Provident Fund')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1388,7 +1390,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Project Incentives')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1483,7 +1485,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Target Incentives')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1578,7 +1580,7 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =Parent.Default
+                Default: =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),Value(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Annual Performance Bonus')*100)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(214, 221, 224, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1765,7 +1767,9 @@ CTC_Screen As screen:
                 BorderStyle: =BorderStyle.None
                 CalendarHeaderFill: =App.Theme.Colors.Primary
                 Color: =RGBA(0, 0, 0, 1)
-                DefaultDate: =Parent.Default
+                DefaultDate: |-
+                    =If(Not(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))),
+                    LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Approval Date')
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
