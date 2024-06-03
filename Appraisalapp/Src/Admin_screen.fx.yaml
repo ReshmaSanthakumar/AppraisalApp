@@ -1713,7 +1713,7 @@ Admin_screen As screen:
             If(
                 IsBlank(Gallery1.Selected.'Reporting Manager Feedback '),
             Notify("Please Submit the Feedback"),
-                Navigate(CTC_Screen)
+                Navigate(CTC_Screen); ResetForm(Form3)
             )
         PressedBorderColor: =RGBA(72, 163, 62, 1)
         PressedColor: =Self.Color
