@@ -29,9 +29,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey27 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -76,9 +77,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey28 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -123,9 +125,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey29 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -170,9 +173,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey30 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -217,9 +221,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey34 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -264,9 +269,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey33 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -311,9 +317,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey35 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -358,9 +365,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey31 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -405,9 +413,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey36 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -452,9 +461,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey6 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -499,9 +509,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey7 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -546,9 +557,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey8 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -593,9 +605,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey9 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -640,9 +653,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey10 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -687,9 +701,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey11 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -734,9 +749,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey12 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -781,9 +797,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey13 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -828,9 +845,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey14 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -875,9 +893,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey15 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -922,9 +941,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey16 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -969,9 +989,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey17 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1016,9 +1037,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey18 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1063,9 +1085,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey19 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1110,9 +1133,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey20 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1157,9 +1181,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey21 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1204,9 +1229,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey22 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1251,9 +1277,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey23 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1298,9 +1325,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey24 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1345,9 +1373,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey25 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1392,9 +1421,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey26 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
@@ -1439,9 +1469,10 @@ CTCDetail_Screen As screen:
 
             DataCardKey32 As label:
                 AutoHeight: =true
-                Color: =App.Theme.Colors.Darker30
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
                 Text: =Parent.DisplayName
