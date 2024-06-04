@@ -137,9 +137,21 @@ Admin_screen As screen:
             OnSelect: =Select(Parent)
             Size: =13
             Text: |-
-                =If(
+                =//If(
+                //    IsBlank(ThisItem.'Reporting Manager Feedback '),
+                //   "Pending","Reviewed"
+                //);
+                If(
                     IsBlank(ThisItem.'Reporting Manager Feedback '),
-                    "Pending","Reviewed"
+                    "Pending",Not(IsBlank(
+                        LookUp( 'Appraisal CTC Breakage',
+                           
+                            Hike<>0
+                        )
+                    )),"Completed",
+                    "Reviewed"
+                
+                
                 )
             X: =61
             Y: =62
