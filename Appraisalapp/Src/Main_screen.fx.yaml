@@ -24,7 +24,7 @@ Main_screen As screen:
         Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Semibold
-        Height: =28
+        Height: =45
         HoverBorderColor: =App.Theme.Colors.Darker10
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(72, 163, 62, 1)
@@ -49,7 +49,7 @@ Main_screen As screen:
         PressedFill: =RGBA(72, 163, 62, 1)
         Size: =15.00
         Text: ="Start Now"
-        Width: =159
+        Width: =161
         X: =621
         Y: =579
         ZIndex: =8
