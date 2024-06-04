@@ -74,7 +74,7 @@ CTC_Screen As screen:
             //If(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))&&!IsBlank(DataCardValue93.Text)||(DataCardValue94.Text),
             // Add record
             
-            If(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))&&!IsBlank(DataCardValue94.Text)||(DataCardValue93.Text)||(DataCardValue65.Text)||(DataCardValue66.Text)||(DataCardValue67.Text)||(DataCardValue68.Text)||(DataCardValue85.IsEditable)||(DataCardValue70.Text)||(DataCardValue72.Text)||(DataCardValue73.Text)||(DataCardValue74.Text)||(DataCardValue85.IsEditable),
+            If(IsBlank(LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title))&&!IsBlank(DataCardValue94.Text)||(DataCardValue93.Text)||(DataCardValue65.Text)||(DataCardValue66.Text)||(DataCardValue67.Text)||(DataCardValue68.Text)||(DataCardValue70.Text)||(DataCardValue72.Text)||(DataCardValue73.Text)||(DataCardValue74.Text)||(DataCardValue63.Text),
             // Add record
             
             Patch('Appraisal CTC Breakage',{'Employee Id':Gallery1.Selected.'Employee Id','Employee Name':Gallery1.Selected.Name,'Employee Email':Gallery1.Selected.Title,Hike:Value(DataCardValue93.Text)/100,'Current CTC':Value(DataCardValue89.Text),'Basic Salary':Value(DataCardValue65.Text)/100,'House Rent Allowance':Value(DataCardValue66.Text)/100,'Provident Fund':Value(DataCardValue70.Text)/100,'Special Personal Allowance':Value(DataCardValue67.Text)/100,'Leave Travel Allowance':Value(DataCardValue68.Text)/100,'Project Incentives':Value(DataCardValue72.Text)/100,'Target Incentives':Value(DataCardValue73.Text)/100,'Annual Performance Bonus':Value(DataCardValue74.Text)/100,Designation:DataCardValue94.Text,'Schedule Send Email':DataCardValue85.SelectedDate,'Approval Date':DataCardValue92.SelectedDate,'New CTC in Words':DataCardValue63.Text});NewForm(Form3);Navigate(CTCDetail_Screen)
@@ -119,7 +119,7 @@ CTC_Screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Appraisal CTC Breakage'], DataSourceInfo.MaxLength, NewCTCinWords)
-            Required: =false
+            Required: =true
             Update: =DataCardValue63.Text
             Width: =455
             X: =2
@@ -1643,7 +1643,7 @@ CTC_Screen As screen:
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,ScheduleSendEmail)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =true
+            Required: =false
             Update: =DataCardValue85.SelectedDate
             Width: =455
             X: =0
@@ -1735,7 +1735,7 @@ CTC_Screen As screen:
             DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,ApprovalDate)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =true
+            Required: =false
             Update: =DataCardValue92.SelectedDate
             Width: =455
             X: =1
