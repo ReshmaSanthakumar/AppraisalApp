@@ -20353,7 +20353,7 @@
         {
           "Category": "Data",
           "PropertyName": "Required",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
