@@ -7,7 +7,7 @@ scr_powerBI As screen:
         DashboardId: ="24ad89b6-a700-45d5-b7ae-1e1e5e19a1d5"
         Height: =659
         TileUrl: |-
-            ="https://app.powerbi.com/embed?dashboardId=24ad89b6-a700-45d5-b7ae-1e1e5e19a1d5&tileId=760af2d4-1636-41d6-81f2-95f190e2be39&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUlORElBLVdFU1QtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7fX0%3d"
+            ="https://app.powerbi.com/embed?dashboardId=24ad89b6-a700-45d5-b7ae-1e1e5e19a1d5&tileId=105c76bb-d3c3-4fa0-b170-6cdbfeac1718&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUlORElBLVdFU1QtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7fX0%3d"
         Width: =1253
         WorkspaceId: ="8173dcd3-f74d-4706-872f-75517dddd04e"
         X: =93
