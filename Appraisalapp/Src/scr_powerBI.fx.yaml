@@ -4,10 +4,10 @@ scr_powerBI As screen:
 
     PowerBI1 As powerbi:
         BorderColor: =App.Theme.Colors.Darker40
-        DashboardId: ="5ee62ef8-f197-4349-b386-8ddab8e35788"
+        DashboardId: ="24ad89b6-a700-45d5-b7ae-1e1e5e19a1d5"
         Height: =659
         TileUrl: |-
-            ="https://app.powerbi.com/embed?dashboardId=5ee62ef8-f197-4349-b386-8ddab8e35788&tileId=c3d7bf22-4895-43a8-9a58-130d52089d41&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUlORElBLVdFU1QtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7fX0%3d"
+            ="https://app.powerbi.com/embed?dashboardId=24ad89b6-a700-45d5-b7ae-1e1e5e19a1d5&tileId=760af2d4-1636-41d6-81f2-95f190e2be39&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUlORElBLVdFU1QtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQiLCJlbWJlZEZlYXR1cmVzIjp7fX0%3d"
         Width: =1253
         WorkspaceId: ="8173dcd3-f74d-4706-872f-75517dddd04e"
         X: =93

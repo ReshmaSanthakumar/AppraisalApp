@@ -208,16 +208,10 @@ scr_userDT As screen:
 
     drp_row_limit As Dropdown.pcfdataset:
         Appearance: ="FilledDarker"
-        BorderColor: =""
-        BorderStyle: =""
         DefaultSelectedItems: =["10"]
-        DisabledBorderColor: =""
         DisplayMode: =DisplayMode.Edit
-        FocusedBorderColor: =""
         Height: =30
-        HoverBorderColor: =""
         Items: =["10", "15", "20"]
-        PressedBorderColor: =""
         Width: =63
         X: =587
         Y: =726
@@ -269,16 +263,10 @@ scr_userDT As screen:
 
     drp_rating As Dropdown.pcfdataset:
         Appearance: ="FilledDarker"
-        BorderColor: =""
-        BorderStyle: =""
         DefaultSelectedItems: =[0]
-        DisabledBorderColor: =""
         DisplayMode: =DisplayMode.Edit
-        FocusedBorderColor: =""
         Height: =32
-        HoverBorderColor: =""
         Items: =[0,1,2,3,4,5]
-        PressedBorderColor: =""
         Width: =55
         X: =1037
         Y: =82

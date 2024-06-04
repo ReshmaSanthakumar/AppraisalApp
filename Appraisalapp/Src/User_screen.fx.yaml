@@ -170,8 +170,6 @@ User_screen As screen:
             ZIndex: =1
 
             DataCardKey3 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -187,16 +185,10 @@ User_screen As screen:
             DataCardValue3 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].Team)
-                PressedBorderColor: =""
                 SelectMultiple: =true
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
@@ -205,8 +197,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage2 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -221,8 +211,6 @@ User_screen As screen:
 
             StarVisible2 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -252,8 +240,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey109 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -271,17 +257,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =32
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =User().Email
@@ -291,8 +271,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage83 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =RGBA(214, 221, 224, 1)
@@ -314,8 +292,6 @@ User_screen As screen:
 
             StarVisible83 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -345,8 +321,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey110 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -363,17 +337,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =32
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -383,8 +351,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage84 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =RGBA(215, 58, 60, 1)
@@ -406,8 +372,6 @@ User_screen As screen:
 
             StarVisible84 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -437,8 +401,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey111 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -455,17 +417,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =32
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -475,8 +431,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage85 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =RGBA(215, 58, 60, 1)
@@ -498,8 +452,6 @@ User_screen As screen:
 
             StarVisible85 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -529,8 +481,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey112 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -547,17 +497,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =32
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -567,8 +511,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage86 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =RGBA(215, 58, 60, 1)
@@ -590,8 +532,6 @@ User_screen As screen:
 
             StarVisible86 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -621,8 +561,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey113 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -639,17 +577,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =32
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -659,8 +591,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage87 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -675,8 +605,6 @@ User_screen As screen:
 
             StarVisible87 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -705,8 +633,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey116 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -722,16 +648,10 @@ User_screen As screen:
             DataCardValue116 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].'Rate your knowledge and skills relevant to your role')
-                PressedBorderColor: =""
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -739,8 +659,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage90 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -755,8 +673,6 @@ User_screen As screen:
 
             StarVisible90 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -786,8 +702,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey115 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -805,17 +719,11 @@ User_screen As screen:
                 Align: ='TextInputCanvas.Align'.Start
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =97
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -825,8 +733,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage89 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -841,8 +747,6 @@ User_screen As screen:
 
             StarVisible89 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -872,8 +776,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey114 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -890,17 +792,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =97
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -910,8 +806,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage88 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -926,8 +820,6 @@ User_screen As screen:
 
             StarVisible88 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -960,8 +852,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey117 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -978,17 +868,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =140
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -998,8 +882,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage91 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1014,8 +896,6 @@ User_screen As screen:
 
             StarVisible91 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1045,8 +925,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey118 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1063,17 +941,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =101
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1083,8 +955,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage92 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1099,8 +969,6 @@ User_screen As screen:
 
             StarVisible92 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1129,8 +997,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey119 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1146,16 +1012,10 @@ User_screen As screen:
             DataCardValue119 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].'Rate your problem-solving and critical-thinking skills')
-                PressedBorderColor: =""
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1163,8 +1023,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage93 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1179,8 +1037,6 @@ User_screen As screen:
 
             StarVisible93 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1210,8 +1066,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey120 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1228,17 +1082,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =107
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1248,8 +1096,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage94 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1264,8 +1110,6 @@ User_screen As screen:
 
             StarVisible94 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1295,8 +1139,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey121 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1313,17 +1155,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =96
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1333,8 +1169,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage95 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1349,8 +1183,6 @@ User_screen As screen:
 
             StarVisible95 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1380,8 +1212,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey122 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1398,17 +1228,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =92
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1418,8 +1242,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage96 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1434,8 +1256,6 @@ User_screen As screen:
 
             StarVisible96 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1465,8 +1285,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey123 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1483,17 +1301,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =95
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1503,8 +1315,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage97 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1519,8 +1329,6 @@ User_screen As screen:
 
             StarVisible97 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1549,8 +1357,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey124 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1566,16 +1372,10 @@ User_screen As screen:
             DataCardValue124 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].'On a scale of one to ten, where do you rate yourself?')
-                PressedBorderColor: =""
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1583,8 +1383,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage98 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1599,8 +1397,6 @@ User_screen As screen:
 
             StarVisible98 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1630,8 +1426,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey126 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1648,17 +1442,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =32
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1668,8 +1456,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage100 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1684,8 +1470,6 @@ User_screen As screen:
 
             StarVisible100 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1715,8 +1499,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey127 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1733,17 +1515,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =103
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -1753,8 +1529,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage101 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1769,8 +1543,6 @@ User_screen As screen:
 
             StarVisible101 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1799,8 +1571,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey128 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1816,16 +1586,10 @@ User_screen As screen:
             DataCardValue128 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].'On a scale of one to ten, how blissful are you with your current job situation? ')
-                PressedBorderColor: =""
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1833,8 +1597,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage102 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1849,8 +1611,6 @@ User_screen As screen:
 
             StarVisible102 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1879,8 +1639,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey129 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1896,16 +1654,10 @@ User_screen As screen:
             DataCardValue129 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].'Are you interested in an internal movement?')
-                PressedBorderColor: =""
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1913,8 +1665,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage103 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1929,8 +1679,6 @@ User_screen As screen:
 
             StarVisible103 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1959,8 +1707,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey130 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -1976,16 +1722,10 @@ User_screen As screen:
             DataCardValue130 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].'On the hunt for some on-site action?')
-                PressedBorderColor: =""
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -1993,8 +1733,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage104 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -2009,8 +1747,6 @@ User_screen As screen:
 
             StarVisible104 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -2039,8 +1775,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey131 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -2056,16 +1790,10 @@ User_screen As screen:
             DataCardValue131 As Combobox.pcfdataset:
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                 Appearance: ="FilledDarker"
-                BorderColor: =""
-                BorderStyle: =""
                 DefaultSelectedItems: =[Parent.Default]
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
-                FocusedBorderColor: =""
                 Height: =32
-                HoverBorderColor: =""
                 Items: =Choices([@AppraisalUserList].'Have you given our employee referral program a spin yet?')
-                PressedBorderColor: =""
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Width: =Parent.Width - 48
                 X: =24
@@ -2073,8 +1801,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage105 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -2089,8 +1815,6 @@ User_screen As screen:
 
             StarVisible105 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -2120,8 +1844,6 @@ User_screen As screen:
             ZIndex: =22
 
             DataCardKey132 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -2138,17 +1860,11 @@ User_screen As screen:
                 AccessibleLabel: =Parent.DisplayName
                 Appearance: ="FilledDarker"
                 BasePaletteColor: =
-                BorderColor: =""
-                BorderStyle: =""
-                DisabledBorderColor: =""
                 DisplayMode: =Parent.DisplayMode
                 Fill: =
-                FocusedBorderColor: =""
                 FontColor: =
                 Height: =73
-                HoverBorderColor: =""
                 Mode: ='TextInputCanvas.Mode'.Multiline
-                PressedBorderColor: =""
                 Required: =Parent.Required
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                 Value: =Parent.Default
@@ -2158,8 +1874,6 @@ User_screen As screen:
                 ZIndex: =2
 
             ErrorMessage106 As Text:
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
@@ -2174,8 +1888,6 @@ User_screen As screen:
 
             StarVisible106 As Text:
                 Align: ='TextCanvas.Align'.Center
-                BorderColor: =""
-                BorderStyle: =""
                 DisplayMode: =DisplayMode.Edit
                 Fill: =
                 FontColor: =
