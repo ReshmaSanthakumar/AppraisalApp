@@ -39,7 +39,7 @@ scr_flow As screen:
         Fill: =RGBA(21, 68, 18, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
-        Height: =52
+        Height: =49
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(72, 163, 62, 1)
@@ -50,10 +50,10 @@ scr_flow As screen:
         PressedColor: =Self.Color
         PressedFill: =RGBA(72, 163, 62, 1)
         Size: =15
-        Text: ="Trigger the appraisal email with pdf attachment send flow now"
-        Width: =631
-        X: =367
-        Y: =140
+        Text: ="Send "
+        Width: =177
+        X: =905
+        Y: =105
         ZIndex: =6
 
     Label14 As label:
@@ -66,8 +66,8 @@ scr_flow As screen:
         Text: =If(varFlowOurput,"Flow Completed","In Progress")
         Visible: =varBlProgress
         Width: =138
-        X: =614
-        Y: =274
+        X: =1108
+        Y: =116
         ZIndex: =7
 
     Container1_3 As groupContainer.manualLayoutContainer:
@@ -130,10 +130,536 @@ scr_flow As screen:
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =26
             Icon: =Icon.Mail
-            OnSelect: =Navigate(scr_flow)
+            OnSelect: =Navigate(scr_flow); Refresh('Appraisal CTC Breakage')
             Visible: =varBI
             Width: =25
             X: =21
             Y: =256
             ZIndex: =4
+
+    DataTable2 As dataTable.datatable:
+        BorderColor: =App.Theme.Colors.Darker40
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(21, 68, 18, 1)
+        HeadingFont: =App.Theme.Font
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =519
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(166, 215, 153, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: |-
+            =If(
+                txt_ip_1.Text = "",
+                'Appraisal CTC Breakage',
+                Sort(
+                    Filter(
+                        'Appraisal CTC Breakage',
+                        txt_ip_1.Text in ThisRecord.'Employee Name'
+                    ),
+                    'Employee Name',
+                    SortOrder.Ascending
+                )
+            )
+        LinkColor: =App.Theme.Colors.Lighter10
+        PrimaryColor1: =App.Theme.Colors.Primary
+        PrimaryColor2: =App.Theme.Colors.Darker30
+        PrimaryColor3: =App.Theme.Colors.Lighter70
+        SelectedColor: =RGBA(21, 68, 18, 1)
+        SelectedFill: =RGBA(166, 215, 153, 1)
+        Size: =13
+        Width: =1273
+        X: =80
+        Y: =249
+        ZIndex: =9
+
+        "'Employee Id_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Employee Id"
+            FieldName: ="EmployeeId"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Employee Id'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        "'Employee Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Employee Name"
+            FieldName: ="EmployeeName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Employee Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        "'Employee Email_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Employee Email"
+            FieldName: ="EmployeeEmail"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Employee Email'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        "'Current CTC_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Current CTC"
+            FieldName: ="CurrentCTC"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Current CTC'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        "'Approval Date_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Approval Date"
+            FieldName: ="ApprovalDate"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.'Approval Date'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+        Hike_Column1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Hike"
+            FieldName: ="Hike"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Hike
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+        Designation_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Designation"
+            FieldName: ="Designation"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.Designation
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+        Currency_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Currency"
+            FieldName: ="Currency"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.Currency
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =13
+
+        "'New CTC in Words_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="New CTC in Words"
+            FieldName: ="NewCTCinWords"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.'New CTC in Words'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =14
+
+        "'Annual Performance Bonus_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Annual Performance Bonus"
+            FieldName: ="Annual_x0020_Performance_x0020_B"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.'Annual Performance Bonus'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =15
+
+        "'Annual Performance Bonus Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Annual Performance Bonus Cur"
+            FieldName: ="Annual_x0020_Performance_x0020_B0"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
+            Text: =ThisItem.'Annual Performance Bonus Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =16
+
+        "'Basic Salary_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Basic Salary"
+            FieldName: ="BasicSalary"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: =ThisItem.'Basic Salary'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =17
+
+        "'Basic Salary Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Basic Salary Cur"
+            FieldName: ="Basic_x0020_Salary_x0028_Rs_x002"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =14
+            Text: =ThisItem.'Basic Salary Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =18
+
+        "'House Rent Allowance_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="House Rent Allowance"
+            FieldName: ="HouseRentAllowance"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =15
+            Text: =ThisItem.'House Rent Allowance'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =19
+
+        "'House Rent Allowance Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="House Rent Allowance Cur"
+            FieldName: ="House_x0020_Rent_x0020_Allowance"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =16
+            Text: =ThisItem.'House Rent Allowance Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =20
+
+        "'Leave Travel Allowance_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Leave Travel Allowance"
+            FieldName: ="LeaveTravelAllowance"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =17
+            Text: =ThisItem.'Leave Travel Allowance'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =21
+
+        "'Leave Travel Allowance Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Leave Travel Allowance Cur"
+            FieldName: ="Leave_x0020_Travel_x0020_Allowan"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =18
+            Text: =ThisItem.'Leave Travel Allowance Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =22
+
+        "'New CTC_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="New CTC"
+            FieldName: ="New_x0020_CTC"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =19
+            Text: =ThisItem.'New CTC'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =23
+
+        "'Project Incentives_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Project Incentives"
+            FieldName: ="Project_x0020_Incentives"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =20
+            Text: =ThisItem.'Project Incentives'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =24
+
+        "'Project Incentives Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Project Incentives Cur"
+            FieldName: ="Project_x0020_Incentives_x0028_R"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =21
+            Text: =ThisItem.'Project Incentives Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =25
+
+        "'Provident Fund_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Provident Fund"
+            FieldName: ="ProvidentFund"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =22
+            Text: =ThisItem.'Provident Fund'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =26
+
+        "'Provident Fund Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Provident Fund Cur"
+            FieldName: ="Provident_x0020_Fund_x0028_Rs_x0"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =23
+            Text: =ThisItem.'Provident Fund Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =27
+
+        "'Retirals Component (B)_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Retirals Component (B)"
+            FieldName: ="Retirals_x0020_Component_x0020__"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =24
+            Text: =ThisItem.'Retirals Component (B)'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =28
+
+        "'Schedule Send Email_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Schedule Send Email"
+            FieldName: ="ScheduleSendEmail"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =25
+            Text: =ThisItem.'Schedule Send Email'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =29
+
+        "'Special Personal Allowance_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Special Personal Allowance"
+            FieldName: ="SpecialPersonalAllowance"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =26
+            Text: =ThisItem.'Special Personal Allowance'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =30
+
+        "'Special Personal Allowance Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Special Personal Allowance Cur"
+            FieldName: ="Special_x0020_Personal_x0020_All"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =27
+            Text: =ThisItem.'Special Personal Allowance Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =31
+
+        "'Target Incentives_Column1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Target Incentives"
+            FieldName: ="Target_x0020_Incentives"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =28
+            Text: =ThisItem.'Target Incentives'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =32
+
+        "'Target Incentives Cur_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Target Incentives Cur"
+            FieldName: ="Target_x0020_Incentives_x0028_Rs"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =29
+            Text: =ThisItem.'Target Incentives Cur'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =33
+
+        "'Total (A+B+C)_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Total (A+B+C)"
+            FieldName: ="Total_x0020__x0028_A_x002b_B_x00"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =30
+            Text: =ThisItem.'Total (A+B+C)'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =34
+
+        "'Total Gross (A)_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Total Gross (A)"
+            FieldName: ="Total_x0020_Gross_x0020__x0028_A"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =31
+            Text: =ThisItem.'Total Gross (A)'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =35
+
+        "'Total other Components (C)_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Total other Components (C)"
+            FieldName: ="Total_x0020_other_x0020_Componen"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =32
+            Text: =ThisItem.'Total other Components (C)'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =36
+
+    Label10 As label:
+        Align: =Align.Right
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =64
+        Size: =20
+        Text: ="Send appraisal email with pdf attachment "
+        Width: =562
+        X: =327
+        Y: =92
+        ZIndex: =10
+
+    Label8_2 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =32
+        Size: =13
+        Text: |-
+            ="Filter By Employee Name: "
+        Width: =226
+        X: =101
+        Y: =192
+        ZIndex: =11
+
+    txt_ip_1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =App.Theme.Font
+        Height: =32
+        HoverBorderColor: =RGBA(166, 166, 166, 1)
+        HoverColor: =RGBA(166, 166, 166, 1)
+        HoverFill: =RGBA(166, 215, 153, 1)
+        Size: =13
+        X: =312
+        Y: =192
+        ZIndex: =12
 

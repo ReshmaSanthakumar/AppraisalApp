@@ -52,6 +52,7 @@ App As appinfo:
             If( varCat="Super Admin",
                 Set(varbtn,true);
                     ClearCollect(colRoleTable,AppraisalUserList);
+                    
                     Set(varBI,true)
                    
                 )

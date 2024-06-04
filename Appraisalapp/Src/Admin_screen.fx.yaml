@@ -1663,7 +1663,7 @@ Admin_screen As screen:
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =26
             Icon: =Icon.Mail
-            OnSelect: =Navigate(scr_flow)
+            OnSelect: =Navigate(scr_flow); Refresh('Appraisal CTC Breakage')
             Visible: =varBI
             Width: =25
             X: =21
