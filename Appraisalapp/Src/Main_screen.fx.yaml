@@ -21,7 +21,7 @@ Main_screen As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Semibold
         Height: =45
@@ -60,7 +60,7 @@ Main_screen As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.Lato
         FontWeight: =FontWeight.Bold
         Height: =29
@@ -83,7 +83,7 @@ Main_screen As screen:
 
     Label2 As label:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(16, 105, 0, 1)
+        Color: =RGBA(0, 109, 91, 1)
         DisabledBorderColor: =RGBA(102, 182, 227, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
         DisabledFill: =RGBA(0, 134, 208, 1)
@@ -99,7 +99,7 @@ Main_screen As screen:
 
     Label3 As label:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(6, 94, 34, 1)
+        Color: =RGBA(0, 109, 91, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(0, 134, 208, 1)
         Font: =Font.Lato
@@ -113,7 +113,7 @@ Main_screen As screen:
 
     Label1 As label:
         BorderColor: =RGBA(0, 134, 208, 1)
-        Color: =RGBA(2, 102, 24, 1)
+        Color: =RGBA(0, 109, 91, 1)
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.'Lato Black'
@@ -128,7 +128,7 @@ Main_screen As screen:
 
     Label4 As label:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(2, 89, 27, 1)
+        Color: =RGBA(0, 109, 91, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         Size: =20.00
@@ -166,7 +166,7 @@ Main_screen As screen:
 
     Label6 As label:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(3, 97, 36, 1)
+        Color: =RGBA(0, 109, 91, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.Lato
         Height: =85

@@ -18,7 +18,7 @@ CTCDetail_Screen As screen:
             DataField: ="EmployeeId"
             Default: =ThisItem.'Employee Id'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeId)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Employee Id')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -66,7 +66,7 @@ CTCDetail_Screen As screen:
             DataField: ="EmployeeName"
             Default: =ThisItem.'Employee Name'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeName)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Employee Name')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -114,7 +114,7 @@ CTCDetail_Screen As screen:
             DataField: ="EmployeeEmail"
             Default: =ThisItem.'Employee Email'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,EmployeeEmail)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Employee Email')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -162,7 +162,7 @@ CTCDetail_Screen As screen:
             DataField: ="CurrentCTC"
             Default: =ThisItem.'Current CTC'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,CurrentCTC)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Current CTC')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -354,7 +354,7 @@ CTCDetail_Screen As screen:
             DataField: ="New_x0020_CTC"
             Default: =ThisItem.'New CTC'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,New_x0020_CTC)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'New CTC')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -402,7 +402,7 @@ CTCDetail_Screen As screen:
             DataField: ="NewCTCinWords"
             Default: =ThisItem.'New CTC in Words'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,NewCTCinWords)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'New CTC in Words')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -450,7 +450,7 @@ CTCDetail_Screen As screen:
             DataField: ="BasicSalary"
             Default: =ThisItem.'Basic Salary'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,BasicSalary)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Basic Salary')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -498,7 +498,7 @@ CTCDetail_Screen As screen:
             DataField: ="HouseRentAllowance"
             Default: =ThisItem.'House Rent Allowance'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,HouseRentAllowance)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'House Rent Allowance')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -546,7 +546,7 @@ CTCDetail_Screen As screen:
             DataField: ="SpecialPersonalAllowance"
             Default: =ThisItem.'Special Personal Allowance'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,SpecialPersonalAllowance)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Special Personal Allowance')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -594,7 +594,7 @@ CTCDetail_Screen As screen:
             DataField: ="LeaveTravelAllowance"
             Default: =ThisItem.'Leave Travel Allowance'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,LeaveTravelAllowance)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Leave Travel Allowance')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -642,7 +642,7 @@ CTCDetail_Screen As screen:
             DataField: ="Total_x0020_Gross_x0020__x0028_A"
             Default: =ThisItem.'Total Gross (A)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020_Gross_x0020__x0028_A)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Total Gross (A)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -690,7 +690,7 @@ CTCDetail_Screen As screen:
             DataField: ="ProvidentFund"
             Default: =ThisItem.'Provident Fund'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,ProvidentFund)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Provident Fund')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -738,7 +738,7 @@ CTCDetail_Screen As screen:
             DataField: ="Retirals_x0020_Component_x0020__"
             Default: =ThisItem.'Retirals Component (B)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Retirals_x0020_Component_x0020__)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Retirals Component (B)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -786,7 +786,7 @@ CTCDetail_Screen As screen:
             DataField: ="Project_x0020_Incentives"
             Default: =ThisItem.'Project Incentives'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Project_x0020_Incentives)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Project Incentives')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -834,7 +834,7 @@ CTCDetail_Screen As screen:
             DataField: ="Target_x0020_Incentives"
             Default: =ThisItem.'Target Incentives'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Target_x0020_Incentives)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Target Incentives')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -882,7 +882,7 @@ CTCDetail_Screen As screen:
             DataField: ="Annual_x0020_Performance_x0020_B"
             Default: =ThisItem.'Annual Performance Bonus'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Annual_x0020_Performance_x0020_B)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Annual Performance Bonus')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -930,7 +930,7 @@ CTCDetail_Screen As screen:
             DataField: ="Total_x0020_other_x0020_Componen"
             Default: =ThisItem.'Total other Components (C)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020_other_x0020_Componen)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Total other Components (C)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -978,7 +978,7 @@ CTCDetail_Screen As screen:
             DataField: ="Total_x0020__x0028_A_x002b_B_x00"
             Default: =ThisItem.'Total (A+B+C)'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Total_x0020__x0028_A_x002b_B_x00)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Total (A+B+C)')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1026,7 +1026,7 @@ CTCDetail_Screen As screen:
             DataField: ="Basic_x0020_Salary_x0028_Rs_x002"
             Default: =ThisItem.'Basic Salary Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Basic_x0020_Salary_x0028_Rs_x002)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Basic Salary Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1074,7 +1074,7 @@ CTCDetail_Screen As screen:
             DataField: ="House_x0020_Rent_x0020_Allowance"
             Default: =ThisItem.'House Rent Allowance Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,House_x0020_Rent_x0020_Allowance)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'House Rent Allowance Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1122,7 +1122,7 @@ CTCDetail_Screen As screen:
             DataField: ="Special_x0020_Personal_x0020_All"
             Default: =ThisItem.'Special Personal Allowance Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Special_x0020_Personal_x0020_All)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Special Personal Allowance Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1170,7 +1170,7 @@ CTCDetail_Screen As screen:
             DataField: ="Leave_x0020_Travel_x0020_Allowan"
             Default: =ThisItem.'Leave Travel Allowance Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Leave_x0020_Travel_x0020_Allowan)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Leave Travel Allowance Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1218,7 +1218,7 @@ CTCDetail_Screen As screen:
             DataField: ="Provident_x0020_Fund_x0028_Rs_x0"
             Default: =ThisItem.'Provident Fund Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Provident_x0020_Fund_x0028_Rs_x0)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Provident Fund Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1266,7 +1266,7 @@ CTCDetail_Screen As screen:
             DataField: ="Project_x0020_Incentives_x0028_R"
             Default: =ThisItem.'Project Incentives Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Project_x0020_Incentives_x0028_R)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Project Incentives Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1314,7 +1314,7 @@ CTCDetail_Screen As screen:
             DataField: ="Target_x0020_Incentives_x0028_Rs"
             Default: =ThisItem.'Target Incentives Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Target_x0020_Incentives_x0028_Rs)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Target Incentives Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1362,7 +1362,7 @@ CTCDetail_Screen As screen:
             DataField: ="Annual_x0020_Performance_x0020_B0"
             Default: =ThisItem.'Annual Performance Bonus Cur'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,Annual_x0020_Performance_x0020_B0)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Annual Performance Bonus Cur')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1410,7 +1410,7 @@ CTCDetail_Screen As screen:
             DataField: ="ScheduleSendEmail"
             Default: =ThisItem.'Schedule Send Email'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,ScheduleSendEmail)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Schedule Send Email')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -1458,7 +1458,7 @@ CTCDetail_Screen As screen:
             DataField: ="ApprovalDate"
             Default: =ThisItem.'Approval Date'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,ApprovalDate)
+            DisplayName: =DataSourceInfo([@'Appraisal CTC Breakage'],DataSourceInfo.DisplayName,'Approval Date')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
