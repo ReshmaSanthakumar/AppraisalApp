@@ -1675,7 +1675,7 @@ CTC_Screen As screen:
                     LookUp('Appraisal CTC Breakage','Employee Email'=Gallery1.Selected.Title).'Schedule Send Email')
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(237, 237, 237, 1)
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Fill: =RGBA(237, 237, 237, 1)
