@@ -6,7 +6,7 @@ User_screen As screen:
 
     Rectangle1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Height: =46
         Width: =1366
         ZIndex: =17
@@ -47,7 +47,7 @@ User_screen As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =44
@@ -1904,7 +1904,7 @@ User_screen As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =46
-        Image: ='logo-colour-1_2'
+        Image: ='nobl q logo-white_1'
         Width: =92
         X: =61
         ZIndex: =22

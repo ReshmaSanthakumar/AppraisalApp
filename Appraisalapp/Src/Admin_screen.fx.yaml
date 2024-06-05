@@ -164,7 +164,7 @@ Admin_screen As screen:
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =57
@@ -179,13 +179,13 @@ Admin_screen As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =28
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 176, 147, 1)
         OnSelect: =Navigate(Feedback_Screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
@@ -1595,13 +1595,13 @@ Admin_screen As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(5, 117, 48, 1)
+        Fill: =RGBA(0, 143, 119, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =29
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 184, 153, 1)
         OnSelect: =Exit(true)
         PaddingRight: =5.00
         PaddingTop: =5.00
@@ -1617,7 +1617,7 @@ Admin_screen As screen:
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Height: =722
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
@@ -1687,7 +1687,7 @@ Admin_screen As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =39
-        Image: ='logo-colour-1_1'
+        Image: ='nobl q logo-white_2'
         Width: =107
         X: =80
         Y: =7
@@ -1713,13 +1713,13 @@ Admin_screen As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =28
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 171, 142, 1)
         OnSelect: |-
             =
             If(

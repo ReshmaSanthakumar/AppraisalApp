@@ -27,7 +27,7 @@ Main_screen As screen:
         Height: =45
         HoverBorderColor: =App.Theme.Colors.Darker10
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 166, 138, 1)
         OnSelect: |+
             =If(
                 Not(IsBlank(
@@ -66,7 +66,7 @@ Main_screen As screen:
         Height: =29
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 176, 147, 1)
         OnSelect: =Navigate(Admin_screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
