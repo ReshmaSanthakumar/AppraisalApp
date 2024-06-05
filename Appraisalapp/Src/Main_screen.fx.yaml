@@ -158,7 +158,7 @@ Main_screen As screen:
         FontWeight: =FontWeight.Bold
         Height: =34
         Size: =15.00
-        Text: ="Designed by NoblQ"
+        Text: ="Designed by Nobl Q"
         Width: =505.00
         X: =381.00
         Y: =702
