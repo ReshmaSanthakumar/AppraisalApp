@@ -1150,7 +1150,14 @@
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "BorderColor",
         "BorderStyle",

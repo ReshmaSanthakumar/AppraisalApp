@@ -26,7 +26,7 @@ CTC_Screen As screen:
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =57
@@ -56,14 +56,14 @@ CTC_Screen As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =39
-        Image: ='logo-colour-1_1'
+        Image: ='nobl q logo-white_3'
         Width: =107
         X: =80
         Y: =7
         ZIndex: =28
 
     ButtonCanvas1 As Button:
-        BasePaletteColor: =RGBA(6, 54, 23, 1)
+        BasePaletteColor: =RGBA(0, 109, 91, 1)
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |
@@ -1819,7 +1819,7 @@ CTC_Screen As screen:
                 ZIndex: =4
 
     ButtonCanvas1_1 As Button:
-        BasePaletteColor: =RGBA(7, 54, 21, 1)
+        BasePaletteColor: =RGBA(0, 109, 91, 1)
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(255, 255, 255, 1)
         Height: =32
@@ -1851,7 +1851,7 @@ CTC_Screen As screen:
         ZIndex: =32
 
     ButtonCanvas1_2 As Button:
-        BasePaletteColor: =RGBA(7, 54, 21, 1)
+        BasePaletteColor: =RGBA(0, 109, 91, 1)
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(255, 255, 255, 1)
         Height: =32

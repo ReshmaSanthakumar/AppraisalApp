@@ -10,7 +10,7 @@ scr_flow As screen:
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =57
@@ -25,7 +25,7 @@ scr_flow As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =39
-        Image: ='logo-colour-1_1'
+        Image: ='nobl q logo-white_7'
         Width: =107
         X: =80
         Y: =7
@@ -36,13 +36,13 @@ scr_flow As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =49
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 184, 153, 1)
         OnSelect: =Set(varBlProgress,true);Set(varFlowOurput,'Appraisal-NewCTCNotificationEmail'.Run())
         PaddingRight: =5.00
         PaddingTop: =5.00
@@ -72,7 +72,7 @@ scr_flow As screen:
 
     Container1_3 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Height: =722
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
@@ -147,13 +147,13 @@ scr_flow As screen:
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Normal
         HeadingColor: =RGBA(255, 255, 255, 1)
-        HeadingFill: =RGBA(21, 68, 18, 1)
+        HeadingFill: =RGBA(0, 109, 91, 1)
         HeadingFont: =App.Theme.Font
         HeadingFontWeight: =FontWeight.Normal
         HeadingSize: =13
         Height: =519
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(166, 215, 153, 1)
+        HoverFill: =RGBA(214, 221, 224, 1)
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
         Items: |-
@@ -173,8 +173,8 @@ scr_flow As screen:
         PrimaryColor1: =App.Theme.Colors.Primary
         PrimaryColor2: =App.Theme.Colors.Darker30
         PrimaryColor3: =App.Theme.Colors.Lighter70
-        SelectedColor: =RGBA(21, 68, 18, 1)
-        SelectedFill: =RGBA(166, 215, 153, 1)
+        SelectedColor: =RGBA(0, 0, 0, 1)
+        SelectedFill: =RGBA(0, 189, 157, 1)
         Size: =13
         Width: =1273
         X: =80

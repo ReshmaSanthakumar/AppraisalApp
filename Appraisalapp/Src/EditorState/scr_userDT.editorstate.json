@@ -499,7 +499,14 @@
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "BorderColor",
         "BorderStyle",
@@ -539,7 +546,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "HoverColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "HoverColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "InputFill",
         "InvertedColor",
         "HeadingFont",

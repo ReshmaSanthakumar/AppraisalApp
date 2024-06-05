@@ -9,13 +9,13 @@
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(0, 134, 208, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(1, 120, 47, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =32
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 171, 142, 1)
         OnSelect: =Exit(true)
         PaddingRight: =5.00
         PaddingTop: =5.00
@@ -44,7 +44,7 @@
 
         iconCircle1 As circle.Circle:
             BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(3, 102, 29, 1)
+            Fill: =RGBA(0, 109, 91, 1)
             Height: =100.00
             Width: =100.00
             X: =266
@@ -52,7 +52,7 @@
             ZIndex: =2
 
         iconCheck1 As icon.Check:
-            BorderColor: =RGBA(2, 105, 19, 1)
+            BorderColor: =RGBA(0, 109, 91, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -71,7 +71,7 @@
         Label7 As label:
             Align: =Align.Center
             BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(3, 102, 34, 1)
+            Color: =RGBA(0, 109, 91, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =DisplayMode.View
             Font: =App.Theme.Font

@@ -1507,7 +1507,7 @@ CTCDetail_Screen As screen:
         DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =57
@@ -1537,7 +1537,7 @@ CTCDetail_Screen As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =39
-        Image: ='logo-colour-1_1'
+        Image: ='nobl q logo-white_6'
         Width: =107
         X: =80
         Y: =7
@@ -1548,13 +1548,13 @@ CTCDetail_Screen As screen:
         DisabledBorderColor: =RGBA(244, 244, 244, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(21, 68, 18, 1)
+        Fill: =RGBA(0, 109, 91, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Bold
         Height: =26
         HoverBorderColor: =RGBA(72, 163, 62, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(72, 163, 62, 1)
+        HoverFill: =RGBA(0, 171, 142, 1)
         OnSelect: =Navigate(CTC_Screen)
         PaddingRight: =5.00
         PaddingTop: =5.00
