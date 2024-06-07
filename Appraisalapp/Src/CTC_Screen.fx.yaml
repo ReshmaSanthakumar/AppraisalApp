@@ -604,7 +604,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Designation(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -702,7 +702,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Hike(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -895,7 +895,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Basic Salary(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -991,7 +991,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="House Rent Allowance(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1087,7 +1087,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Special Personal Allowance(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1183,7 +1183,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Leave Travel Allowance(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1278,7 +1278,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Provident Fund(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1373,7 +1373,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Project Incentives(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1468,7 +1468,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Target Incentives(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1563,7 +1563,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Annual Performance Bonus(%)"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
