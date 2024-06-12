@@ -929,7 +929,7 @@ User_screen As screen:
                 Fill: =
                 FontColor: =
                 Height: =43
-                Text: =Parent.DisplayName
+                Text: ="Share the names of 5 Noblites whom you think exceeded their work expectations this year!!"
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =Parent.Width - 48
                 Wrap: =true
