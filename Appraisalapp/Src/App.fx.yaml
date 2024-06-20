@@ -35,7 +35,7 @@ App As appinfo:
             
             );
         
-        Notify("Your teams are " & varAdminTeamStr,NotificationType.Success,5000);
+        Notify("Your Team: " & varAdminTeamStr,NotificationType.Success,5000);
         
         If(is_admin,
             If( varCat="Team Lead",
