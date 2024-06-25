@@ -518,7 +518,7 @@ Admin_screen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: ="Nobl Q Reporting Manager Email"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30

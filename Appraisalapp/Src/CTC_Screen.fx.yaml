@@ -64,6 +64,7 @@ CTC_Screen As screen:
 
     ButtonCanvas1 As Button:
         BasePaletteColor: =RGBA(0, 109, 91, 1)
+        BorderStyle: =""
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |
@@ -604,7 +605,7 @@ CTC_Screen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =13
-                Text: ="Designation(%)"
+                Text: ="Designation"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -784,7 +785,7 @@ CTC_Screen As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Appraisal CTC Breakage'], DataSourceInfo.MaxLength, Currency)
-            Required: =false
+            Required: =true
             Update: =DataCardValue95.Text
             Width: =455
             X: =0
@@ -1820,6 +1821,7 @@ CTC_Screen As screen:
 
     ButtonCanvas1_1 As Button:
         BasePaletteColor: =RGBA(0, 109, 91, 1)
+        BorderStyle: =""
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(255, 255, 255, 1)
         Height: =32
@@ -1852,6 +1854,7 @@ CTC_Screen As screen:
 
     ButtonCanvas1_2 As Button:
         BasePaletteColor: =RGBA(0, 109, 91, 1)
+        BorderStyle: =""
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(255, 255, 255, 1)
         Height: =32

@@ -208,6 +208,7 @@ scr_userDT As screen:
 
     drp_row_limit As Dropdown.pcfdataset:
         Appearance: ="FilledDarker"
+        BorderStyle: =""
         DefaultSelectedItems: =["10"]
         DisplayMode: =DisplayMode.Edit
         Height: =30
@@ -263,6 +264,7 @@ scr_userDT As screen:
 
     drp_rating As Dropdown.pcfdataset:
         Appearance: ="FilledDarker"
+        BorderStyle: =""
         DefaultSelectedItems: =[0]
         DisplayMode: =DisplayMode.Edit
         Height: =32
