@@ -122,20 +122,22 @@ scr_userDT As screen:
         ZIndex: =1
 
         Title_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Title"
+            FieldDisplayName: ="Employee Email"
             FieldName: ="Title"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =2
             Text: =ThisItem.Title
-            Width: =100
+            Width: =294
             X: =0
             Y: =0
             ZIndex: =1
 
         Name_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Name"
             FieldName: ="Name"
@@ -144,14 +146,14 @@ scr_userDT As screen:
             LayoutHeight: =Parent.Height
             Order: =27
             Text: =ThisItem.Name
-            Width: =100
+            Width: =193
             X: =0
             Y: =0
             ZIndex: =2
 
         JeevanReportingManagerName_Column1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="JeevanReportingManagerName"
+            FieldDisplayName: ="Nobl Q Reporting Manager Email"
             FieldName: ="JeevanReportingManagerName"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
@@ -164,6 +166,7 @@ scr_userDT As screen:
             ZIndex: =28
 
         Team_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Team"
             FieldName: ="Team"
@@ -172,13 +175,13 @@ scr_userDT As screen:
             LayoutHeight: =Parent.Height
             Order: =28
             Text: =Concat(ThisItem.Team,ThisRecord.Value,",")
-            Width: =100
+            Width: =152
             X: =0
             Y: =0
             ZIndex: =29
 
         EmployeeId_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =true
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="EmployeeId"
             FieldName: ="EmployeeId"
@@ -187,22 +190,23 @@ scr_userDT As screen:
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.'Employee Id'
-            Width: =100
+            Width: =132
             X: =0
             Y: =0
             ZIndex: =30
 
         RatetheEmployee_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="RatetheEmployee"
+            FieldDisplayName: ="Rating"
             FieldName: ="RatetheEmployee"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =30
             Text: =ThisItem.'Rate the Employee'
-            Width: =100
-            X: =0
+            Width: =132
+            X: =1101
             Y: =0
             ZIndex: =31
 
