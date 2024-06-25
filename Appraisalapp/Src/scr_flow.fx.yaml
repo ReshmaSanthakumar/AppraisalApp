@@ -90,6 +90,7 @@ scr_flow As screen:
             Height: =46
             Icon: =Icon.DetailList
             OnSelect: =Navigate(scr_userDT)
+            Tooltip: ="Performance List"
             Width: =25
             X: =19
             Y: =99
@@ -103,7 +104,7 @@ scr_flow As screen:
             Height: =46
             Icon: =Icon.Home
             OnSelect: =Navigate(Admin_screen)
-            Tooltip: ="Home"
+            Tooltip: ="Performance Feedback"
             Width: =26
             X: =18
             Y: =27
@@ -117,6 +118,7 @@ scr_flow As screen:
             Height: =46
             Icon: =Icon.Trending
             OnSelect: =Navigate(scr_powerBI)
+            Tooltip: ="Performance Analysis"
             Visible: =varBI
             Width: =25
             X: =23
@@ -131,6 +133,7 @@ scr_flow As screen:
             Height: =26
             Icon: =Icon.Mail
             OnSelect: =Navigate(scr_flow); Refresh('Appraisal CTC Breakage')
+            Tooltip: ="Email Trigger"
             Visible: =varBI
             Width: =25
             X: =21

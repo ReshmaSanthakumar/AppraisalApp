@@ -370,6 +370,7 @@ scr_userDT As screen:
             Height: =46
             Icon: =Icon.DetailList
             OnSelect: =Navigate(scr_userDT)
+            Tooltip: ="Performance List"
             Width: =25
             X: =19
             Y: =99

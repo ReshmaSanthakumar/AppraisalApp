@@ -1643,6 +1643,7 @@ Admin_screen As screen:
             Height: =46
             Icon: =Icon.DetailList
             OnSelect: =Navigate(scr_userDT)
+            Tooltip: ="Performance List"
             Width: =25
             X: =19
             Y: =99
@@ -1656,7 +1657,7 @@ Admin_screen As screen:
             Height: =46
             Icon: =Icon.Home
             OnSelect: =Navigate(Admin_screen)
-            Tooltip: ="Home"
+            Tooltip: ="Performance Feedback"
             Width: =26
             X: =18
             Y: =27

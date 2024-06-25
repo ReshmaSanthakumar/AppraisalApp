@@ -92,6 +92,7 @@ scr_powerBI As screen:
             Height: =46
             Icon: =Icon.DetailList
             OnSelect: =Navigate(scr_userDT)
+            Tooltip: ="Performance Feedback"
             Width: =25
             X: =19
             Y: =99
@@ -118,6 +119,7 @@ scr_powerBI As screen:
             Height: =46
             Icon: =Icon.Trending
             OnSelect: =Navigate(scr_powerBI)
+            Tooltip: ="Performance Analysis"
             Width: =25
             X: =23
             Y: =171
